@@ -1,0 +1,13 @@
+{
+    "name": "palantirnet/mayflower-artifacts",
+    "description": "This repository is the product of the built artifact from massgov/mayflower",
+    "type": "library",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Mathew Peterson",
+            "email": "peterson@palantir.net"
+        }
+    ],
+    "require": {}
+}
