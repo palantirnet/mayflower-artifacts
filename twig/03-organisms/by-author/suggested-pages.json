@@ -1,12 +1,13 @@
 {
   "suggestedPages": {
     "title": "Related Parks",
+    "view":"",
     "buttonMinor" : {
       "link": "#",
       "text": "Do Something"
     },
     "pages": [{
-      "image": "http://placehold.it/230x130",
+      "image": "/assets/images/placeholder/230x130.png",
       "altTag": "Place Holder Image",
       "link": {
         "type": "",
@@ -14,7 +15,7 @@
         "text": "Title Link I"
       }
     },{
-      "image": "http://placehold.it/230x130",
+      "image": "/assets/images/placeholder/230x130.png",
       "altTag": "Place Holder Image",
       "link": {
         "type": "",
@@ -22,7 +23,7 @@
         "text": "Title Link II"
       }
     },{
-      "image": "http://placehold.it/230x130",
+      "image": "/assets/images/placeholder/230x130.png",
       "altTag": "Place Holder Image",
       "link": {
         "type": "",
@@ -30,7 +31,7 @@
         "text": "Title Link III"
       }
     },{
-      "image": "http://placehold.it/230x130",
+      "image": "/assets/images/placeholder/230x130.png",
       "altTag": "Place Holder Image",
       "link": {
         "type": "",
