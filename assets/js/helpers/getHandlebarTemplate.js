@@ -1,7 +1,7 @@
 module.exports = function(name) {
   if (Handlebars.templates === undefined || Handlebars.templates[name] === undefined) {
       $.ajax({
-          url : themePath + '/js/templates/' + name + '.html',
+          url : '/assets/js/templates/' + name + '.html',
           success : function(data) {
               if (Handlebars.templates === undefined) {
                   Handlebars.templates = {};
