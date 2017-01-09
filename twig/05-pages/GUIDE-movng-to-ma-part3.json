@@ -88,7 +88,7 @@
     }]
   },
 
-  "stackedRowSections": [{
+  "multiRowSections": [{
     "title": "Residency",
     "id": "residency",
     "pageContent": [{
@@ -543,17 +543,12 @@
             }
           }
         },{
-          "path": "@atoms/09-media/figure.twig",
+          "path": "@atoms/09-media/image.twig",
           "data": {
-            "figure": {
-              "align": "",
-              "image": { 
-                "alt": "alt text", 
-                "src": "/assets/images/placeholder/800x400.png",
-                "height": "",
-                "width": ""
-              },
-              "caption": ""
+            "image": {
+              "alt": "alt text",
+              "src": "/assets/images/placeholder/800x400.png",
+              "pull": ""
             }
           }
         }]
@@ -638,17 +633,12 @@
             }
           }
         },{
-          "path": "@atoms/09-media/figure.twig",
+          "path": "@atoms/09-media/image.twig",
           "data": {
-            "figure": {
-              "align": "align-right",
-              "image": { 
-                "alt": "alt text", 
-                "src": "/assets/images/placeholder/400x300.png",
-                "height": "",
-                "width": ""
-              },
-              "caption": ""
+            "image": {
+              "alt": "alt text",
+              "src": "/assets/images/placeholder/800x400.png",
+              "pull": "right"
             }
           }
         },{

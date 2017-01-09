@@ -1,6 +1,6 @@
 {
   "catIcon": {
-    "icon":"@atoms/07-user-added-icons/svg-camping.twig",
+    "svg":"atoms-svg-camping",
     "small":""
   }
 }

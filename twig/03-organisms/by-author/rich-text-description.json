@@ -3,7 +3,7 @@
     "path": "@atoms/04-headings/heading-2.twig",
     "data": {
       "heading2" : {
-        "text": "H2 - This component is used when you want less bottom margin"
+        "text": "H2 - This component is usually used on a two column page"
       }
     }
   },
@@ -66,17 +66,12 @@
     }
   },
   {
-    "path": "@atoms/09-media/figure.twig",
+    "path": "@atoms/09-media/image.twig",
     "data": {
-      "figure": {
-        "align": "",
-        "image": { 
-          "alt": "alt text", 
-          "src": "/assets/images/placeholder/800x400.png",
-          "height": "",
-          "width": ""
-        },
-        "caption": ""
+      "image": { 
+        "alt": "alt text", 
+        "src": "/assets/images/placeholder/800x400.png",
+        "pull": ""
       }
     }
   },
@@ -89,17 +84,12 @@
     }
   },
   {
-    "path": "@atoms/09-media/figure.twig",
+    "path": "@atoms/09-media/image.twig",
     "data": {
-      "figure": {
-        "align": "align-right",
-        "image": { 
-          "alt": "alt text", 
-          "src": "/assets/images/placeholder/400x300.png",
-          "height": "",
-          "width": ""
-        },
-        "caption": ""
+      "image": { 
+        "alt": "alt text", 
+        "src": "/assets/images/placeholder/400x300.png",
+        "pull": "right"
       }
     }
   },
@@ -128,17 +118,12 @@
     }
   },
   {
-    "path": "@atoms/09-media/figure.twig",
+    "path": "@atoms/09-media/image.twig",
     "data": {
-      "figure": {
-        "align": "align-left",
-        "image": { 
-          "alt": "alt text", 
-          "src": "/assets/images/placeholder/400x300.png",
-          "height": "",
-          "width": ""
-        },
-        "caption": ""
+      "image": { 
+        "alt": "alt text", 
+        "src": "/assets/images/placeholder/400x300.png",
+        "pull": "left"
       }
     }
   },

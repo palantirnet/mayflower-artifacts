@@ -54,7 +54,6 @@
   "sectionThreeUp" : {
     "title": "More in State Parks & Recreation",
     "sections": [{
-      "id": "GUIDasjdhf1",
       "catIcon": "",
       "title" : {
         "href" : "#",
@@ -79,7 +78,6 @@
       }]
     },
     {
-      "id": "GUIDasjdhf2",
       "catIcon": "",
       "title" : {
         "href" : "#",
@@ -104,7 +102,6 @@
       }]
     }, 
     {
-      "id": "GUIDasjdhf3",
       "catIcon": "",
       "title" : {
         "href" : "#",
@@ -129,7 +126,6 @@
       }]
     },
     {
-      "id": "GUIDasjdhf4",
       "catIcon": "",
       "title" : {
         "href" : "#",

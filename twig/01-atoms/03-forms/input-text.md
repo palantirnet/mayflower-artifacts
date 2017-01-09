@@ -12,15 +12,4 @@ Any text input field will have the same label (Your Name) and will always be req
 - [@organisms/by-author/feedback-form](/?p=organisms-feedback-form)
 
 ### Variables:
-~~~
-  inputText: {
-    labelText:
-      type: string\required,
-    required: 
-      type: boolean,
-    id: 
-      type: string\unique\required
-    placeholder:
-      type: string
-  }
-~~~
+_All ids, classes, labels are hard coded. No placeholder text._

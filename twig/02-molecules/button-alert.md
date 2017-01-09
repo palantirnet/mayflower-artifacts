@@ -1,27 +1,25 @@
 ---
-title: DEPRECATED - Alert Button
+title: Alert Button
 ---
 Description: Black styled button used to control and accordion.
-
-## State: Deprecated
+## State: ALPHA
 
 ###  Notes
-- Will be moved into the same directory as the other atom buttons.
-- Button text toggles between "hide" and "show" states
+Button text toggles between "hide" and "show" states
 
-### Used in:
+### Used in: 
 [@organisms/by-template/emergency-alerts.twig](/?p=organisms-emergency-alerts)
 
 ### Contains
 
-### Variables
-~~~
+### Variables 
+~~~ 
 buttonAlert: {
-  hideText:
+  hideText: 
     type: string/required,
-  showText:
+  showText: 
     type: string/required,
-  text:
+  text: 
     type: string/optional
 }
 ~~~

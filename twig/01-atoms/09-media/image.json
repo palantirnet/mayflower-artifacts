@@ -2,7 +2,6 @@
   "image": { 
     "alt": "alt text", 
     "src": "/assets/images/placeholder/800x400.png",
-    "height": "",
-    "width": ""
+    "pull": ""
   }
 }
