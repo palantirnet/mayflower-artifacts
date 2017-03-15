@@ -9,15 +9,15 @@
     "items": [{
       "href": "#",
       "text":"Helpful link",
-      "info": ""
+      "chevron": "true"
     },{
       "href": "#",
       "text":"Another helpful link",
-      "info": ""
+      "chevron": "true"
     },{
       "href": "#",
       "text":"Yet another helpful link",
-      "info": ""
+      "chevron": "true"
     }]
   }
 }

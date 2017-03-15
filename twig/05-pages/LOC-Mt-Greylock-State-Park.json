@@ -34,14 +34,10 @@
         "name": "",
         "items": [{
           "type": "address",
+          "property": "url",
           "label": "",
-          "address": "Visitor's Center, 30 Rockwell Road, Lanesborough, MA 01237",
-          "link": {
-            "href": "https://www.google.com/maps/place/30+Rockwell+Rd,+Cheshire,+MA+01225",
-            "text": "directions",
-            "info": "directions to Mt Greylock State Park Vistor's Center",
-            "property": "url"
-          },
+          "value": "Visitor's Center, 30 Rockwell Road, Lanesborough, MA 01237",
+          "link": "https://www.google.com/maps/place/30+Rockwell+Rd,+Cheshire,+MA+01225",
           "details": ""
         }]
       },{
@@ -50,10 +46,8 @@
         "items": [{
           "type": "phone",
           "label":"Main:",
-          "link": {
-            "href": "+14134994262",
-            "text":"(413) 499-4262"
-          },
+          "value":"(413) 499-4262",
+          "link":"14134994262",
           "details":"This line is open from 9:00 a.m. - 5:00 p.m., M-F"
         }]
       },{
@@ -62,10 +56,8 @@
         "items": [{
           "type": "email",
           "label":"Email:",
-          "link": {
-            "text":"email@email.com",
-            "href":"email@email.com"
-          },
+          "value":"email@email.com",
+          "link":"email@email.com",
           "details":""
         }]
       }]
@@ -117,7 +109,7 @@
           "phone": "14134994262",
           "fax": "",
           "email": "mass.parks@state.ma.us",
-          "address": "30 Rockwell Road\nLanesborough, MA 01237"
+          "address": "30 Rockwell Road<br />Lanesborough, MA 01237"
         }
       },{
         "position": {
@@ -130,7 +122,7 @@
           "phone": "14137431591",
           "fax": "",
           "email": "mail@bascomlodge.net",
-          "address": "30 Rockwell Road\nLanesborough, MA 01237"
+          "address": "30 Rockwell Road<br />Lanesborough, MA 01237"
         }
       }]
     }
@@ -277,7 +269,7 @@
               "phone": "14134994262",
               "fax": "",
               "email": "mass.parks@state.ma.us",
-              "address": "30 Rockwell Road\n Lanesborough, MA 01237"
+              "address": "30 Rockwell Road<br />Lanesborough, MA 01237"
             }
           },{
             "position": {
@@ -290,7 +282,7 @@
               "phone": "14137431591",
               "fax": "",
               "email": "mail@bascomlodge.net",
-              "address": "30 Rockwell Road\n Lanesborough, MA 01237"
+              "address": "30 Rockwell Road<br />Lanesborough, MA 01237"
             }
           }]
         }
@@ -558,19 +550,15 @@
             "type": "phone",
             "property": "telephone",
             "label":"Main:",
-            "link": {
-              "href":"+14134994262",
-              "text":"(413) 499-4262"
-            },
+            "value":"(413) 499-4262",
+            "link":"14134994262",
             "details":"This line is open from 9:00 a.m. - 5:00 p.m., M-F"
           },{
             "type": "phone",
             "property": "",
             "label":"TTY:",
-            "link": {
-              "href": "+16175557777",
-              "text": "(617) 555-7777"
-            },
+            "value":"(617) 555-7777",
+            "link":"16175557777",
             "details":"For those who need accessible services"
           }]
         },{
@@ -580,11 +568,9 @@
           "items": [{
             "type": "email",
             "property": "",
-            "label": "Email:",
-            "link": {
-              "href":"mount.greylock@state.ma.us",
-              "text":"mount.greylock@state.ma.us"
-            },
+            "label":"Email:",
+            "value":"mount.greylock@state.ma.us",
+            "link":"mount.greylock@state.ma.us",
             "details":""
           }]
         },{
@@ -595,10 +581,8 @@
             "type": "fax",
             "property": "faxNumber",
             "label":"",
-            "link": {
-              "href": "+14134994262",
-              "text": "(413) 499-4262"
-            },
+            "value":"(413) 499-4262",
+            "link":"14134994262",
             "details":"Please allow 24 hours for a response"
           }]
         },{
@@ -608,14 +592,9 @@
           "items": [{
             "type": "address",
             "property": "address",
-            "label": "",
-            "address": "555 Park Drive\nBoston, MA 02231",
-            "link": {
-              "href": "https://www.google.com/maps/place/555+Park+Dr,+Boston,+MA+02215",
-              "text": "directions",
-              "info": "Directions to Bascom Lodge",
-              "property": "url"
-            }, 
+            "label":"",
+            "value":"555 Park Drive<br />Boston, MA 02231",
+            "link": "https://www.google.com/maps/place/555+Park+Dr,+Boston,+MA+02215",
             "details":""
           }]
         }]
@@ -639,10 +618,8 @@
             "type": "phone",
             "property": "telephone",
             "label":"Main:",
-            "link": {
-              "href": "+14134438765",
-              "text": "(413) 443-8765"
-            },
+            "value":"(413) 443-8765",
+            "link":"14134438765",
             "details":""
           }]
         },{
@@ -653,10 +630,8 @@
             "type": "email",
             "property": "",
             "label":"Email:",
-            "link": {
-              "href": "mount.greylock@state.ma.us",
-              "text": "mount.greylock@state.ma.us"
-            },
+            "value":"mount.greylock@state.ma.us",
+            "link":"mount.greylock@state.ma.us",
             "details":""
           }]
         },{
@@ -667,10 +642,8 @@
             "type": "fax",
             "property": "faxNumber",
             "label":"",
-            "link": {
-              "href": "+14134994262",
-              "text": "(413) 499-4262"
-            },
+            "value":"(413) 499-4262",
+            "link":"14134994262",
             "details":"Please allow 24 hours for a response"
           }]
         },{
@@ -681,7 +654,7 @@
             "type": "address",
             "property": "address",
             "label":"",
-            "value":"555 Park Drive\nNorth Hampton, MA 02231",
+            "value":"555 Park Drive<br />North Hampton, MA 02231",
             "link": "",
             "details":""
           }]

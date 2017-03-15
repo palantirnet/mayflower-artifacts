@@ -14,9 +14,7 @@ Description: An `<h4>` used at the start of a column, designated by its CSS clas
 ### Variables:
 ~~~
 columnHeading {
-  text: 
-    type: string / required
-  href: 
-    type: string(url) / optional
+    text: 
+        type: string / required
 }
 ~~~

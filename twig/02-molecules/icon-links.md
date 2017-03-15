@@ -17,6 +17,8 @@ iconLinks: {
         type: string (url) / required
       text:
         type: string / required
+      chevron:
+        type: string / required
     }
   }]
 }
