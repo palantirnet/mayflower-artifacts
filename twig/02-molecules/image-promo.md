@@ -25,9 +25,9 @@ imagePromo: {
       type: string/optional ("external")
   } 
   (optional) image: {  
-    src:
+    image:
       type: string(path)/required
-    alt: 
+    text: 
       type: string/required - describes the image
     href: 
       type: string(url)/optional
