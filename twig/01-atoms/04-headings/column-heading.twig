@@ -2,8 +2,7 @@
   {% if columnHeading.href %}
     {% set decorativeLink = {
       "text": columnHeading.text, 
-      "href": columnHeading.href,
-      "info": columnHeading.info
+      "href": columnHeading.href
     } %}
     {% include "@atoms/decorative-link.twig" %}
   {% else %}
