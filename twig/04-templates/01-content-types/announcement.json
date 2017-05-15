@@ -3,15 +3,15 @@
     "category": "type of annoucement",
     "divider": false,
     "title": "Page Title",
-    "subTitle": "",
+    "subTitle": "Sub Title",
     "headerTags": {
       "label": "Related to:",
       "taxonomyTerms": [{
-        "url": "#",
-        "term": "Parent Page"
+        "href": "#",
+        "text": "Parent Page"
       },{
-        "url": "#",
-        "term": "Another Parent Page"
+        "href": "#",
+        "text": "Another Parent Page"
       }]
     },
     "socialLinks": {
@@ -151,7 +151,7 @@
     },
 
     "contactList": {
-      "sidebarHeading": {
+      "compHeading": {
         "title": "Media Contact"
       },
 
