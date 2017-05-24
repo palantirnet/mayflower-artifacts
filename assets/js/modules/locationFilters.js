@@ -1,61 +1,56 @@
 export default function (window,document,$,undefined) {
+  $('.js-location-filters').each(function(){
+    let $el = $(this);
 
-  $('.js-location-filters').each(function(i){
-    let $el = $(this),
-      placeId = ''; // specified per instance
+    // When google map libraries are loaded, initialize places.autocomplete on the location input, if it exists.
+    $(document).on('ma:LibrariesLoaded:GoogleMaps', function() {
+      let $locationFilter = $('.ma__location-filters__by-location', $el).find('input');
+      if ($locationFilter.length) {
+        // Create the google places autocomplete object and associate it with the zip code text input.
+        let locationInput = document.getElementById($locationFilter.attr('id'));
+        let defaultBounds = new google.maps.LatLngBounds(new google.maps.LatLng(40.727093,-73.97864), new google.maps.LatLng(43.004778, -69.845299));
 
-    /**
-     * Location Listing config, event listeners
-     */
-    let $locationListing = $el.parents('.js-location-listing');
-
-    // Set location listing specific listeners, when parent component is initialized.
-    $locationListing.on('ma:LocationListing:ListingInitialized', function() {
-      // Set location listing specific placeId.
-      placeId = locationListing[i].locationFilters.zipcode.inputText.id;
-
-      // Create the google places autocomplete object and associate it with the zip code text input.
-      window.autocomplete = new google.maps.places.Autocomplete(document.getElementById(placeId));
-      window.autocomplete.setComponentRestrictions({country: 'us'});
-
-
-      // Listen for location listing tag interaction event, update form.
-      $locationListing.on('ma:LocationListing:ActiveTagInteraction', function(e, data){
-        renderForm({data: data.clearedFilter, form: $el, placeId: placeId});
-      });
+        // See options: https://developers.google.com/maps/documentation/javascript/places-autocomplete#add_autocomplete
+        let options = {
+          bounds: defaultBounds,
+          strictBounds: true,
+          types: ['geocode'],
+          componentRestrictions: {country: 'us'}
+        };
+        ma.autocomplete = new google.maps.places.Autocomplete(locationInput, options);
+      }
     });
 
-    // window.autocomplete.setBounds(new google.maps.LatLngBounds(new google.maps.LatLng(41,74), new google.maps.LatLng(43,69)));
-    // window.autocomplete.setBounds(new google.maps.LatLngBounds({east: 69, north: 43, south: 41, west: 74}));
-    // window.autocomplete.strictBounds = true;
-    // window.autocomplete.geocode = true;
-    // window.autocomplete.setTypes(['(locality)']);
-    // console.log('bounds:', window.autocomplete.getBounds());
+    // Listen for new data from another component interaction (i.e. results heading), update form.
+    $el.on('ma:FormFilter:DataUpdated', function(e, data){
+      renderForm({clearedFilter: data.clearedFilter, $form: $el});
+    });
 
-    // $el.keydown(function(e) {
-    //   if (e.keyCode === 13) {
-    //     if (e.target !== $('button.ma__location-filters__submit')) {
-    //       console.log(e.target);
-    //       e.preventDefault();
-    //     }
-    //   }
-    // });
+    // Don't submit the form when a user selects the autocomplete dropdown item with enter
+    $el.keydown(function(e) {
+      if (e.keyCode === 13) {
+        if  ($(e.target).is($('.ma__location-filters__by-location', $el).find('input'))) {
+          e.preventDefault();
+        }
+      }
+    });
 
     // Handle global form submission.
     $el.submit(function(e){
       e.preventDefault();
       // Update master data with the various filter values.
-      let filters = getFormData({form: $(this), placeId: placeId});
+      let formData = getFormData({$form: $(this)});
 
       // Trigger location listing filter event with current filter values.
-      $locationListing.trigger('ma:LocationListing:FormInteraction', [{filters: filters}]);
+      $el.trigger('ma:LocationFilter:FormSubmitted', [{formData: formData}]);
     });
 
   });
 
   function renderForm(args) {
+    let clearedFilter = args.clearedFilter;
     // The clear all button was pressed.
-    if (args.data === 'all') {
+    if (clearedFilter === "all") {
       clearForm(args);
     }
     // Single filter button was pressed.
@@ -65,38 +60,39 @@ export default function (window,document,$,undefined) {
   }
 
   function getFormData(args) {
-    let $form = $(args.form),
+    let $form = $(args.$form),
+      $location = $form.find('.ma__location-filters__by-location'),
       $tags = $form.find('.ma__location-filters__by-tags'),
-      filters = [];
+      formData = [];
 
-    // Get place
-    let placeId = '#' + args.placeId;
-    let place = $form.find(placeId).val();
-
-    if (place) {
-      filters.push({
-        type: 'location',
-        text: place,
-        value: place
-      });
+    // Get location
+    if ($location.find('input').length) {
+      let place = $location.find('input').val();
+      if (place) {
+        formData.push({
+          type: 'location',
+          text: place,
+          value: place
+        });
+      }
     }
 
     $tags.find('input:checked').each(function() {
-      filters.push({'type': 'tag', 'value': $(this).val(), 'text': $(this).next("label").text()});
+      formData.push({'type': 'tag', 'value': $(this).val(), 'text': $(this).next("label").text()});
     });
 
-    return filters;
+    return formData;
   }
 
   function clearDeactivatedFilter(args) {
-    let $form = $(args.form),
-      $place = $form.find(args.placeId),
+    let $form = $(args.$form),
+      $place = $form.find('.ma__location-filters__by-location'),
       $tags = $form.find('.ma__location-filters__by-tags'),
-      clearedFilter = args.data;
+      clearedFilter = args.clearedFilter;
 
     // If the cleared filter button was for a location filter.
     if (clearedFilter.type === 'location') {
-      $place.val("");
+      $place.find('input').val("");
       return;
     }
 
@@ -107,12 +103,14 @@ export default function (window,document,$,undefined) {
   }
 
   function clearForm(args) {
-    let $form = $(args.form),
-      $tags = $form.find('.ma__location-filters__by-tags'),
-      $place = $form.find('#' + args.placeId);
+    let $form = $(args.$form),
+      $tags = $('.ma__location-filters__by-tags', $form),
+      $place = $('.ma__location-filters__by-location', $form).find('input');
 
     // Clear location text input.
-    $place.val("");
+    if ($place.length) {
+      $place.val("");
+    }
     // Uncheck all checked tags inputs.
     $tags.find('input:checked').prop('checked', false);
   }

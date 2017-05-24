@@ -3,26 +3,15 @@
 {% endif %}
 
 <section class="ma__page-header {{ widgetsClass }}">
-  {% if pageHeader.headerTags.taxonomyTerms or pageHeader.socialLinks.items %}
+  {% if pageHeader.headerTags.taxonomyTerms %}
     <div class="ma__page-header__tags">
-      {% if pageHeader.headerTags.taxonomyTerms %}
-        {% set headerTags = pageHeader.headerTags %}
-        {% include "@molecules/header-tags.twig" %}
-      {% endif %}
-      {% if pageHeader.socialLinks.items %}
-        {% set socialLinks = pageHeader.socialLinks %}
-        {% include "@molecules/social-links.twig" %}
-      {% endif %}
+      {% set headerTags = pageHeader.headerTags %}
+      {% include "@molecules/header-tags.twig" %}
     </div>
   {% endif %}
   <div 
     class="ma__page-header__content"
     {% if schemaPageType %} property="mainEntityOfPage"{% endif %}>
-      {% if pageHeader.category %}
-        <div class="ma__page-header__category">
-          {{ pageHeader.category }}
-        </div>
-      {% endif %}
       <h1 
       class="ma__page-header__title"
       {% if schemaPageType %} property="name"{% endif %}>{{pageHeader.title}}</h1>

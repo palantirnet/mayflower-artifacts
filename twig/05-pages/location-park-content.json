@@ -98,8 +98,7 @@
     "bgTitle":"Mt Greylock State Park",
     "bgWide":"/assets/images/placeholder/1600x400.png",
     "bgNarrow":"/assets/images/placeholder/800x400.png",
-    "id": "GUID24872901570",
-    "googleMap": {
+    "actionMap": {
       "map": {
         "center": {
           "lat": 42.594129,
@@ -138,7 +137,7 @@
   },
 
 
- "COMMENT":"****PAGE CONTENT COMPONENTS****",
+  "COMMENT":"****PAGE CONTENT COMPONENTS****",
 
   "actionDetails" : {
     "sections": [{
@@ -297,9 +296,9 @@
         }
       }
     },{
-      "title":"Recommended Activities",
+      "title":"Activities",
       "intro": "",
-      "id":"recommended-activities",
+      "id":"activities",
       "path": "@organisms/by-author/image-promos.twig",
       "data": {
         "imagePromos": {
@@ -325,7 +324,11 @@
                 }]
               }
             },
-            "link": null
+            "link": {
+              "text": "Details & Maps",
+              "type": "chevron",
+              "href": "#"
+            }
           },{
             "title": {
               "text": "Camping",
@@ -348,7 +351,11 @@
                 }]
               }
             },
-            "link": null
+            "link": {
+              "text": "More",
+              "type": "chevron",
+              "href": "#"
+            }
           },{
             "title": {
               "text": "Winter Sports",
@@ -371,42 +378,64 @@
                 }]
               }
             },
-            "link": null
-          }]
-        }
-      }
-    },{
-      "title":"All Activities",
-      "intro": "",
-      "id":"all-activities",
-      "path": "organisms-rich-text",
-      "data": {
-        "richText": {
-          "property": "",
-          "rteElements": [{
-            "path": "atoms-unordered-list",
-            "data": {
-              "unorderedList": [{
-                "text": "Hiking"
-              },{
-                "text": "Bird Watching"
-              },{
-                "text": "Swimming"
-              },{
-                "text": "Bug Collecting"
-              },{
-                "text": "Whale Riding"
-              },{
-                "text": "Mountain Biking"
-              },{
-                "text": "Camping"
-              },{
-                "text": "More Taxonomy"
-              },{
-                "text": "More Taxonomy"
-              },{
-                "text": "More Taxonomy"
-              }]
+            "link": {
+              "text": "More",
+              "type": "chevron",
+              "href": "#"
+            }
+          },{
+            "title": {
+              "text": "Hunting",
+              "href": "#"
+            },
+            "image": {
+              "src": "/assets/images/placeholder/190x107.png",
+              "alt": "hunting image",
+              "href": "#"
+            },
+            "description": {
+              "richText":{
+                "rteElements": [{
+                  "path": "@atoms/11-text/paragraph.twig",
+                  "data": {
+                    "paragraph" : {
+                      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu tellus sit amet turpis convallis finibus at id nulla."
+                    }
+                  }
+                }]
+              }
+            },
+            "link": {
+              "text": "",
+              "type": "",
+              "href": ""
+            }
+          },{
+            "title": {
+              "text": "Bird Watching",
+              "href": "#"
+            },
+            "image": {
+              "src": "/assets/images/placeholder/190x107.png",
+              "alt": "bird image",
+              "href": "#"
+            },
+            "description": {
+              "richText":{
+                "rteElements": [{
+                  "path": "@atoms/11-text/paragraph.twig",
+                  "data": {
+                    "paragraph" : {
+                      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu tellus sit amet turpis convallis finibus at id nulla."
+                    }
+                  }
+                }]
+              }
+            },
+            "link": {
+              "text": "More",
+              "type": "chevron",
+              "href": "#"
             }
           }]
         }
@@ -583,8 +612,7 @@
   },
 
 
-
-"COMMENT":"****SIDEBAR COMPONENTS****",
+  "COMMENT":"****SIDEBAR COMPONENTS****",
   "sidebar": {
     "coloredHeadings": true,
 
@@ -764,11 +792,9 @@
           "info": "",
           "property": ""
         },
-        "location": "Walden Pond, Concord, MA",
-        "date": {
-          "summary": "June 24, 2017" 
-        },
-        "time": "12 p.m.",
+        "location": "",
+        "date":"June 24, 2017, 12:00pm",
+        "time": "",
         "description":"This is a description of the event that will happen at a future date"
       },{
         "title": {
@@ -777,11 +803,9 @@
           "info": "",
           "property": ""
         },
-        "location": "Concord, MA",
-        "date": {
-          "summary": "June 24, 2017"
-        },
-        "time": "9 p.m.",
+        "location": "",
+        "date":"June 24, 2017, 9:00pm",
+        "time": "",
         "description":"This is a description of the event that will happen at a future date"
       }],
       "more":{
