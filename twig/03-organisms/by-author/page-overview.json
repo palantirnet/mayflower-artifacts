@@ -10,8 +10,8 @@
     "image": { 
       "alt": "alt text", 
       "src": "/assets/images/placeholder/440x248.png",
-      "width": "440",
-      "height": "248"
+      "height": "248",
+      "width": "440"
     },
     "labelledList": {
       "items": [{

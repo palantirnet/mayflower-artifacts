@@ -34,9 +34,9 @@
         {% set contactList = sidebar.contactList %}
         {% include "@organisms/by-author/contact-list.twig" %}
       {% endif %}
-      {% if sidebar.pressListing %}
-        {% set pressListing = sidebar.pressListing %}
-        {% include "@organisms/by-author/press-listing.twig" %}
+      {% if sidebar.linkList %}
+        {% set linkList = sidebar.linkList %}
+        {% include "@organisms/by-author/link-list.twig" %}
       {% endif %}
       {% block sidebar %}
         {% include "@base/placeholder.twig" with {'placeholder':{'text':'sidebar'}} %}

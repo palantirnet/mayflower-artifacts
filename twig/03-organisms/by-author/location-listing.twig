@@ -1,5 +1,3 @@
-{# set max number of items / markers to render per listing page / map if passed one, default to all #}
-{% set maxItems = locationListing.maxItems ?: locationListing.imagePromos.items.length %}
 <section class="ma__location-listing js-location-listing">
   {% if locationListing.locationFilters %}
     <div class="ma__location-listing__filters">
@@ -18,8 +16,7 @@
       <div class="ma__location-listing__results js-location-listing-results">
         {% set resultsHeading = locationListing.resultsHeading %}
         {% include "@molecules/results-heading.twig" %}
-        {% set items = locationListing.imagePromos.items[:maxItems] %}
-        {% set imagePromos = { items: items } %}
+        {% set imagePromos = locationListing.imagePromos %}
         {% include "@organisms/by-author/image-promos.twig" %}
         {% set pagination = locationListing.pagination %}
         {% include "@molecules/pagination.twig" %}
@@ -27,9 +24,3 @@
     </div>
   </div>
 </section>
-<script>
-  // Make locationListing data object available in locationListing module js.
-  var ma = ma || {};
-  ma.locationListing = ma.locationListing || [];
-  ma.locationListing.push({{ locationListing|json_encode|raw }});
-</script>
