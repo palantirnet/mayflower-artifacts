@@ -158,8 +158,8 @@
           "bgWide":"/assets/images/placeholder/1600x600-lighthouse-blur.jpg",
           "bgNarrow":"/assets/images/placeholder/800x800.png",
           "title": "What Would You Like to Do?",
-          "featuredHeading":"Top Services:",
-          "generalHeading":"Other Services:",
+          "featuredHeading":"Featured:",
+          "generalHeading":"All Actions & Guides:",
 
           "seeAll": {
             "type": "external",
@@ -170,35 +170,41 @@
 
           "featuredLinks": [{
             "image": "",
-            "text": "MassHealth (Medicaid)",
+            "text": "Find mental health care options",
             "type": "external",
             "href": "#"
           }],
 
           "links": [{
             "image": "",
-            "text": "Affordable Health & Dental Care",
+            "text": "Learn about other health care programs",
+            "type": "external",
             "href": "#"
           },{
             "image": "",
-            "text": "Cash Assistance",
+            "text": "Learn about MassHealth coverage types",
+            "type": "external",
             "href": "#"
           },{
-            "image": "",
-            "text": "Veteran Education",
+            "image": "/assets/images/placeholder/130x160.png",
+            "text": "Massachusetts Health Care",
+            "type": "",
             "href": "#",
             "label": ""
           },{
             "image": "",
-            "text": "Food Stamp Program: SNAP",
+            "text": "Find a MassHealth doctor",
+            "type": "external",
             "href": "#"
           },{
             "image": "",
-            "text": "Women, Infants, & Children Nutrition Program: WIC",
+            "text": "Find dental care options",
+            "type": "external",
             "href": "#"
           },{
             "image": "",
-            "text": "Early Intervention",
+            "text": "Shop for health care on the Health Connector",
+            "type": "external",
             "href": "#"
           }]
         }
@@ -284,16 +290,11 @@
               "text" : "MassHealth & Other Health Care"
             },{
               "href" : "#",
-              "text" : "Food & Cash Assistance"
+              "text" : "food & Cash Assistance"
             },{
               "href" : "#",
               "text" : "Special Needs & Accessible Living"
-            }],
-            "seeAll": {
-              "href": "#",
-              "text": "more",
-              "info": "learn more about Health & Social Services"
-            }
+            }]
           },
           {
             "id": "GUIDasjdhf2",
@@ -315,12 +316,7 @@
             },{
               "href" : "#",
               "text" : "Housing Assistance"
-            }],
-            "seeAll": {
-              "href": "#",
-              "text": "more",
-              "info": "learn more about Families & Children"
-            }
+            }]
           },
           {
             "id": "GUIDasjdhf3",
@@ -342,12 +338,7 @@
             },{
               "href" : "#",
               "text" : "Safety & Inspections"
-            }],
-            "seeAll": {
-              "href": "#",
-              "text": "more",
-              "info": "learn more about Housing & Property"
-            }
+            }]
           }]
         }
       }
@@ -355,27 +346,21 @@
       "path": "@organisms/by-author/link-list.twig",
       "data": {
         "linkList" : {
-          "compHeading": {
-            "title": "Related Organizations on pilot.mass.gov",
-            "sub": "",
-            "color": "",
-            "id": "",
-            "centered": ""
-          },
+          "title": "Related Organizations on pilot.mass.gov",
           "links" : [{
-            "href":"#",
+            "url":"#",
             "text":"Executive Office of Elder Affairs"
           },{
-            "href":"#",
+            "url":"#",
             "text":"Department of Public Health"
           },{
-            "href":"#",
+            "url":"#",
             "text":"Department of Transitional Assistance"
           },{
-            "href":"#",
+            "url":"#",
             "text":"Massachusetts Health Connector"
           },{
-            "href":"#",
+            "url":"#",
             "text":"Executive Office of Health & Human Services"
           }]
         }

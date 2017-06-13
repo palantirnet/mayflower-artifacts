@@ -1,10 +1,6 @@
 {
-  "buttonLink":{
-    "text":"Button a tag",
-    "href":"#",
-    "info": "",
-    "size": "",
-    "theme": "",
-    "outline": false
+	"buttonMain":{
+    "text":"Main Button",
+    "href":"#"
   }
 }

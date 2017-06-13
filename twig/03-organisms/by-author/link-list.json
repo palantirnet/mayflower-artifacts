@@ -1,51 +1,46 @@
 {
   "linkList" : {
     "compHeading": {
-      "title": "Related Agencies",
-      "sub": "",
-      "color": "",
-      "id": "",
-      "centered": "true"
+      "title": "Related Agencies"
     },
-    "description": null,
     "stacked": false,
     "links" : [{
-      "href":"#",
+      "url":"#",
       "text":"MassParks",
       "info": "",
       "property": ""
     },{
-      "href":"#",
+      "url":"#",
       "text":"Energy & Environmental Affairs (EEA)",
       "info": "",
       "property": ""
     },{
-      "href":"#",
+      "url":"#",
       "text":"Department of Conservation and Recreation (DCR)",
       "info": "",
       "property": ""
     },{
-      "href":"#",
+      "url":"#",
       "text":"Department of Agricultural Resources (DAR)",
       "info": "",
       "property": ""
     },{
-      "href":"#",
+      "url":"#",
       "text":"Department of Energy Resources (DOER)",
       "info": "",
       "property": ""
     },{
-      "href":"#",
+      "url":"#",
       "text":"Department of Energy Resources (DOER)",
       "info": "",
       "property": ""
     },{
-      "href":"#",
+      "url":"#",
       "text":"Department of Fish and Game (DFG)",
       "info": "",
       "property": ""
     },{
-      "href":"#",
+      "url":"#",
       "text":"Department of Public Utilities (DPU)",
       "info": "",
       "property": ""

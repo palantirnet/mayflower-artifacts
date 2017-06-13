@@ -29,10 +29,9 @@
     "title": "Building Energy Codes",
     "subTitle": "Energy Efficiency Provisions of the State Building Code (780 CMR)",
     "headerTags": {
-      "label": "More about:",
       "taxonomyTerms": [{
-        "href": "#",
-        "text": "Energy & Utilities"
+        "url": "#",
+        "term": "Energy & Utilities"
       }]
     },
     "optionalContents": null,
@@ -219,12 +218,12 @@
       },
       "stacked": true,
       "links" : [{
-        "href":"#",
+        "url":"#",
         "text":"Stretch Code Summary",
         "info": "",
         "property": ""
       },{
-        "href":"#",
+        "url":"#",
         "text":"Stretch code \"Residential Cash Flow Analysis\"",
         "info": "",
         "property": ""

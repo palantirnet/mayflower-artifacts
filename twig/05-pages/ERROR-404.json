@@ -15,8 +15,7 @@
     "compHeading": {
       "title": "Helpful Links",
       "sub": "true",
-      "color": "yellow",
-      "centered": true
+      "color": "yellow"
     },
     "items": [{
       "href": "#",
