@@ -1,1 +1,1 @@
-var themePath = '/themes/custom/mass_theme';
+var themePath = '/assets';

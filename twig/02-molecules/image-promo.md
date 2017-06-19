@@ -13,7 +13,7 @@ Description: An illustrated list where each item displays an image, title, descr
 - [@molecules/action-activities](?p=molecules-action-activities)
 
 
-### Variables
+### Required Variables
 ~~~
 imagePromo: {
   title: {
@@ -47,16 +47,7 @@ imagePromo: {
   phone (optional) {
     text: 
       type: string/required
-  },
-  tags (optional) [
-    { 
-      label: 
-        type: string (required)
-      icon: 
-        type: string (path to tag icon) (required)
-      id:
-        type: string (required)
-    }, ...] // see @molecules/results-heading > resultsHeading.tags,
+  }
 }
 ~~~
 

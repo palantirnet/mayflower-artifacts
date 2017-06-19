@@ -15,14 +15,10 @@ Description: List of location with matching icons on a google map
 ### Used in:
 
 
-### Variables
+### Required Variables
 
 ~~~
 locationListing: {
-  maxItems: 
-    type: int
-    required: no
-    description: the max number of items to appear per listing "page" / map
   googleMap: {
     type: @molecules/google-map.twig
   }
