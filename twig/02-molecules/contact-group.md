@@ -24,7 +24,7 @@ group: { // aggregated in array contactUs.contactGroups
     ...,
     {
       type: 
-        type: string ("email", "phone", "online", "address", "fax" ) / required,
+        type: string ("phone" || "online" || "address" || "fax" ) / required,
       property:
         type: string / optional
       label:
