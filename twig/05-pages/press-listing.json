@@ -41,6 +41,7 @@
 
   "pressListing": {
     "items": [{
+      "image": null,
       "eyebrow": "Press Release",
       "title" : {
         "href":"#",
@@ -61,6 +62,7 @@
         }]
       }
     },{
+      "image": null,
       "eyebrow": "Press Statement",
       "title" : {
         "href":"#",
@@ -81,6 +83,7 @@
         }]
       }
     },{
+      "image": null,
       "eyebrow": "News Article",
       "title" : {
         "href":"#",
@@ -101,6 +104,7 @@
         }]
       }
     },{
+      "image": null,
       "eyebrow": "Blog Post",
       "title" : {
         "href":"#",
@@ -121,6 +125,7 @@
         }]
       }
     },{
+      "image": null,
       "eyebrow": "Speech",
       "title" : {
         "href":"#",
@@ -207,7 +212,7 @@
         "image": {
           "href": "#",
           "alt": "Maura Healey",
-          "src": "../../assets/images/placeholder/100x100.png",
+          "src": "/assets/images/placeholder/100x100.png",
           "height": "100",
           "width": "100"
         },
@@ -227,7 +232,7 @@
         "image": {
           "href": "#",
           "alt": "Charles Baker",
-          "src": "../../assets/images/placeholder/100x100.png",
+          "src": "/assets/images/placeholder/100x100.png",
           "height": "100",
           "width": "100"
         },
@@ -247,7 +252,7 @@
         "image": {
           "href": "#",
           "alt": "Mass Dot Logo",
-          "src": "../../assets/images/placeholder/190x107.png",
+          "src": "/assets/images/placeholder/190x107.png",
           "height": "107",
           "width": "190"
         },
