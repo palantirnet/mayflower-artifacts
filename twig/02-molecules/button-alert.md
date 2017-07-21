@@ -21,8 +21,6 @@ buttonAlert: {
     type: string/required,
   showText:
     type: string/required,
-  class:
-    type: string/optional,
   text:
     type: string/optional
 }
