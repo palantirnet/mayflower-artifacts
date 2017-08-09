@@ -1,6 +1,5 @@
 {
   "eventListing": {
-    "grid": false,
     "compHeading":{
       "title": "Upcoming Events"
     },

@@ -14,8 +14,7 @@
           "name": "exp-month",
           "type": "text",
           "width": "85",
-          "placeholder": "",
-          "errorMsg": "missing month"
+          "placeholder": ""
         }
       }
     },{
@@ -29,8 +28,7 @@
           "name": "exp-year",
           "type": "text",
           "width": "85",
-          "placeholder": "",
-          "errorMsg": "missing year"
+          "placeholder": ""
         }
       }
     }]
