@@ -19,7 +19,13 @@
     "divider": false,
     "title": "Southbridge RMV",
     "subTitle": "",
-    "headerTags": null,
+    "headerTags": {
+      "label": "More about:",
+      "taxonomyTerms": [{
+        "href": "#",
+        "text": "Massachusetts Registry of Motor Vehicle"
+      }]
+    },
     "optionalContents": [{
       "path": "@molecules/contact-us.twig",
       "data": {
@@ -59,8 +65,8 @@
 
   "locationBanner": {
     "bgTitle":"Mt Greylock State Park",
-    "bgWide":"../../assets/images/placeholder/1600x400.png",
-    "bgNarrow":"../../assets/images/placeholder/800x400.png",
+    "bgWide":"/assets/images/placeholder/1600x400.png",
+    "bgNarrow":"/assets/images/placeholder/800x400.png",
     "id": "GUID24872901570",
     "googleMap": {
       "map": {
@@ -299,7 +305,7 @@
           "href": "#"
         },
         "image": {
-          "src": "../../assets/images/placeholder/190x107.png",
+          "src": "/assets/images/placeholder/190x107.png",
           "alt": "hiking image",
           "href": "#"
         },
@@ -322,7 +328,7 @@
           "href": "#"
         },
         "image": {
-          "src": "../../assets/images/placeholder/190x107.png",
+          "src": "/assets/images/placeholder/190x107.png",
           "alt": "camping image",
           "href": "#"
         },
@@ -345,7 +351,7 @@
           "href": "#"
         },
         "image": {
-          "src": "../../assets/images/placeholder/190x107.png",
+          "src": "/assets/images/placeholder/190x107.png",
           "alt": "wintery image",
           "href": "#"
         },

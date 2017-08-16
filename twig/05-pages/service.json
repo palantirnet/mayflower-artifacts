@@ -1,7 +1,17 @@
 {
+  "contentEyebrow": {
+    "hideBorder": true,
+    "headerTags": {
+      "label": "More about:",
+      "taxonomyTerms": [{
+        "href": "#",
+        "text": "Unemployment"
+      }]
+    }
+  },
   "pageBanner": {
-    "bgWide": "../../assets/images/placeholder/1600x400.png",
-    "bgNarrow": "../../assets/images/placeholder/800x400.png",
+    "bgWide": "/assets/images/placeholder/1600x400.png",
+    "bgNarrow": "/assets/images/placeholder/800x400.png",
     "size": "overlay",
     "icon": "",
     "title": "Unemployment Benefits",
@@ -50,7 +60,7 @@
         "sub": true
       },
       "links":[{
-        "image": "../../assets/images/placeholder/130x160.png",
+        "image": "/assets/images/placeholder/130x160.png",
         "text": "Name of Optional Guide",
         "href": "#",
         "label": "Guide:"
@@ -62,12 +72,12 @@
         "label": ":"
       }]
     }
- },
+  },
 
   "introSidebar": {
     "logo": {
       "alt": "alt text", 
-      "src": "../../assets/images/placeholder/230x130.png",
+      "src": "/assets/images/placeholder/230x130.png",
       "height": "130",
       "width": "230"
     },
@@ -172,7 +182,7 @@
       "featuredLinks": "",
 
       "links": [{
-        "image": "../../assets/images/placeholder/130x160.png",
+        "image": "/assets/images/placeholder/130x160.png",
         "text": "Name of optional guide",
         "href": "#",
         "label": "Guide:"
@@ -238,6 +248,58 @@
           "address": "24 Beacon St\nBoston, MA 02133"
         }
       }]
+    }
+  },
+
+  "eventListing": {
+    "grid": true,
+    "compHeading":{
+      "title": "Upcoming Events",
+      "sub": "",
+      "color": "",
+      "id": "",
+      "centered": ""
+    },
+    "events":[{
+      "title": {
+        "href": "#",
+        "text": "Winter Birding Event",
+        "info": "",
+        "property": ""
+      },
+      "location": "Lanesborough, MA",
+      "date": {
+        "summary": "March 30, 2017",
+        "startMonth": "Mar",
+        "startDay": "30",
+        "endMonth": "",
+        "endDay": ""
+      },
+      "time": "12 p.m. - 2 p.m.",
+      "description": "Event description. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam tempora itaque fuga quasi vero sint, sapiente soluta sit molestias architecto deleniti sunt eum incidunt laboriosam quos repudiandae nesciunt eligendi? Aliquid."
+    },{
+      "title": {
+        "href": "#",
+        "text": "First Day Hike",
+        "info": "",
+        "property": ""
+      },
+      "location": "Lanesborough, MA",
+      "date": {
+        "summary": "March 30, 2017 - April 10, 2017",
+        "startMonth": "Mar",
+        "startDay": "30",
+        "endMonth": "Apr",
+        "endDay": "10"
+      },
+      "time": "12 p.m. - 2 p.m.",
+      "description": ""
+    }],
+    "more":{
+      "href": "#",
+      "text": "See all events",
+      "chevron": true,
+      "label": "See all events for Executive Office of Health and Human Services"
     }
   },
 

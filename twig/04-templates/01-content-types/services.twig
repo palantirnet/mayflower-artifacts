@@ -10,6 +10,7 @@
   {% if schemaPageType %} typeof="{{schemaPageType}}"{% endif %}>
   <div class="pre-content">
     {% block preContent %}
+      {% include "@organisms/by-template/content-eyebrow.twig" %}
       {% include "@organisms/by-template/page-banner.twig" %}
     {% endblock %}
   </div>
@@ -72,6 +73,9 @@
             {% endif %}
             {% if mappedLocations %}
               {% include "@organisms/by-author/mapped-locations.twig" %}
+            {% endif %}
+            {% if eventListing %}
+              {% include "@organisms/by-author/event-listing.twig" %}
             {% endif %}
             {% if splitColumns %}
               {% include "@organisms/by-author/split-columns.twig" %}
