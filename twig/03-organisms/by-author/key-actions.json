@@ -2,8 +2,7 @@
   "keyActions": {
     "compHeading": {
       "title": "Key Actions",
-      "sub": false,
-      "id": "key-action-id"
+      "sub":true
     },
     "links":[{
       "text": "Register to Vote",
@@ -14,7 +13,7 @@
       "type": "",
       "href": "#"
     },{
-      "image": "/assets/images/placeholder/130x160.png",
+      "image": "../../assets/images/placeholder/130x160.png",
       "text": "File for unemployment",
       "type": "",
       "href": "#",

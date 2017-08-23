@@ -14,25 +14,6 @@
         "text": "Unemployment Benefits"
       }]
     },
-    "socialLinks": {
-      "label": "Share:",
-      "items": [{
-        "altText": "Follow us on Facebook",
-        "href": "#",
-        "icon": "@atoms/05-icons/svg-facebook.twig",
-        "linkType": "facebook"
-      },{
-        "altText": "Follow us on Twitter",
-        "href": "#",
-        "icon": "@atoms/05-icons/svg-twitter.twig",
-        "linkType": "twitter"
-      },{
-        "altText": "Follow us on LinkedIn",
-        "href": "#",
-        "icon": "@atoms/05-icons/svg-linkedin.twig",
-        "linkType": "linkedin"
-      }]
-    },
     "optionalContents": [{
       "path": "@organisms/by-author/callout-time.twig",
       "data": {
@@ -118,13 +99,13 @@
         "path": "@atoms/08-lists/unordered-list.twig",
         "data": {
           "unorderedList": [{
-            "text": "Names of all employers, plus addresses and phone numbers"
+            "text": "Names of all employers, plus addresses and phone numbers" 
           },{
-            "text": "Reasons for leaving those jobs"
+            "text": "Reasons for leaving those jobs" 
           },{
-            "text": "Work start and end dates"
+            "text": "Work start and end dates" 
           },{
-            "text": "Recall date (if you were laid off but have a set date to return to work)"
+            "text": "Recall date (if you were laid off but have a set date to return to work)" 
           }]
         }
       },{
@@ -138,15 +119,15 @@
         "path": "@atoms/08-lists/unordered-list.twig",
         "data": {
           "unorderedList": [{
-            "text": "If you are not a U.S. citizen — your Alien Registration number"
+            "text": "If you are not a U.S. citizen — your Alien Registration number" 
           },{
-            "text": "If you have children or other dependents — their birth dates and Social Security numbers"
+            "text": "If you have children or other dependents — their birth dates and Social Security numbers" 
           },{
-            "text": "If you’re in a union — your union name and local number"
+            "text": "If you’re in a union — your union name and local number" 
           },{
-            "text": "If you were in the military — your DD-214 Member 4 form (optional). If you don’t have it, you can request your DD-214 online."
+            "text": "If you were in the military — your DD-214 Member 4 form (optional). If you don’t have it, you can request your DD-214 online." 
           },{
-            "text": "If you worked for the federal government — your SF8 form (optional)"
+            "text": "If you worked for the federal government — your SF8 form (optional)" 
           }]
         }
       },{
@@ -166,16 +147,6 @@
         "color": "",
         "id": "fees",
         "centered": ""
-      },
-      "richText": {
-        "rteElements": [{
-          "path": "@atoms/11-text/paragraph.twig",
-          "data": {
-            "paragraph" : {
-              "text": "You must submit a form. Morbi euismod enim eget neque. Donec sagittis massa. Vestibulum quis augue sit amet ipsum laoreet pretium."
-            }
-          }
-        }]
       },
       "table": {
         "head": {
@@ -269,9 +240,9 @@
           },{
             "path": "@atoms/08-lists/ordered-list.twig",
             "data": {
-              "orderedList": [{
-                "text": "Ordered list example"
-              },{
+              "orderedList": [{ 
+                "text": "Ordered list example" 
+              },{ 
                 "text": "Use this if there are multiple steps within a how to area"
               }]
             }
@@ -321,11 +292,11 @@
           },{
             "path": "@atoms/08-lists/ordered-list.twig",
             "data": {
-              "orderedList": [{
-                "text": "If you looked for work that week"
-              },{
+              "orderedList": [{ 
+                "text": "If you looked for work that week" 
+              },{ 
                 "text": "If you were able to work and available for work that week"
-              },{
+              },{ 
                 "text": "If you worked during that week"
               }]
             }
@@ -433,8 +404,7 @@
         "isExpanded": false,
         "subTitle": {
           "href":"",
-          "text": "Department of Unemployment Assistance",
-          "info": ""
+          "text": "Department of Unemployment Assistance"
         },
         "groups": [{
           "icon": "@atoms/05-icons/svg-phone.twig",
@@ -498,19 +468,13 @@
             },
             "details": ""
           }]
-        }],
-        "decorativeLink": {
-          "href": "#",
-          "text": "Learn more about this organization",
-          "info": "Learn more about this generic"
-        }
+        }]
       },{
         "accordion": true,
         "isExpanded": false,
         "subTitle": {
-          "href": "",
-          "text": "Benefits Claims Customer Service",
-          "info": ""
+          "href":"",
+          "text": "Benefits Claims Customer Service"
         },
         "groups": [{
           "icon": "@atoms/05-icons/svg-phone.twig",
@@ -574,18 +538,14 @@
             },
             "details": ""
           }]
-        }],
-        "decorativeLink": {
-          "href": "#",
-          "text": "Learn more about this organization",
-          "info": "Learn more about this generic"
-        }
+        }]
       }]
     }
   },
 
   "sidebar": {
     "coloredHeadings": true,
+    
     "contactList": {
       "viewSpecific": true,
       "sidebarHeading": {
@@ -595,7 +555,7 @@
         "accordion": false,
         "isExpanded": false,
         "subTitle": {
-          "href":"#",
+          "href":"",
           "text": "Department of Unemployment Assistance",
           "chevron":""
         },

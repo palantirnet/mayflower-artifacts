@@ -19,9 +19,9 @@
 
     "richText": {
       "rteElements": [{
-        "path": "@atoms/08-lists/checklist.twig",
+        "path": "@atoms/08-lists/unordered-list.twig",
         "data": {
-          "checkList": [{
+          "unorderedList": [{ 
             "text": "Vestibulum ornare feugiat sodales" 
           },{ 
             "text": "Suspendisse fermentum augue eget semper feugiat"
