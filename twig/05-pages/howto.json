@@ -1,4 +1,5 @@
 {
+  "level": 1,
   "details": {
     "contentTitle": "The Details"
   },
@@ -6,12 +7,31 @@
   "pageHeader": {
     "divider": false,
     "title": "Apply for unemployment benefits",
-    "subTitle": "Have you lost your job?  You may qualify for temporary income to support you while you look for a new one",
+    "subTitle": "Have you lost your job?  You may qualify for temporary income to support you while you look for a new one.",
     "headerTags": {
       "label": "More about:",
       "taxonomyTerms": [{
         "href": "#",
         "text": "Unemployment Benefits"
+      }]
+    },
+    "socialLinks": {
+      "label": "Share:",
+      "items": [{
+        "altText": "Follow us on Facebook",
+        "href": "#",
+        "icon": "@atoms/05-icons/svg-facebook.twig",
+        "linkType": "facebook"
+      },{
+        "altText": "Follow us on Twitter",
+        "href": "#",
+        "icon": "@atoms/05-icons/svg-twitter.twig",
+        "linkType": "twitter"
+      },{
+        "altText": "Follow us on LinkedIn",
+        "href": "#",
+        "icon": "@atoms/05-icons/svg-linkedin.twig",
+        "linkType": "linkedin"
       }]
     },
     "optionalContents": [{
@@ -76,6 +96,7 @@
     "intro": {
       "compHeading": {
         "title": "What you need",
+        "level": 3,
         "sub": true,
         "color": "",
         "id": "what-you-need",
@@ -99,13 +120,13 @@
         "path": "@atoms/08-lists/unordered-list.twig",
         "data": {
           "unorderedList": [{
-            "text": "Names of all employers, plus addresses and phone numbers" 
+            "text": "Names of all employers, plus addresses and phone numbers"
           },{
-            "text": "Reasons for leaving those jobs" 
+            "text": "Reasons for leaving those jobs"
           },{
-            "text": "Work start and end dates" 
+            "text": "Work start and end dates"
           },{
-            "text": "Recall date (if you were laid off but have a set date to return to work)" 
+            "text": "Recall date (if you were laid off but have a set date to return to work)"
           }]
         }
       },{
@@ -119,15 +140,15 @@
         "path": "@atoms/08-lists/unordered-list.twig",
         "data": {
           "unorderedList": [{
-            "text": "If you are not a U.S. citizen — your Alien Registration number" 
+            "text": "If you are not a U.S. citizen — your Alien Registration number"
           },{
-            "text": "If you have children or other dependents — their birth dates and Social Security numbers" 
+            "text": "If you have children or other dependents — their birth dates and Social Security numbers"
           },{
-            "text": "If you’re in a union — your union name and local number" 
+            "text": "If you’re in a union — your union name and local number"
           },{
-            "text": "If you were in the military — your DD-214 Member 4 form (optional). If you don’t have it, you can request your DD-214 online." 
+            "text": "If you were in the military — your DD-214 Member 4 form (optional). If you don’t have it, you can request your DD-214 online."
           },{
-            "text": "If you worked for the federal government — your SF8 form (optional)" 
+            "text": "If you worked for the federal government — your SF8 form (optional)"
           }]
         }
       },{
@@ -143,10 +164,21 @@
     "tabularData": {
       "compHeading": {
         "title": "Fees",
+        "level": 3,
         "sub": true,
         "color": "",
         "id": "fees",
         "centered": ""
+      },
+      "richText": {
+        "rteElements": [{
+          "path": "@atoms/11-text/paragraph.twig",
+          "data": {
+            "paragraph" : {
+              "text": "You must submit a form. Morbi euismod enim eget neque. Donec sagittis massa. Vestibulum quis augue sit amet ipsum laoreet pretium."
+            }
+          }
+        }]
       },
       "table": {
         "head": {
@@ -201,6 +233,7 @@
     "stepsUnordered": {
       "compHeading": {
         "title": "How To Apply",
+        "level": 3,
         "sub": true,
         "color": "",
         "id": "how-to-apply",
@@ -240,9 +273,9 @@
           },{
             "path": "@atoms/08-lists/ordered-list.twig",
             "data": {
-              "orderedList": [{ 
-                "text": "Ordered list example" 
-              },{ 
+              "orderedList": [{
+                "text": "Ordered list example"
+              },{
                 "text": "Use this if there are multiple steps within a how to area"
               }]
             }
@@ -270,6 +303,7 @@
     "stepsOrdered": {
       "compHeading": {
         "title": "Next Steps",
+        "level": 3,
         "sub": true,
         "color": "",
         "id": "next-steps",
@@ -292,11 +326,11 @@
           },{
             "path": "@atoms/08-lists/ordered-list.twig",
             "data": {
-              "orderedList": [{ 
-                "text": "If you looked for work that week" 
-              },{ 
+              "orderedList": [{
+                "text": "If you looked for work that week"
+              },{
                 "text": "If you were able to work and available for work that week"
-              },{ 
+              },{
                 "text": "If you worked during that week"
               }]
             }
@@ -351,6 +385,7 @@
     "moreInfo": {
       "compHeading": {
         "title": "More info",
+        "level": 3,
         "sub": true,
         "color": "",
         "id": "more-info",
@@ -369,6 +404,7 @@
     "formDownloads": {
       "compHeading": {
         "title": "Downloads",
+        "level": 3,
         "sub": true,
         "color": "",
         "id": "downloads",
@@ -393,6 +429,7 @@
     "contactList": {
       "compHeading": {
         "title": "Contact",
+        "level": 3,
         "sub": true,
         "color": "",
         "id": "contact",
@@ -404,9 +441,12 @@
         "isExpanded": false,
         "subTitle": {
           "href":"",
-          "text": "Department of Unemployment Assistance"
+          "text": "Department of Unemployment Assistance",
+          "level": 4,
+          "info": ""
         },
         "groups": [{
+          "level": 5,
           "icon": "@atoms/05-icons/svg-phone.twig",
           "name": "Phone",
           "items": [{
@@ -422,6 +462,7 @@
             "details":"This line is open from 9 a.m. - 5 p.m., M-F"
           }]
         },{
+          "level": 5,
           "icon": "@atoms/05-icons/svg-laptop.twig",
           "name": "Online",
           "hidden": "",
@@ -438,6 +479,7 @@
             "details":""
           }]
         },{
+          "level": 5,
           "icon": "@atoms/05-icons/svg-fax-icon.twig",
           "name": "Fax",
           "items": [{
@@ -453,6 +495,7 @@
             "details":"Please allow 24 hours for a response"
           }]
         },{
+          "level": 5,
           "icon": "@atoms/05-icons/svg-marker.twig",
           "name": "Address",
           "items": [{
@@ -468,13 +511,19 @@
             },
             "details": ""
           }]
-        }]
+        }],
+        "decorativeLink": {
+          "href": "#",
+          "text": "Learn more about this organization",
+          "info": "Learn more about this generic"
+        }
       },{
         "accordion": true,
         "isExpanded": false,
         "subTitle": {
-          "href":"",
-          "text": "Benefits Claims Customer Service"
+          "href": "",
+          "text": "Benefits Claims Customer Service",
+          "info": ""
         },
         "groups": [{
           "icon": "@atoms/05-icons/svg-phone.twig",
@@ -538,28 +587,35 @@
             },
             "details": ""
           }]
-        }]
+        }],
+        "decorativeLink": {
+          "href": "#",
+          "text": "Learn more about this organization",
+          "info": "Learn more about this generic"
+        }
       }]
     }
   },
 
   "sidebar": {
     "coloredHeadings": true,
-    
     "contactList": {
       "viewSpecific": true,
       "sidebarHeading": {
-        "title": "Contact"
+        "title": "Contact",
+        "level": 2
       },
       "contacts":[{
         "accordion": false,
         "isExpanded": false,
         "subTitle": {
-          "href":"",
+          "href":"#",
           "text": "Department of Unemployment Assistance",
+          "level": 3,
           "chevron":""
         },
         "groups": [{
+          "level": 4,
           "icon": "@atoms/05-icons/svg-phone.twig",
           "name": "Phone",
           "items": [{
@@ -575,6 +631,7 @@
             "details":""
           }]
         },{
+          "level": 4,
           "icon": "@atoms/05-icons/svg-laptop.twig",
           "name": "Online",
           "hidden": "",
@@ -596,7 +653,8 @@
 
     "linkList" : {
       "compHeading": {
-        "title": "Related"
+        "title": "Related",
+        "level": 2
       },
       "stacked": true,
       "links" : [{

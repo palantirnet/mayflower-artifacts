@@ -1,9 +1,10 @@
 {
   "compHeading": {
     "title": "Title text",
-    "sub": "",
+    "level": 2,
+    "sub": false,
     "color": "",
     "id": "",
-    "centered": "true"
+    "centered": true
   }
 }
