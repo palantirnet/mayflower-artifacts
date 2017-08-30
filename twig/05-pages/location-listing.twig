@@ -5,7 +5,6 @@
 {% endblock %}
 {% block stackedRowContent %}
   {% for stackedRowSection in stackedRowSections %}
-    {% set stackedRowSection = stackedRowSection|merge({'level': level}) %}
     {% include "@organisms/by-author/stacked-row-section.twig" %}
   {% endfor %}
 {% endblock %}

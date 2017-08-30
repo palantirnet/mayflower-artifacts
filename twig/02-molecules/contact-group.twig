@@ -1,10 +1,9 @@
-{% set level = contactGroup.level ?: 2 %}
 <div class="ma__contact-group">
   {% if contactGroup.name and contactGroup.icon %}
-    <h{{ level }} class="ma__contact-group__name">
+    <h5 class="ma__contact-group__name">
       {% include contactGroup.icon %}
       <span>{{contactGroup.name}}</span>
-    </h{{ level }}>
+    </h5>
   {% endif %}
   {% for item in contactGroup.items %}
     {# if using the older 3.4.1 data model #}

@@ -11,8 +11,6 @@ Description: a molecule for an related action.
 ### Required Variables
 ~~~
 relatedAction {
-  level:
-  	 type: intrger/required
   link {
     type:
       string

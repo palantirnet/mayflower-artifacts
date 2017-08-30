@@ -24,7 +24,6 @@
     }]
   },
 
-  "level": 1,
   "pageHeader": {
     "divider": false,
     "title": "Building Energy Codes",
@@ -93,7 +92,7 @@
         "markers": [{
           "position": {
             "lat": 42.366565,
-            "lng": -71.058940
+            "lng": -71.058940 
           },
           "label": "A",
           "infoWindow": {
@@ -106,7 +105,7 @@
         },{
           "position": {
             "lat": 42.358795,
-            "lng": -71.063858
+            "lng": -71.063858 
           },
           "label": "B",
           "infoWindow": {
@@ -125,8 +124,7 @@
         "path": "atoms-heading-2",
         "data": {
           "heading2" : {
-            "text":"Stretch Code Summary",
-            "level": 2
+            "text":"Stretch Code Summary"
           }
         }
       },{
@@ -156,7 +154,6 @@
     "formDownloads": {
       "compHeading": {
         "title": "Additional resources",
-        "level": 2,
         "sub": true
       },
       "downloadLinks": [{
@@ -180,8 +177,7 @@
         "path": "atoms-heading-2",
         "data": {
           "heading2" : {
-            "text":"Stretch code \"Residential Cash Flow Analysis\"",
-            "level": 2
+            "text":"Stretch code \"Residential Cash Flow Analysis\""
           }
         }
       },{
@@ -189,8 +185,8 @@
         "data": {
           "figure": {
             "align": "align-right",
-            "image": {
-              "alt": "alt text",
+            "image": { 
+              "alt": "alt text", 
               "src": "../../assets/images/placeholder/400x300.png",
               "height": "",
               "width": ""
@@ -213,8 +209,7 @@
         "path": "atoms-heading-2",
         "data": {
           "heading2" : {
-            "text":"Stretch Code Adoption by Community",
-            "level": 2
+            "text":"Stretch Code Adoption by Community"
           }
         }
       },{
@@ -230,16 +225,80 @@
     "formDownloads": {
       "compHeading": {
         "title": "Additional resources",
-        "level": 2,
         "sub": true
       },
       "downloadLinks": [{
+          "downloadLink": {
+            "iconSize": "",
+            "icon": "@atoms/05-icons/svg-doc-pdf.twig",
+            "decorativeLink": {
+              "text": "Stretch Code Adoption by Community",
+              "href": "http://www.mass.gov/eea/docs/doer/green-communities/grant-program/stretch-code-towns-adoption-by-community-map-and-list.pdf",
+              "info": "",
+              "property": ""
+            },
+            "size": "",
+            "format": "form"
+          }
+        },{
+        "downloadLink": {
+          "iconSize": "",
+          "icon": "@atoms/05-icons/svg-doc-docx.twig",
+          "decorativeLink": {
+            "text": "Name of Doc",
+            "href": "#",
+            "info": "",
+            "property": ""
+          },
+          "size": "",
+          "format": "form"
+        }
+      },{
         "downloadLink": {
           "iconSize": "",
           "icon": "@atoms/05-icons/svg-doc-pdf.twig",
           "decorativeLink": {
-            "text": "Stretch Code Adoption by Community",
-            "href": "http://www.mass.gov/eea/docs/doer/green-communities/grant-program/stretch-code-towns-adoption-by-community-map-and-list.pdf",
+            "text": "Work Search Activity Log",
+            "href": "#",
+            "info": "",
+            "property": ""
+          },
+          "size": "",
+          "format": "form"
+        }
+      },{
+        "downloadLink": {
+          "iconSize": "",
+          "icon": "@atoms/05-icons/svg-doc-docx.twig",
+          "decorativeLink": {
+            "text": "Name of another doc",
+            "href": "#",
+            "info": "",
+            "property": ""
+          },
+          "size": "",
+          "format": "form"
+        }
+      },{
+        "downloadLink": {
+          "iconSize": "",
+          "icon": "@atoms/05-icons/svg-doc-pdf.twig",
+          "decorativeLink": {
+            "text": "Another pdf",
+            "href": "#",
+            "info": "",
+            "property": ""
+          },
+          "size": "",
+          "format": "form"
+        }
+      },{
+        "downloadLink": {
+          "iconSize": "",
+          "icon": "@atoms/05-icons/svg-doc-docx.twig",
+          "decorativeLink": {
+            "text": "Helpful resource",
+            "href": "#",
             "info": "",
             "property": ""
           },
@@ -249,7 +308,7 @@
       }],
       "more": {
         "href": "#",
-        "text": "See all 15 Resources",
+        "text": "See all 15 additional resources",
         "chevron": true,
         "label": "See all of the resources for Executive Office of Health and Human Services"
       }
@@ -260,8 +319,7 @@
         "path": "atoms-heading-2",
         "data": {
           "heading2" : {
-            "text":"Massachusetts Energy Code Training",
-            "level": 2
+            "text":"Massachusetts Energy Code Training"
           }
         }
       },{
@@ -278,8 +336,7 @@
   "sidebar": {
     "linkList" : {
       "sidebarHeading": {
-        "title": "Related",
-        "level": 2
+        "title": "Related"
       },
       "stacked": true,
       "links" : [{
