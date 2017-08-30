@@ -172,6 +172,32 @@
         "image": "",
         "text": "Log in to UI Online for recipients",
         "href": "#"
+      },{
+        "image": "",
+        "text": "Check your status ",
+        "href": "#",
+        "label": ""
+      },{
+        "image": "",
+        "text": "Log work hours",
+        "href": "#"
+      },{
+        "image": "",
+        "text": "Appeal your status",
+        "href": "#"
+      },{
+        "image": "",
+        "text": "Find an unemployment location",
+        "href": "#"
+      },{
+        "image": "",
+        "text": "Log in to UI Online for recipients",
+        "href": "#"
+      },{
+        "image": "",
+        "text": "Check your status ",
+        "href": "#",
+        "label": ""
       }]
     }
   },
@@ -210,18 +236,17 @@
         "type": "",
         "label": ""
       },{
-        "image": "",
-        "text": "Another helpful link",
-        "href": "#",
-        "label": ""
-      },{
         "image": "/assets/images/placeholder/130x160.png",
-        "text": "Another helpful guide",
+        "text": "Name of optional guide",
         "href": "#",
         "label": "Guide:"
       },{
         "image": "",
-        "text": "Last visible helpful link",
+        "text": "Learn about the appeals process",
+        "href": "#"
+      },{
+        "image": "",
+        "text": "Learn about on the job training programs",
         "type": "",
         "label": ""
       }]
@@ -344,22 +369,22 @@
             "stacked": true,
             "links" : [{
               "href":"#",
-              "text":"Job search help"
+              "text":"Job Search Help"
             },{
               "href":"#",
-              "text":"Job training"
+              "text":"Job Training"
             },{
               "href":"#",
-              "text":"Career counseling"
+              "text":"Career Counseling"
             },{
               "href":"#",
-              "text":"A related service"
+              "text":"Job Search Help"
             },{
               "href":"#",
-              "text":"Another related service"
+              "text":"Job Training"
             },{
               "href":"#",
-              "text":"Yet another related service"
+              "text":"Career Counseling"
             }],
             "more": {
               "href": "#",
@@ -422,7 +447,7 @@
                 "iconSize": "small",
                 "icon": "@atoms/05-icons/svg-doc-docx.twig",
                 "decorativeLink": {
-                  "text": "Name of another doc",
+                  "text": "Name of Doc",
                   "href": "#",
                   "info": "",
                   "property": ""
@@ -435,7 +460,7 @@
                 "iconSize": "small",
                 "icon": "@atoms/05-icons/svg-doc-pdf.twig",
                 "decorativeLink": {
-                  "text": "Another pdf",
+                  "text": "Work Search Activity Log",
                   "href": "#",
                   "info": "",
                   "property": ""
@@ -448,7 +473,7 @@
                 "iconSize": "small",
                 "icon": "@atoms/05-icons/svg-doc-docx.twig",
                 "decorativeLink": {
-                  "text": "Helpful resource",
+                  "text": "Name of Doc",
                   "href": "#",
                   "info": "",
                   "property": ""
