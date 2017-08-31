@@ -3,9 +3,8 @@
     "accordion": true,
     "isExpanded": false,
     "subTitle": {
-      "href": "",
-      "text": "Department of Conservation and Recreation",
-      "info": ""
+      "href":"",
+      "text": "Department of Conservation and Recreation"
     },
     "groups": [{
       "icon": "@atoms/05-icons/svg-phone.twig",

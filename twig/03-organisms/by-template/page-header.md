@@ -25,8 +25,6 @@ pageHeader: {
     type: string / optional,
   divider: 
     type: boolean
-  prefix:
-    type: string / optional
   title:
     type: string / required
   subTitle:
