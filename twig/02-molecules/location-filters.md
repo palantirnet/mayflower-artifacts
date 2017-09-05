@@ -1,56 +1,40 @@
-### Description
-Form with inputs used for sorting and filtering location listing organism.
 
-### Status 
-Stable as of 5.0.0
 
-### Pattern Contains
-* Input Text
-* Select Box
-* Input Checkbox
+---
+title: Location Filters
+---
+Description: Form with input used on location listing organism
 
-### JavaScript Used
-* Location Filters (js/modules/locationFilters.js)
+## State: Alpha
 
-### Usage Guidelines
+### Notes
 
-- `zipcode.placeAutocomplete.bounds` sets default bounds for google maps api place autocomplete (see: [google maps api docs: LatLngBounds](https://developers.google.com/maps/documentation/javascript/reference#LatLngBounds)) which will be used in `js/modules/locationFilters`.
+### Used in:
+- [@organism/by-author/location-listing](?p=organism-location-listing)
+
+### contains:
+- [@atoms/03-forms/input-text](?p=atoms-input-text)
+- [@atoms/03-forms/select-box](?p=atoms-select-box)
+- [@atoms/03-forms/input-checkbox](?p=atoms-input-checkbox)
+
 
 ### Required Variables
 ~~~
-locationFilters: {
-  zipcode: {
-    inputText: {
-      type: inputText/required
-    },
-    placeAutoComplete: {
-      bounds: {
-        sw: {
-          lat: 
-            type: float, latitude
-          lng:
-            type: float, longitude
-        },
-        ne: {
-          lat: 
-            type: float, latitude
-          lng:
-            type: float, longitude
-        }
-      }
-    }
+"locationFilters": {
+  "zipcode": {
+    type: inputText/required - see atoms/03-forms/input-text.md
   },
-  activity: {
-    type: selectBox / optional
+  "activity": {
+    type: selectBox/optional - see atoms/03-forms/select-box.md
   },
-  keyword: {
-    type: inputText / optional
+  "keyword": {
+    type: inputText/optional - see atoms/03-forms/input-text.md
   },
-  tags: [{
-    type: inputCheckbox / optional + icon property
-  }],
-  submitButton:
-    type: string
+  "tags": [{
+    type: array of inputCheckbox/optional + icon property
+    // see @atoms/forms/input-checkbox.md
+    // see @molecules/image-promo.md
+  }]   
 }
 ~~~
 
