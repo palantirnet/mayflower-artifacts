@@ -1,7 +1,4 @@
 
-{# Set top heading level for the page. #}
-{% set level = 1 %}
-
 {# site header #}
 {% block header %}{% endblock %}
 
@@ -11,8 +8,6 @@
       {% include "@organisms/by-template/page-header.twig" %}
     {% endblock %}
   </div>
-  {# Increase heading number by 1 from the parent heading. #}
-  {% set level = level + 1 %}
     <div class="main-content main-content--two ma__policy-advisory__top-contact">
       <div class="page-content">
         {% if sideContent.contactList %}
@@ -25,7 +20,6 @@
     {% if jumpLinks %}
       {% include "@organisms/by-template/jump-links.twig" %}
     {% endif %}
-    {% set compHeadingLevel = level %}
     <div class="main-content main-content--two">
       <div class="page-content">
         {% for richText in mainContent.contents %}
@@ -38,14 +32,11 @@
 
         {% if mainContent.formDownloads %}
           {% set formDownloads = mainContent.formDownloads %}
-
           {% include "@organisms/by-author/form-downloads.twig" %}
         {% endif %}
 
         {% if mainContent.contactList %}
           {% set contactList = mainContent.contactList %}
-          {% set compHeading = contactList.compHeading|merge({'level': compHeadingLevel}) %}
-          {% set contactList = contactList|merge({'compHeading': compHeading}) %}
           {% include "@organisms/by-author/contact-list.twig" %}
         {% endif %}
 

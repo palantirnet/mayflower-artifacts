@@ -2,7 +2,6 @@
   "stepsUnordered": {
     "compHeading": {
       "title": "Title",
-      "level": 3, 
       "sub": "",
       "color": "",
       "id": "title",
@@ -24,7 +23,6 @@
       "accordionLabel": "Expand step for doing this in person",
       "icon":"@atoms/05-icons/svg-profile.twig",
       "title":"In Person at State Parks",
-      "level": 4,
       "richText": {
         "rteElements": [{
           "path": "@atoms/11-text/paragraph.twig",
@@ -41,7 +39,6 @@
       "accordionLabel": "Expand step for doing this in person",
       "icon":"@atoms/05-icons/svg-circle-chevron.twig",
       "title":"Some Other Method",
-      "level": 4,
       "richText": {
         "rteElements": [{
           "path": "@atoms/11-text/paragraph.twig",
@@ -58,7 +55,6 @@
       "accordionLabel": "Expand step for doing this in person",
       "icon":"@atoms/05-icons/svg-laptop.twig",
       "title":"Online",
-      "level": 4,
       "richText": {
         "rteElements": [{
           "path": "@atoms/11-text/paragraph.twig",
@@ -75,7 +71,6 @@
       "accordionLabel": "Expand step for doing this in person",
       "icon":"@atoms/05-icons/svg-phone.twig",
       "title":"By Phone",
-      "level": 4,
       "richText": {
         "rteElements": [{
           "path": "@atoms/11-text/paragraph.twig",
@@ -92,7 +87,6 @@
       "accordionLabel": "Expand step for doing this in person",
       "icon":"@atoms/05-icons/svg-mail.twig",
       "title":"By Mail",
-      "level": 4,
       "richText" : {
         "rteElements": [{
           "path": "@atoms/11-text/paragraph.twig",
@@ -109,7 +103,6 @@
       "accordionLabel": "Expand step for doing this in person",
       "icon":"@atoms/05-icons/svg-fax-icon.twig",
       "title":"By Fax",
-      "level": 4,
       "richText": {
         "rteElements": [{
           "path": "@atoms/08-lists/unordered-list.twig",

@@ -14,8 +14,7 @@
         {% include actionStep.icon %}
       </div> 
     {% endif %} 
-    {% set level = actionStep.level ? : 4 %} 
-    <h{{ level }} class="ma__action-step__title">{{ actionStep.title }}</h{{ level }}>
+    <h2 class="ma__action-step__title">{{ actionStep.title }}</h2>
   {% if accordion %}
     </button>
   {% else %}
