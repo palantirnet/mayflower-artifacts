@@ -1,6 +1,7 @@
 {
   "location": {
-    "contentTitle": "The Details"
+    "contentTitle": "The Details",
+    "titleContext": "of Mt Greylock State Park"
   },
 
   "headerAlerts": [{
@@ -149,6 +150,7 @@
   },
 
   "stickyNav": {
+    "titleContext": "Mt Greylock State Park",
     "anchorLinks":[{
       "href": "overview",
       "text": "Overview",
@@ -194,6 +196,7 @@
    "overview": {
      "compHeading": {
        "title": "Overview",
+       "titleContext": "of Mt Greylock State Park",
        "sub": true,
        "color": "",
        "id": "overview",
@@ -213,6 +216,7 @@
    "hours": {
      "compHeading": {
        "title": "Hours",
+       "titleContext": "of Mt Greylock State Park",
        "sub": true,
        "color": "",
        "id": "hours",
@@ -282,6 +286,7 @@
    "parking": {
      "compHeading": {
        "title": "Parking",
+       "titleContext": "for Mt Greylock State Park",
        "sub": true,
        "color": "",
        "id": "parking",
@@ -348,6 +353,7 @@
    "imagePromos": {
      "compHeading": {
        "title": "Recommended Activities",
+       "titleContext": "at Mt Greylock State Park",
        "sub": true,
        "color": "",
        "id": "recommended-activities",
@@ -364,16 +370,14 @@
          "href": "#"
        },
        "description": {
-         "richText":{
-           "rteElements": [{
-             "path": "@atoms/11-text/paragraph.twig",
-             "data": {
-               "paragraph" : {
-                 "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu tellus sit amet turpis convallis finibus at id nulla."
-               }
+         "rteElements": [{
+           "path": "@atoms/11-text/paragraph.twig",
+           "data": {
+             "paragraph" : {
+               "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu tellus sit amet turpis convallis finibus at id nulla."
              }
-           }]
-         }
+           }
+         }]
        },
        "link": null
      },{
@@ -387,16 +391,14 @@
          "href": "#"
        },
        "description": {
-         "richText":{
-           "rteElements": [{
-             "path": "@atoms/11-text/paragraph.twig",
-             "data": {
-               "paragraph" : {
-                 "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu tellus sit amet turpis convallis finibus at id nulla."
-               }
+         "rteElements": [{
+           "path": "@atoms/11-text/paragraph.twig",
+           "data": {
+             "paragraph" : {
+               "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu tellus sit amet turpis convallis finibus at id nulla."
              }
-           }]
-         }
+           }
+         }]
        },
        "link": null
      },{
@@ -410,16 +412,14 @@
          "href": "#"
        },
        "description": {
-         "richText":{
-           "rteElements": [{
-             "path": "@atoms/11-text/paragraph.twig",
-             "data": {
-               "paragraph" : {
-                 "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu tellus sit amet turpis convallis finibus at id nulla."
-               }
+         "rteElements": [{
+           "path": "@atoms/11-text/paragraph.twig",
+           "data": {
+             "paragraph" : {
+               "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu tellus sit amet turpis convallis finibus at id nulla."
              }
-           }]
-         }
+           }
+         }]
        },
        "link": null
      }]
@@ -428,6 +428,7 @@
    "allActivities": {
      "compHeading": {
        "title": "All Activities",
+       "titleContext": "at Mt Greylock State Park",
        "sub": true,
        "color": "",
        "id": "all-activities",
@@ -465,6 +466,7 @@
    "facilities": {
      "compHeading": {
        "title": "Facilities",
+       "titleContext": "at Mt Greylock State Park",
        "sub": true,
        "color": "",
        "id": "facilities",
@@ -492,6 +494,7 @@
    "acessibility": {
      "compHeading": {
        "title": "Acessibility",
+       "titleContext": "at Mt Greylock State Park",
        "sub": true,
        "color": "",
        "id": "acessibility",
@@ -527,6 +530,7 @@
    "restrictions": {
      "compHeading": {
        "title": "Restrictions",
+       "titleContext": "at Mt Greylock State Park",
        "sub": true,
        "color": "",
        "id": "restrictions",
@@ -563,6 +567,7 @@
      "viewSpecific": false,
      "compHeading":{
        "title": "Contacts",
+       "titleContext": "for Mt Greylock State Park",
        "sub": "true",
        "color": "",
        "id": "contacts",
@@ -715,37 +720,54 @@
 
   "suggestedPages": {
     "title": "Related Locations",
+    "titleContext": "to Mt Greylock State Park",
     "buttonMinor" : {
       "href": "#",
       "text": "Do Something"
     },
     "pages": [{
-      "image": "../../assets/images/placeholder/230x130.png",
-      "altTag": "Place Holder Image",
+      "image": {
+        "alt": "Place Holder Image", 
+        "src": "../../assets/images/placeholder/230x130.png",
+        "height": "130",
+        "width": "230"
+      },
       "link": {
         "type": "",
         "href": "#",
         "text": "Nearby State Parks"
       }
     },{
-      "image": "../../assets/images/placeholder/230x130.png",
-      "altTag": "Place Holder Image",
+      "image": {
+        "alt": "Place Holder Image", 
+        "src": "../../assets/images/placeholder/230x130.png",
+        "height": "130",
+        "width": "230"
+      },
       "link": {
         "type": "",
         "href": "#",
         "text": "Similar State Park"
       }
     },{
-      "image": "../../assets/images/placeholder/230x130.png",
-      "altTag": "Place Holder Image",
+      "image": {
+        "alt": "Place Holder Image", 
+        "src": "../../assets/images/placeholder/230x130.png",
+        "height": "130",
+        "width": "230"
+      },
       "link": {
         "type": "",
         "href": "#",
         "text": "Great Sight Seeing"
       }
     },{
-      "image": "../../assets/images/placeholder/230x130.png",
-      "altTag": "Place Holder Image",
+      "image": {
+        "alt": "Place Holder Image", 
+        "src": "../../assets/images/placeholder/230x130.png",
+        "height": "130",
+        "width": "230"
+      },
       "link": {
         "type": "",
         "href": "#",
@@ -763,7 +785,8 @@
     "contactList": {
       "viewSpecific": true,
       "sidebarHeading":{
-        "title": "Contact"
+        "title": "Contact",
+        "titleContext": "for Mt Greylock State Park"
       },
       "contacts":[{
         "accordion": false,
@@ -842,7 +865,8 @@
 
     "eventListing": {
       "sidebarHeading":{
-        "title": "Upcoming Events"
+        "title": "Upcoming Events",
+        "titleContext": "at Mt Greylock State Park"
       },
       "events":[{
         "title": {
