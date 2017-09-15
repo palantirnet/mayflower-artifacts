@@ -9,7 +9,5 @@ An `<h3>` element used as a subheading.  Typically used in the right rail or in 
 sidebarHeading: {
     title:
         type: string / required
-    titleContext: 
-    type: string / optional
   }
 ~~~
