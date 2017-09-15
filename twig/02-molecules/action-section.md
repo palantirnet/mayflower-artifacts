@@ -15,8 +15,6 @@ Description: A section of content on an action page that includes a title and mu
 actionSection: {
   title:
     type: string
-  titleContext
-    type: string / optional
   id:
     type: string
   path:
