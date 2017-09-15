@@ -1,20 +1,28 @@
-### Description
-This pattern shows Left and Right arrows page links along with a blurb about the destination page being linked to
+---
+title: Page Flipper
+---
+Description: Previous and Next arrow navigation for jumping between pages.
 
-### Status
-* Stable as of 5.0.0
+## State: Alpha
 
-### Pattern Contains
-* Arrow Nav
+### Notes: One Arrow Nav is required, either prev or next.
 
-### Variables
+### Contains
+- [@molecules/arrow-nav.twig](?p=molecules-arrow-nav)
+
+### Used in:
+
+### Required Variables
+
 ~~~
-pageFlipper: {
-  prev: {
-    type: arrowNav / optional
+"pageFlipper": {
+  "prev": {
+    type: object/arrow-nav/optional
   },
-  next: {
-    type: arrowNav / optional
+  "next": {
+    type: object/arrow-nav/optional
   }
 }
 ~~~
+
+

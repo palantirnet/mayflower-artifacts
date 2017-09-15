@@ -1,7 +1,5 @@
-{% block header %}
-  {% include "@organisms/by-template/emergency-alerts.twig" %}
-  {% include "@organisms/by-template/header.twig" %}
-{% endblock %}
+{% include "@organisms/by-template/emergency-alerts.twig" %}
+{% include "@organisms/by-template/header.twig" %}
 
 <main id="main-content" tabindex="-1">
   <div class="pre-content">
@@ -12,7 +10,7 @@
   <div class="main-content main-content--two main-content--reversed">
     <aside class="sidebar {{ sidebar.coloredHeadings ? 'sidebar--colored' : '' }}">
       {% block sidebar %}
-        {% include "@base/placeholder.twig" with {'placeholder':{'text':'Left Rail'}} %}
+        {% include "@base/placeholder.twig" with {'placeholder':{'text':'sidebar'}} %}
       {% endblock %}
     </aside>
     <div class="page-content">
@@ -30,6 +28,4 @@
   {% block schemaContent %}{% endblock %}
 </main>
 
-{% block footer %}
-  {% include "@organisms/by-template/footer.twig" %}
-{% endblock %}
+{% include "@organisms/by-template/footer.twig" %}

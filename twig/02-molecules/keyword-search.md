@@ -1,6 +1,6 @@
-### Status
-* Obsolete as of 5.0.0
-
+---
+title: Keyword search
+---
 Description: displays a search form.
 ## Status: ALPHA
 ### Used in:

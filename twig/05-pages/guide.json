@@ -124,7 +124,7 @@
     }]
   },
 
-  "stackedRows": [{
+  "stackedRowSections": [{
     "title":"Buying or Renting a Home",
     "id":"buying-or-renting-a-home",
     "pageContent": [{
@@ -169,7 +169,8 @@
         "contactList": {
           "viewSpecific": false,
           "sidebarHeading": {
-            "title": "Key Agencies"
+            "title": "Key Agencies",
+            "level": 3
           },
           "contacts": [{
             "accordion": false,
@@ -270,7 +271,8 @@
         "contactList": {
           "viewSpecific": false,
           "sidebarHeading": {
-            "title": "Key Agencies"
+            "title": "Key Agencies",
+            "level": 3
           },
           "contacts": [{
             "accordion": false,
@@ -372,7 +374,8 @@
         "contactList": {
           "viewSpecific": false,
           "sidebarHeading": {
-            "title": "Key Agencies"
+            "title": "Key Agencies",
+            "level": 3
           },
           "contacts": [{
             "accordion": false,
@@ -488,8 +491,10 @@
       "path":"@organisms/by-author/callout-alert.twig",
       "data":{
         "calloutAlert": {
-          "href": "",
-          "text": "Massachusetts requires you to license your dog"
+          "decorativeLink": {
+            "href": "",
+            "text": "Massachusetts requires you to license your dog"
+          }
         }
       }
     }],
@@ -518,7 +523,7 @@
         "keyActions": {
           "compHeading": {
             "title": "Key Actions",
-            "sub":true
+            "level": 3
           },
           "links":[{
             "text": "Related Action to important Page Name",
@@ -547,7 +552,8 @@
         "contactList": {
           "viewSpecific": false,
           "sidebarHeading": {
-            "title": "Key Agencies"
+            "title": "Key Agencies",
+            "level": 3
           },
           "contacts": [{
             "accordion": false,
@@ -629,7 +635,8 @@
         "contactList": {
           "viewSpecific": false,
           "sidebarHeading": {
-            "title": "Key Agencies"
+            "title": "Key Agencies",
+            "level": 3
           },
           "contacts": [{
             "accordion": false,
@@ -679,7 +686,6 @@
       "path": "@organisms/by-author/callout-time.twig",
       "data": {
         "calloutTime": {
-          "icon": "@atoms/05-icons/svg-wait-time.twig",
           "text": "This usually takes approximately 4 weeks"
         }
       }
@@ -733,7 +739,8 @@
         "contactList": {
           "viewSpecific": false,
           "sidebarHeading": {
-            "title": "Key Agencies"
+            "title": "Key Agencies",
+            "level": 3
           },
           "contacts": [{
             "accordion": false,
@@ -872,7 +879,7 @@
         "keyActions": {
           "compHeading": {
             "title": "Key Actions",
-            "sub":true
+            "level": 3
           },
           "links":[{
             "text": "Related Action to important Page Name",
@@ -897,12 +904,8 @@
       "text": "See All Guides"
     },
     "pages": [{
-      "image": {
-        "alt": "Place Holder Image", 
-        "src": "../../assets/images/placeholder/130x160.png",
-        "height": "160",
-        "width": "130"
-      },
+      "image": "../../assets/images/placeholder/130x160.png",
+      "altTag": "Place Holder Image",
       "link": {
         "type": "",
         "href": "#",
@@ -910,12 +913,8 @@
         "label": "Guide:"
       }
     },{
-      "image": {
-        "alt": "Place Holder Image", 
-        "src": "../../assets/images/placeholder/130x160.png",
-        "height": "160",
-        "width": "130"
-      },
+      "image": "../../assets/images/placeholder/130x160.png",
+      "altTag": "Place Holder Image",
       "link": {
         "type": "",
         "href": "#",
@@ -923,12 +922,8 @@
         "label": "Guide:"
       }
     },{
-      "image": {
-        "alt": "Place Holder Image", 
-        "src": "../../assets/images/placeholder/130x160.png",
-        "height": "160",
-        "width": "130"
-      },
+      "image": "../../assets/images/placeholder/130x160.png",
+      "altTag": "Place Holder Image",
       "link": {
         "type": "",
         "href": "#",

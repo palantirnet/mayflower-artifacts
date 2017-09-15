@@ -1,6 +1,5 @@
-Description: This is a variant of the [Page Banner](./?p=organisms-page-banner) showing an example with a full height green overlay
+Description: This is a variant of the [Page Banner](./?p=organisms-page-banner) showing an example with size set to 'large'.
 
-### How to generate
-* set the `size` variable to 'large'
-
+### Status
+* Stable as of 5.0.0
 

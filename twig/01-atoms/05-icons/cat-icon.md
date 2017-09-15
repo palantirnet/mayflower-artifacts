@@ -14,7 +14,7 @@ catIcon: {
   icon:
     type: string (path to icon) / required 
   small:
-    type: boolean
+    type: string ("true" || "") / optional
 }
 ~~~
 

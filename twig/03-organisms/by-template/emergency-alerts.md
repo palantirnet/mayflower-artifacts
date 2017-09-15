@@ -33,7 +33,7 @@ emergencyAlerts: {
   emergencyHeader: {
     type: emergencyHeader / required
   },
-  alerts (optional): [{
+  alerts: [{
     type: array of emergencyAlert / required
   }]
 }

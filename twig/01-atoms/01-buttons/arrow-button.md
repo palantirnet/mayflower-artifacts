@@ -1,17 +1,21 @@
-### Description
-This Pattern shows a link styled as a button with a directional arrow.
+---
+title: Arrow Button
+---
+Description: A link `<a>` element which is styled to look like a button with a chevron.
 
-### Status
-* Stable as of 5.0.0
+## State: ALPHA
 
-### Variables
+### Used In:
+
+
+### Variables:
 ~~~
-arrowButton: {
-  href: 
-    type: string (url) / required
-  info: 
-    type: string (adds more description to the link) / required
-  direction: 
-    type string ("left","right") / optional
+"arrowButton": {
+  "href": 
+    type: string/required
+  "info": 
+    type: string/required - used for screen readers
+  "direction": 
+    type string/optional
 }
 ~~~

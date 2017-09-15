@@ -1,24 +1,29 @@
-### Description
-Displays a list of error messages that link to the inputs on a form page.
+---
+title: Error List
+---
+Description: Displays a list of error message and links to the inputs.
 
-### Status
-* Stable as of 5.0.0
+## Status: alpha
 
-### JavaScript Used
-* When used in a form (js/modules/formValidation.js)
+### Notes:
+
+### Contains
+
+### Used in:
+
 
 ### Variables
 ~~~
 errorList: {
   title: 
-    type: string / required
+    type: string/required
   labels: [{
     inputId: 
-      type: string (unique per page) / required
+      type: string/id/required
     text: 
-      type: string / required
+      type: string/required
     info:
-      type: string / optional 
+      type: string/optional 
   }]
 }
 ~~~

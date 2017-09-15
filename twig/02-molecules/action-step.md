@@ -6,7 +6,7 @@ Displays details about how to complete a step.
 
 ### Pattern Contains
 * Rich Text
-* Form Downloads
+* Download Link
 * Decorative Link
 
 ### Variant options
@@ -29,6 +29,8 @@ actionStep: {
     type: string (path to icon) / optional
   title: 
     type: string / required
+  level:
+    type: number / optional
   richText: 
     type: richText /required
   downloadLinks: (optional) [{ 

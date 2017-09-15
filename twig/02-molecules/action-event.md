@@ -1,6 +1,6 @@
-### Status
-* Obsolete as of 5.0.0
-
+---
+title: DEPRECATED - Action Event
+---
 Description: A singular event including title, link, date and a description of the event.
 ## State: DEPRECATED
 ### Notes

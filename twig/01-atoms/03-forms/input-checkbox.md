@@ -1,21 +1,25 @@
-### Description
-This is a stylized checkbox with a label and an optional icon.
+---
+title: Input Checkbox
+---
+Description: An `<input> [type='checkbox']`  element with its corresponding `<label>` element,  wrapped in a containing `<span>`.
 
-### Status
-* Stable as of 5.0.0
+## State: ALPHA
 
-### Variables
+### Notes:
+
+### Used In:
+- [@organisms/by-template/transition-page](/?p=organisms-transition-page)
+
+### Variables:
 ~~~
 inputCheckbox {
-  value:
-    type: string / required
-  id: 
-    type: string / required
-  icon:
-    type: string (path to icon) / optional
-  label:
-    type: string / required
-  checked:
-    type: boolean
+    value:
+        type: string / required
+    id: 
+        type: string / required
+    label:
+        type: string / required
+    checked:
+        type: boolean
 }
 ~~~

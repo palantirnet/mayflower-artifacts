@@ -1,6 +1,6 @@
-### Status
-* Archived as of 6.0.0
-
+---
+title: DEPRECATED - Action Gallery
+---
 Description: A teaser for a gallery of images with a link to view the full gallery.
 
 ## State: DEPRECATED

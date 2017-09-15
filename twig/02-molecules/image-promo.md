@@ -26,7 +26,9 @@ imagePromo: {
       type: string(url) / optional
     info:
       type: string / optional
-  } 
+  }
+  level:
+    type: number / optional 
   image: (optional) {  
     src:
       type: string (image path) / required
@@ -36,7 +38,9 @@ imagePromo: {
       type: string (url) / optional
   },
   description: {
-    type: richText / optional
+    richText: {
+      type: richText / optional
+    }
   },
   link: {
     type: decorativeLink / optional

@@ -12,17 +12,13 @@
     "message": "Sorry, you don't have access to this page"
   },
 
-  "linkList": {
+  "helpfulLinks": {
     "compHeading": {
       "title": "Helpful Links",
-      "sub": "true",
-      "color": "yellow",
-      "centered": true
+      "level": 3,
+      "color": "yellow"
     },
-    "description": null,
-    "stacked": false,
-    "hideBullets": true,
-    "links" : [{
+    "items": [{
       "href": "#",
       "text":"Helpful link",
       "chevron": "true"
