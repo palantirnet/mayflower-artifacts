@@ -68,9 +68,9 @@
       "widgets": null
     }
   },
-  
+
   "COMMENT":"****PAGE CONTENT COMPONENTS****",
-  
+
   "jumpLinks": {
     "title": "In this guide",
     "links": [{
@@ -79,7 +79,7 @@
     }]
   },
 
-  "stackedRowSections": [{
+  "stackedRows": [{
       "title": "Section with Everything",
       "id": "another-section-name6",
       "pageContent": [
@@ -87,6 +87,7 @@
           "path": "@organisms/by-author/callout-time.twig",
           "data": {
             "calloutTime": {
+              "icon": "@atoms/05-icons/svg-wait-time.twig",
               "text": "This usually takes approximately 4 weeks"
             }
           }
@@ -133,10 +134,8 @@
           "path":"@organisms/by-author/callout-alert.twig",
           "data":{
             "calloutAlert": {
-              "decorativeLink": {
-                "href": "",
-                "text": "Massachusetts requires you to license your dog"
-              }
+              "href": "",
+              "text": "Massachusetts requires you to license your dog"
             }
           }
         },
@@ -146,7 +145,8 @@
             "keyActions": {
               "compHeading": {
                 "title": "Key Actions",
-                "sub":true
+                "sub":true,
+                "titleContext": "for Section with Everything"
               },
               "links":[{
                 "text": "Related Action to important Page Name",
@@ -162,7 +162,8 @@
             "formDownloads": {
               "compHeading": {
                 "title": "Downloads & Links",
-                "sub": true
+                "sub": true,
+                "titleContext": "for Section with Everything"
               },
               "downloadLinks": [{
                 "downloadLink": {
@@ -241,7 +242,8 @@
         "contactList": {
           "viewSpecific": false,
           "sidebarHeading": {
-            "title": "Key Agencies"
+            "title": "Key Agencies",
+            "titleContext": "for Section with Everything"
           },
           "contacts": [{
             "accordion": false,
@@ -291,14 +293,19 @@
 
   "suggestedPages": {
     "title": "Related Guides",
+    "titleContext": "to Moving to Massachusetts: Planning Your Move",
     "view":"guide",
     "buttonMinor" : {
       "href": "#",
       "text": "See All Guides"
     },
     "pages": [{
-      "image": "../../assets/images/placeholder/130x160.png",
-      "altTag": "Place Holder Image",
+      "image": {
+        "alt": "Place Holder Image", 
+        "src": "../../assets/images/placeholder/130x160.png",
+        "height": "160",
+        "width": "130"
+      },
       "link": {
         "type": "",
         "href": "#",
@@ -306,8 +313,12 @@
         "label": "Guide:"
       }
     },{
-      "image": "../../assets/images/placeholder/130x160.png",
-      "altTag": "Place Holder Image",
+      "image": {
+        "alt": "Place Holder Image", 
+        "src": "../../assets/images/placeholder/130x160.png",
+        "height": "160",
+        "width": "130"
+      },
       "link": {
         "type": "",
         "href": "#",
@@ -315,8 +326,12 @@
         "label": "Guide:"
       }
     },{
-      "image": "../../assets/images/placeholder/130x160.png",
-      "altTag": "Place Holder Image",
+      "image": {
+        "alt": "Place Holder Image", 
+        "src": "../../assets/images/placeholder/130x160.png",
+        "height": "160",
+        "width": "130"
+      },
       "link": {
         "type": "",
         "href": "#",

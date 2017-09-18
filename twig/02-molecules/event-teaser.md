@@ -19,8 +19,6 @@ A Pattern that displays the Name, Location, Time, Date and a brief description o
 eventTeaser: {
   title: 
     type: decorativeLink / optional
-  level: 
-    type: number / optional
   location: 
     type: string (address) / optional
   date: {

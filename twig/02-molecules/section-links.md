@@ -24,19 +24,15 @@ sectionLinks: {
   title: {
     type: decorativeLink / required
   },
-  level: 
-    type: number / optional
+  subTitle: {
+    type: boolean
+  },
   description:
     type: string / optional
   type:
     type: string ("", "callout") / optional
   links: [{
-    href:
-      type: string / required
-    text:
-      type: string / required
-    info:
-      type: string (adds more description about the link) / optional
+    type: decorativeLink and calloutLink / required
   }]
   seeAll: {
     type: decorativeLink / optional

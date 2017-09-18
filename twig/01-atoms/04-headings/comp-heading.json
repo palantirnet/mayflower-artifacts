@@ -1,7 +1,8 @@
 {
   "compHeading": {
     "title": "Title text",
-    "level": "",
+    "titleContext": "",
+    "sub": "",
     "color": "",
     "id": "GUID9827924",
     "centered": ""
