@@ -1,6 +1,7 @@
 import getTemplate from "../helpers/getHandlebarTemplate.js";
 import sticky from "../helpers/sticky.js";
 import moment from "../vendor/bower_components/moment/src/moment";
+import getOuterHtml from "../helpers/getElementOuterHtml.js";
 
 export default  function(window, document, undefined, $){
   "use strict";
@@ -203,7 +204,10 @@ export default  function(window, document, undefined, $){
    */
   function getSvgFromTag(tag) {
     // Get the existing corresponding icon markup so we don't have to worry about outdated markup.
-    return $('.js-filter-by-tags').find("#" + tag).parent().siblings('svg').prop('outerHTML');
+    // return $('.js-filter-by-tags').find("#" + tag).parent().siblings('svg').prop('outerHTML');
+    // Get outerHtml of svgElement shim for IE
+    // See: https://stackoverflow.com/questions/12592417/outerhtml-of-an-svg-element
+    return getOuterHtml($('.js-filter-by-tags').find("#" + tag).parent().siblings('svg')[0]);
   }
 
   /**
@@ -383,6 +387,12 @@ export default  function(window, document, undefined, $){
       return filterDataByTags(tags, data);
     }
 
+    // If a date filter is present, filter based on the date filter values.
+    if (hasFilter(filters, 'end') || hasFilter(filters, 'start')) {
+      return filterDataByDateTags(filters, data);
+    }
+
+
     // Either there are no filters or the only active filter is location, make all items active
     return makeAllActive(data);
   }
@@ -430,7 +440,7 @@ export default  function(window, document, undefined, $){
       return;
     }
     // Geocode address string, then execute callback with argument upon success.
-    return geocoder.geocode({address: address}, function (results, status) {
+    return ma.geocoder.geocode({address: address}, function (results, status) {
       if (status === google.maps.GeocoderStatus.OK) {
         return callback(results[0], callbackArg);
       }
@@ -497,7 +507,10 @@ export default  function(window, document, undefined, $){
   function doesItemContainTags(haystack, needle) {
     return needle.every(function(v) {
       return Boolean(haystack.filter(function(item){
-        return Object.values(item).indexOf(v) !== -1;
+        // return Object.values(item).indexOf(v) !== -1;
+        // return Object.values(item).indexOf(v) !== -1;
+        // Object.values shim for IE11
+        return Object.keys(item).map(function(i) { return item[i]; }).indexOf(v) !== -1;
       }).length);
     });
   }
@@ -569,11 +582,11 @@ export default  function(window, document, undefined, $){
      */
     // Create moment.js object for start timestamp
     if (args.hasOwnProperty('type') && args.type === 'start') {
-      return moment(args.data.startTimestamp, 'M/D/YYYY - H:mm')
+      return moment(args.data.startTimestamp, 'M/DD/YYYY')
     }
     // Create a moment.js object for end timestamp
     if (args.hasOwnProperty('type') && args.type === 'end') {
-      return args.data.endTimestamp ? moment(args.data.endTimestamp, 'M/D/YYYY - H:mm') : "";
+      return args.data.endTimestamp ? moment(args.data.endTimestamp, 'M/DD/YYYY') : "";
     }
     return false;
   }
@@ -617,6 +630,63 @@ export default  function(window, document, undefined, $){
     return data;
   }
 
+  /**
+   * Returns data with necessary items flagged inactive according to date/date range.
+   *
+   * @param tags
+   *  The array of filters by which to filter.
+   *
+   * @param data
+   *   The current instance of master data being filtered.
+   *
+   * @returns {*}
+   *   The 'filtered' instance of data after checking date(s).
+   */
+  function filterDataByDateTags(tags, data) {
+    data.items = data.items.map(function(item) {
+      item.isActive = isEventInDateRange(item, tags);
+      return item;
+    });
+    let paginated = paginateItems(data.items, data.maxItems);
+    data.items = paginated.items;
+    data.totalPages = paginated.totalPages;
+    return data;
+  }
+
+  /**
+   * Returns an item's isActive value depending on the date range from date filters.
+   *
+   * @param item
+   *   The item.item[]{} being transformed.
+   *
+   * @param tags
+   *  The array of filters by which to filter.
+   *
+   * @returns
+   *   The updated item.
+   */
+  function isEventInDateRange(item, tags) {
+    let filterStart = '';
+    let filterEnd = '';
+
+    tags.map(function(tag) {
+      if (tag.type == 'start') { filterStart = moment(tag.value, 'M/DD/YYYY'); }
+      if (tag.type == 'end') { filterEnd = moment(tag.value, 'M/DD/YYYY'); }
+    });
+
+    // If we don't have a start date, lets use now.
+    if (!filterStart) {
+      filterStart = moment();
+    }
+
+    if (filterEnd && filterStart) {
+      return item.start.isSameOrAfter(filterStart, 'day') && item.start.isSameOrBefore(filterEnd, 'day') ? true : false;
+    }
+    else {
+      return item.start.isSame(filterStart, 'day') ? true : false;
+    }
+  }
+
   return {
     renderListingPage,
     transformPaginationData,
@@ -625,6 +695,7 @@ export default  function(window, document, undefined, $){
     hasFilter,
     getFilterValues,
     filterDataByTags,
+    filterDataByDateTags,
     transformActiveTagsData,
     paginateItems,
     clearListingPage,

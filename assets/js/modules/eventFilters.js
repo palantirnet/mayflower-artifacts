@@ -1,5 +1,5 @@
 export default function (window,document,$,undefined) {
-  $('.js-event-location-filters').each(function(){
+  $('.js-event-filters').each(function(){
     let $el = $(this);
 
     // When google map libraries are loaded, initialize places.autocomplete on the location input, if it exists.
@@ -32,15 +32,6 @@ export default function (window,document,$,undefined) {
       renderForm({clearedFilter: data.clearedFilter, $form: $el});
     });
 
-    // Don't submit the form when a user selects the autocomplete dropdown item with enter
-    $el.keydown(function(e) {
-      if (e.keyCode === 13) {
-        if  ($(e.target).is($('.js-event-filter-by-location', $el).find('input'))) {
-          e.preventDefault();
-        }
-      }
-    });
-
     // Handle global form submission.
     $el.submit(function(e){
       e.preventDefault();
@@ -69,6 +60,8 @@ export default function (window,document,$,undefined) {
     let $form = $(args.$form),
       $location = $form.find('.js-event-filter-by-location'),
       $tags = $form.find('.js-filter-by-tags'),
+      $dateStart = $form.find('.js-filter-by-date-range__start'),
+      $dateEnd = $form.find('.js-filter-by-date-range__end'),
       formData = [];
 
     // Get location
@@ -83,8 +76,38 @@ export default function (window,document,$,undefined) {
       }
     }
 
+    // Get start date.
+    if ($dateStart.find('input').length) {
+      let startDate = $dateStart.find('input').val();
+      if (startDate) {
+        formData.push({
+          type: 'start',
+          text: startDate,
+          value: startDate
+        });
+      }
+    }
+
+    // Get end date.
+    if ($dateEnd.find('input').length) {
+      let endDate = $dateEnd.find('input').val();
+      if (endDate) {
+        formData.push({
+          type: 'end',
+          text: endDate,
+          value: endDate
+        });
+      }
+    }
+
+    // Get checkboxes/tags.
     $tags.find('input:checked').each(function() {
-      formData.push({'type': 'tag', 'value': $(this).val(), 'text': $(this).next("label").text()});
+      formData.push({
+        'type': 'tag',
+        'text': $(this).next("label").text(),
+        'value': $(this).val()
+
+      });
     });
 
     return formData;
@@ -93,12 +116,23 @@ export default function (window,document,$,undefined) {
   function clearDeactivatedFilter(args) {
     let $form = $(args.$form),
       $place = $form.find('.js-event-filter-by-location'),
+      $dateStart = $form.find('.js-filter-by-date-range__start'),
+      $dateEnd = $form.find('.js-filter-by-date-range__end'),
       $tags = $form.find('.js-filter-by-tags'),
       clearedFilter = args.clearedFilter;
 
     // If the cleared filter button was for a location filter.
     if (clearedFilter.type === 'location') {
       $place.find('input').val("");
+      return;
+    }
+    // Clear dates text inputs.
+    if (clearedFilter.type === 'start') {
+      $dateStart.find('input').val("");
+      return;
+    }
+    if (clearedFilter.type === 'end') {
+      $dateEnd.find('input').val("");
       return;
     }
     // If the cleared filter button was for a tag filter.
@@ -109,12 +143,25 @@ export default function (window,document,$,undefined) {
 
   function clearForm(args) {
     let $form = $(args.$form),
-      $place = $('.js-event-filter-by-location', $form).find('input');
+      $place = $('.js-event-filter-by-location', $form).find('input'),
+      $dateStart = $('.js-filter-by-date-range__start', $form).find('input'),
+      $dateEnd = $('.js-filter-by-date-range__end', $form).find('input');
 
     // Clear location text input.
     if ($place.length) {
       $place.val("");
     }
+
+    // Clear start date text input.
+    if ($dateStart.length) {
+      $dateStart.val("");
+    }
+
+    // Clear end date text input.
+    if ($dateEnd.length) {
+      $dateEnd.val("");
+    }
+
     // Check for tags and uncheck all checked tags inputs.
     if (typeof $tags != "undefined") {
       $tags.find('input:checked').prop('checked', false);
