@@ -147,8 +147,7 @@
         "sub": false,
         "color": "",
         "id": "downloads",
-        "centered": "",
-        "titleContext": "for No. 573: Reaffirming and restructuring the Governor's advisory council on veterans' services"
+        "centered": ""
       },
       "downloadLinks": [{
         "downloadLink": {
@@ -172,8 +171,7 @@
         "sub": false,
         "color": "",
         "id": "contact",
-        "centered": "",
-        "titleContext": "for No. 573: Reaffirming and restructuring the Governor's advisory council on veterans' services"
+        "centered": ""
       },
       "contacts":[{
         "accordion": true,
@@ -225,8 +223,7 @@
         "sub": false,
         "color": "",
         "id": "contact",
-        "centered": "",
-        "titleContext": "for No. 573: Reaffirming and restructuring the Governor's advisory council on veterans' services"
+        "centered": ""
       },
       "contacts":[{
         "accordion": false,
@@ -271,8 +268,7 @@
 
     "pressListing": {
       "sidebarHeading": {
-        "title": "Related",
-        "titleContext": "to No. 573: Reaffirming and restructuring the Governor's advisory council on veterans' services"
+        "title": "Related"
       },
       "items": [{
         "eyebrow": "Letter Ruling",
@@ -312,8 +308,7 @@
 
     "eventListing": {
       "sidebarHeading":{
-        "title": "Upcoming Events",
-        "titleContext": "for No. 573: Reaffirming and restructuring the Governor's advisory council on veterans' services"
+        "title": "Upcoming Events"
       },
       "events":[{
         "title": {
@@ -324,7 +319,7 @@
         },
         "location": "Boston, MA",
         "date": {
-          "summary": "May 20, 2017"
+          "summary": "May 20, 2017" 
         },
         "time": "12 p.m. - 2 p.m.",
         "description": "Event description. Ut nulla. Vivamus bibendum, nulla ut congue fringilla, lorem ipsum ultricies risus, ut rutrum velit tortor vel purus."

@@ -1,5 +1,5 @@
 ### Description
-This Pattern shows a title with a styled underline color
+An `<h2>` element with a styled underline color
 
 ### Status
 * Stable as of 5.0.0
@@ -14,8 +14,6 @@ This Pattern shows a title with a styled underline color
 compHeading: {
   title:
     type: string / required
-  titleContex: 
-    type: string / optional
   sub:
     type: string ("true" || "" ) / optional
   color:

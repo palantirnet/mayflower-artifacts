@@ -5,6 +5,11 @@ Description: A link `<a>` element which is styled to look like a button.
 
 ## State: depreciated
 
+### Notes:
+- 'theme' eventually needs to be changed to 'color' and used as a modifier class (--color)
+
+### Used In:
+
 ### Variables:
 ~~~
 buttonLink {

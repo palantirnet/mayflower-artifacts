@@ -1,7 +1,6 @@
 {
   "details": {
-    "contentTitle": "The Details",
-    "titleContext": ""
+    "contentTitle": "The Details"
   },
 
   "pageHeader": {
@@ -28,7 +27,6 @@
       "path": "@organisms/by-author/callout-time.twig",
       "data": {
         "calloutTime": {
-          "icon": "@atoms/05-icons/svg-wait-time.twig",
           "text": "turn around time for completion"
         }
       }
@@ -52,7 +50,6 @@
   },
 
   "stickyNav": {
-    "titleContext": "",
     "anchorLinks":[{
       "href": "jump link",
       "text": "jump-link",
@@ -74,8 +71,7 @@
     "contactList": {
       "viewSpecific": true,
       "sidebarHeading": {
-        "title": "Contact",
-        "titleContext": ""
+        "title": "Contact"
       },
       "contacts":[{
         "accordion": false,

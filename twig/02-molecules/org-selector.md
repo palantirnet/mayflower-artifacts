@@ -1,58 +1,50 @@
-### Description
-This pattern is an interactive select box that when changed will shows a brief description of an organization.  The description of the organization is rendered using a Handlebar template (js/templates/orgInfo.html)
+---
+title: Org Selector
+---
 
-### Status
-* Stable as of 5.0.0
+Description: Selectbox input that when changed shows/updates/hides a brief description of an organization.  The description of the organization is rendered using a Handlebar template orgInfo.html
 
-### Pattern Contains
-* Select Box
+## State: Alpha
 
-### Usage Guidelines
-* The organizations array is consumed by JavaScript
-* The organizations.value should be the same value used in the select box.
-
-### JavaScript Used
-* This pattern uses JavaScript to render the organization's information (js/modules/orgSelector.js)
-
-### Variables
+### Required variables
 ~~~
 orgSelector: {
   selectBox:{
-    type: selectBox / required
+    type: object/selectBox/required
   },
 
   organizations: [{
     value: 
-      type: string / required
+      type: string/required - matches the value used in the selectBox
     image: {
-      href:
-        type: string (url) / required 
+      href: #,
+        type: string/url/required 
       alt: 
-        type: string / required,
+        type: string/required,
       src: 
-        type: string (image path) / required,
+        type: string/url/required,
       height: 
-        type: string (number) / required,
+        type: string/required,
       width: 
-        type: string (number) / required
+        type: string/required
     },
     name: {
       text: 
-        type: string / required,
+        type: string/required,
       href:
-        type: string (url) / required
+        type: string/url/required
     },
     jobTitle: 
-      type: string / required,
+      type: string/required,
     message: 
-      type: rich text / required,
+      type: rich text/required,
     moreLink: {
       text: 
-        type: string / required,
+        type: string/required,
       href: 
-        type: string (url) / required,
+        type: string/url/required,
       info: 
-        type: string / optional
+        type: string/optional ('')
     }
   }]
 }

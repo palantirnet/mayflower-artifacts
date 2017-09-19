@@ -1,29 +1,31 @@
-### Description
-This is stylized textarea input
+---
+title: Input Textarea
+---
+Description: A `<textarea>`  element with its corresponding `<label>` element.
 
-### Status
-* Stable as of 5.0.0
+## State: ALPHA
 
-### Variant options
-* a [maxlength](./?p=atoms-textarea-set-characters) restriction can be applied
+### Notes:
 
-### JavaScript Used
-* This pattern uses JavaScript for the maxlength option to show the remaining character count (js/modules/formInputs.js)
 
-### Variables
+### Used In:
+- [@organisms/by-author/feedback-form](/?p=organisms-feedback-form)
+
+### Variables:
 ~~~
 textarea:  {
   labelText:
-    type: string / required,
+    type: string\required,
   hiddenLabel:
     type: boolean,
   required: 
     type: boolean,
   maxlength:
-    type: number / optional
+    type: number/optional
   id: 
-    type: string (unique per page) / required
+    type: string\unique\required
   name: 
-    type: string / required
+    type: string\required
 }
 ~~~
+

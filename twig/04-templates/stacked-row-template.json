@@ -13,7 +13,7 @@
     }]
   },
 
-  "stackedRows": [{
+  "stackedRowSections": [{
     "title": "Row with sidebar",
     "id": "row-with-sidebar",
     "pageContent": [{
@@ -29,7 +29,7 @@
       "path": "@base/placeholder.twig",
       "data": {
         "placeholder": {
-          "text":"Right Rail"
+          "text":"Sidebar"
         }
       }
     }]
@@ -62,7 +62,7 @@
       "path": "@base/placeholder.twig",
       "data": {
         "placeholder": {
-          "text":"Right Rail"
+          "text":"Sidebar"
         }
       }
     }]

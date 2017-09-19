@@ -12,8 +12,6 @@ This is a sticky navigation list with links to content within the page.
 ### Variables
 ~~~
 stickyNav: {
-  titleContext: 
-    type: string / optional
   anchorLinks:[{
     href: 
       type: string (id of target) / required,

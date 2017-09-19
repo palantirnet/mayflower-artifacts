@@ -2,8 +2,7 @@
 This is a row of content used in the Stacked Row Template
 
 ### Status
-* Obsolute as of 5.7.0
-* This code was added to the Stacked Row Template
+* Stable as of 5.0.0
 
 ### Pattern Contains
 * Comp Heading

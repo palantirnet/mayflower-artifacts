@@ -120,8 +120,7 @@
         "sub": false,
         "color": "",
         "id": "downloads",
-        "centered": "",
-        "titleContext": ""
+        "centered": ""
       },
       "downloadLinks": [{
         "downloadLink": {
@@ -172,8 +171,7 @@
         "sub": false,
         "color": "",
         "id": "contact",
-        "centered": "",
-        "titleContext": ""
+        "centered": ""
       },
       "contacts":[{
         "accordion": true,
@@ -285,8 +283,7 @@
         "sub": false,
         "color": "",
         "id": "",
-        "centered": "",
-        "titleContext": ""
+        "centered": ""
       },
       "contacts":[{
         "subTitle": {
@@ -315,8 +312,7 @@
 
     "pressListing": {
       "sidebarHeading": {
-        "title": "Related",
-        "titleContext": ""
+        "title": "Related"
       },
       "items": [{
         "eyebrow": "Letter Ruling",
@@ -356,8 +352,7 @@
 
     "eventListing": {
       "sidebarHeading":{
-        "title": "Upcoming Events",
-        "titleContext": ""
+        "title": "Upcoming Events"
       },
       "events":[{
         "title": {
@@ -368,7 +363,7 @@
         },
         "location": "location",
         "date": {
-          "summary": "Date"
+          "summary": "Date" 
         },
         "time": "Time",
         "description":"This is a description of the event that will happen at a future date"

@@ -14,19 +14,18 @@
     "rteTitle": {
       "text": "You will need:",
       "href": "",
-      "info": "",
-      "titleContext": ""
+      "info": ""
     },
 
     "richText": {
       "rteElements": [{
         "path": "@atoms/08-lists/unordered-list.twig",
         "data": {
-          "unorderedList": [{
-            "text": "Vestibulum ornare feugiat sodales"
-          },{
+          "unorderedList": [{ 
+            "text": "Vestibulum ornare feugiat sodales" 
+          },{ 
             "text": "Suspendisse fermentum augue eget semper feugiat"
-          },{
+          },{ 
             "text": "Ut risus nibh, sodales sit amet mollis pharetra, elementum vitae sapien"
           },{
             "text":"Integer quis suscipit dui"
@@ -63,8 +62,7 @@
     "contactList": {
       "viewSpecific": false,
       "sidebarHeading":{
-        "title": "Contact",
-        "titleContext": ""
+        "title": "Contact"
       },
       "contacts":[{
         "subTitle": {

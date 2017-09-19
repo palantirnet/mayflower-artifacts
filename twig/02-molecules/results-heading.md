@@ -1,37 +1,57 @@
-### Description
-This Pattern contains a string of text with a range and total value followed by selected filters and controls for sorting.
+---
+title: Results Heading
+---
+Description: a molecule that shows information about the current result set of a list of things (i.e. the various listing organisms).
 
-### Status
-* Stable as of 5.0.0
+## Status: Alpha
 
-### Pattern Contains
-* Sort Results
+## Notes:
+- Contains an array of tags which represent active filters applied to a related listing, usually applied by inputs on [@molecules/location-filters](/?p=molecules-location-filters)
 
-### Usage Guidelines
-For the tags:
-
-* 'type' -> the "type" of filter (i.e. input label)
-* 'text' -> the text displayed on the filter tag
-* 'value' -> machine friendly version of filter text
-
+### Used in:
+- [@organisms/by-author/location-listing](/?p=organisms-location-listing)
+- [@organisms/by-author/event-listing](/?p=organisms-event-listing)
+- [@organisms/by-author/press-listing](/?p=organisms-press-listing)
 
 ### Variables
 ~~~
 resultsHeading: {
   numResults:
-    type: string (number range '1-12') / optional 
+    type: string 
+    description: range representing the  current result set (i.e. "1-12")
   totalResults:
-    type: string (numeric) / optional 
+    type: string 
+    description: the total results (i.e. "108"),
   sortResults: {
-    type: sortResults / optional
+    label: "Sort by:",
+    sortButtons: [{
+      text: "Date",
+      direction: "dsc"
+    },{
+      text: "Price",
+      direction: ""
+    },{
+      text: "Color",
+      direction: ""
+    }]
   },
-  tags (optional): [{
-    type:
-      type: string / optional
-    text:
-      type: string / required
-    value: 
-      type: string / optional
-  }]
+  tags: [
+    type: array
+    description: arary of filter input values currently applied to listing items
+    {
+      type:
+        type: string (i.e. "keyword")
+        description: the "type" of filter (i.e. input label)
+      text:
+        type: string (i.e. "Beginner")
+        description: text displayed on the filter tag
+      value: 
+        type: string (i.e. "beginner")
+        description: machine friendly version of filter text
+    },
+    // form input data representing active filter tags
+    // see @molecules/location-filters.md
+    ... 
+  ]
 }
 ~~~

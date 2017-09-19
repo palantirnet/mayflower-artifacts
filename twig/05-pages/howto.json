@@ -1,7 +1,6 @@
 {
   "details": {
-    "contentTitle": "The Details",
-    "titleContext": "to Apply for unemployment benefits"
+    "contentTitle": "The Details"
   },
 
   "pageHeader": {
@@ -38,7 +37,6 @@
       "path": "@organisms/by-author/callout-time.twig",
       "data": {
         "calloutTime": {
-          "icon": "@atoms/05-icons/svg-wait-time.twig",
           "text": "Most applicants hear back within 4-6 weeks of applying"
         }
       }
@@ -62,7 +60,6 @@
   },
 
   "stickyNav": {
-    "titleContext": "Apply for unemployment benefits",
     "anchorLinks":[{
       "href": "what-you-need",
       "text": "What you need",
@@ -98,7 +95,6 @@
     "intro": {
       "compHeading": {
         "title": "What you need",
-        "titleContext": "to Apply for unemployment benefits",
         "sub": true,
         "color": "",
         "id": "what-you-need",
@@ -166,7 +162,6 @@
     "tabularData": {
       "compHeading": {
         "title": "Fees",
-        "titleContext": "to Apply for unemployment benefits",
         "sub": true,
         "color": "",
         "id": "fees",
@@ -305,7 +300,6 @@
     "stepsOrdered": {
       "compHeading": {
         "title": "Next Steps",
-        "titleContext": "to Apply for unemployment benefits",
         "sub": true,
         "color": "",
         "id": "next-steps",
@@ -387,7 +381,6 @@
     "moreInfo": {
       "compHeading": {
         "title": "More info",
-        "titleContext": "to Apply for unemployment benefits",
         "sub": true,
         "color": "",
         "id": "more-info",
@@ -406,7 +399,6 @@
     "formDownloads": {
       "compHeading": {
         "title": "Downloads",
-        "titleContext": "to Apply for unemployment benefits",
         "sub": true,
         "color": "",
         "id": "downloads",
@@ -431,7 +423,6 @@
     "contactList": {
       "compHeading": {
         "title": "Contact",
-        "titleContext": "to Apply for unemployment benefits",
         "sub": true,
         "color": "",
         "id": "contact",
@@ -599,8 +590,7 @@
     "contactList": {
       "viewSpecific": true,
       "sidebarHeading": {
-        "title": "Contact",
-        "titleContext": "to Apply for unemployment benefits"
+        "title": "Contact"
       },
       "contacts":[{
         "accordion": false,
@@ -647,8 +637,7 @@
 
     "linkList" : {
       "compHeading": {
-        "title": "Related",
-        "titleContext": "to Apply for unemployment benefits"
+        "title": "Related"
       },
       "stacked": true,
       "links" : [{

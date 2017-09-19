@@ -90,11 +90,10 @@
         "sub": "",
         "color": "",
         "id": "",
-        "centered": "",
-        "titleContext": ""
+        "centered": ""
       },
-      "image": {
-        "alt": "alt text",
+      "image": { 
+        "alt": "alt text", 
         "src": "../../assets/images/placeholder/600x338.png",
         "width": "600",
         "height": "338"
@@ -134,18 +133,17 @@
       "compHeading": {
         "title": "You will need",
         "id": "",
-        "sub": true,
-        "titleContext": ""
+        "sub": true
       },
       "rteElements": [{
         "path": "@atoms/08-lists/checklist.twig",
         "data": {
-          "checkList": [{
-            "text": "first item to bring"
-          },{
-            "text": "second item to bring"
-          },{
-            "text": "third item to bring"
+          "checkList": [{ 
+            "text": "first item to bring" 
+          },{ 
+            "text": "second item to bring" 
+          },{ 
+            "text": "third item to bring" 
           }]
         }
       }]
@@ -154,8 +152,7 @@
     "formDownloads": {
       "compHeading": {
         "title": "Additional resources",
-        "sub": true,
-        "titleContext": ""
+        "sub": true
       },
       "downloadLinks": [{
         "downloadLink": {
@@ -203,8 +200,7 @@
       "viewSpecific": false,
       "compHeading":{
         "title": "Contact",
-        "sub": true,
-        "titleContext": ""
+        "sub": true
       },
       "contacts":[{
         "accordion": true,
@@ -252,8 +248,7 @@
       "viewSpecific": false,
       "compHeading":{
         "title": "Media Contact",
-        "sub": true,
-        "titleContext": ""
+        "sub": true
       },
       "contacts":[{
         "accordion": true,
@@ -300,8 +295,7 @@
     "linkList" : {
       "compHeading": {
         "title": "Other dates",
-        "sub": true,
-        "titleContext": ""
+        "sub": true
       },
       "description": {
         "rteElements": [{
@@ -338,8 +332,7 @@
     "contactList": {
       "viewSpecific": true,
       "sidebarHeading":{
-        "title": "Contact",
-        "titleContext": ""
+        "title": "Contact"
       },
       "contacts":[{
         "subTitle": {
@@ -384,8 +377,7 @@
     "mediaContact": {
       "viewSpecific": true,
       "sidebarHeading":{
-        "title": "Media Contact",
-        "titleContext": ""
+        "title": "Media Contact"
       },
       "contacts":[{
         "subTitle": {
@@ -432,8 +424,7 @@
     "eventListing": {
       "compHeading":{
         "title": "Related Events",
-        "centered": true,
-        "titleContext": ""
+        "centered": true
       },
       "events":[{
         "title": {
