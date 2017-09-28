@@ -207,7 +207,7 @@ export default  function(window, document, undefined, $){
     // return $('.js-filter-by-tags').find("#" + tag).parent().siblings('svg').prop('outerHTML');
     // Get outerHtml of svgElement shim for IE
     // See: https://stackoverflow.com/questions/12592417/outerhtml-of-an-svg-element
-    return getOuterHtml($('.js-filter-by-tags').find("#" + tag).parent().siblings('svg')[0]);
+    return getOuterHtml($('.js-filter-by-tags').find("#" + tag).siblings('svg')[0]);
   }
 
   /**
@@ -388,7 +388,7 @@ export default  function(window, document, undefined, $){
     }
 
     // If a date filter is present, filter based on the date filter values.
-    if (hasFilter(filters, 'end') || hasFilter(filters, 'start')) {
+    if (hasFilter(filters, 'dateRange')) {
       return filterDataByDateTags(filters, data);
     }
 
@@ -422,27 +422,56 @@ export default  function(window, document, undefined, $){
   }
 
   /**
-   * Geocode an address string arg and executes callback upon successful return.
+   * Geocodes an address string arg and executes callback upon successful return.
    *
    * @param address
    *   Address string to be geocoded.
    * @param callback
-   *   Callback function to execute (with callbackArg).
-   * @param callbackArg
-   *   Argument to pass to callback.
+   *   Callback function to call upon successful geocode return.
    *
    * @returns {*}
    *   Upon success, the return value of the passed callback function.
    */
-  function geocodeAddressString(address, callback, callbackArg) {
+  function geocodeAddressString(address, callback) {
     // Only attempt to execute if google's geocode library is loaded.
     if (typeof ma.geocoder === "undefined") {
       return;
     }
+
     // Geocode address string, then execute callback with argument upon success.
-    return ma.geocoder.geocode({address: address}, function (results, status) {
+    ma.geocoder.geocode({address: address}, function (results, status) {
       if (status === google.maps.GeocoderStatus.OK) {
-        return callback(results[0], callbackArg);
+        let place =  results[0];
+        return callback(place);
+      }
+      else {
+        console.warn('Geocode was not successful for the following reason: ' + status);
+      }
+    });
+  }
+
+  /**
+   * Geocodes an address string arg and executes callback upon successful return.
+   *
+   * @param address
+   *   Address string to be geocoded.
+   * @param callback
+   *   Callback function to call upon successful geocode return.
+   *
+   * @returns {*}
+   *   Upon success, the return value of the passed callback function.
+   */
+  function geocodePlaceId(place_id, callback) {
+    // Only attempt to execute if google's geocode library is loaded.
+    if (typeof ma.geocoder === "undefined") {
+      return;
+    }
+
+    // Geocode address string, then execute callback with argument upon success.
+    ma.geocoder.geocode({ 'placeId': place_id}, function(results, status) {
+      if (status === google.maps.GeocoderStatus.OK) {
+        let place =  results[0];
+        return callback(place);
       }
       else {
         console.warn('Geocode was not successful for the following reason: ' + status);
@@ -670,14 +699,9 @@ export default  function(window, document, undefined, $){
     let filterEnd = '';
 
     tags.map(function(tag) {
-      if (tag.type == 'start') { filterStart = moment(tag.value, 'M/DD/YYYY'); }
-      if (tag.type == 'end') { filterEnd = moment(tag.value, 'M/DD/YYYY'); }
+      if (tag.type == 'dateRange') { filterStart = moment(tag.start, 'M/DD/YYYY'); }
+      if (tag.type == 'dateRange') { filterEnd = moment(tag.end, 'M/DD/YYYY'); }
     });
-
-    // If we don't have a start date, lets use now.
-    if (!filterStart) {
-      filterStart = moment();
-    }
 
     if (filterEnd && filterStart) {
       return item.start.isSameOrAfter(filterStart, 'day') && item.start.isSameOrBefore(filterEnd, 'day') ? true : false;
@@ -702,6 +726,7 @@ export default  function(window, document, undefined, $){
     sortDataAlphabetically,
     sortDataByDate,
     geocodeAddressString,
+    geocodePlaceId,
     makeAllActive,
     calculateDistance,
     transformListing,
