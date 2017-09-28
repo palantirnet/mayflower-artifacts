@@ -31,8 +31,6 @@ contactUs: {
   subTitle: {
     type: columnHeading / optional
   }
-  level:
-    type: number / optional
   groups: [{
     type: array of contactGroup / required
   }]

@@ -24,8 +24,9 @@ sectionLinks: {
   title: {
     type: decorativeLink / required
   },
-  level: 
-    type: number / optional
+  subTitle: {
+    type: boolean
+  },
   description:
     type: string / optional
   type:

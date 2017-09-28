@@ -26,9 +26,7 @@ imagePromo: {
       type: string(url) / optional
     info:
       type: string / optional
-  }
-  level:
-    type: number / optional 
+  } 
   image: (optional) {  
     src:
       type: string (image path) / required

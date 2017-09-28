@@ -15,9 +15,8 @@
     </div>
   {% endif %}
   <div class="ma__image-promo__details">
-    {% if imagePromo.title.text %}
-      {% set headingLevel = imagePromo.level ? : 2 %}
-      <h{{ headingLevel }} class="ma__image-promo__title">
+    {% if imagePromo.title %}
+    <h2 class="ma__image-promo__title">
       {% if imagePromo.tags %}
         <div class="ma__image-promo__tags">
           {% for tag in imagePromo.tags %}
@@ -31,7 +30,7 @@
       {% else %}
         {{ imagePromo.title.text }}
       {% endif %}
-    </h{{ headingLevel }}>
+    </h2>
     {% endif %}
     {% if imagePromo.location.text %}
       <div class="ma__image-promo__location">

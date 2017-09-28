@@ -169,8 +169,7 @@
         "contactList": {
           "viewSpecific": false,
           "sidebarHeading": {
-            "title": "Key Agencies",
-            "level": 3
+            "title": "Key Agencies"
           },
           "contacts": [{
             "accordion": false,
@@ -271,8 +270,7 @@
         "contactList": {
           "viewSpecific": false,
           "sidebarHeading": {
-            "title": "Key Agencies",
-            "level": 3
+            "title": "Key Agencies"
           },
           "contacts": [{
             "accordion": false,
@@ -330,9 +328,9 @@
               }
             }
           },{
-            "path": "@atoms/04-headings/heading-3.twig",
+            "path": "@atoms/04-headings/heading-4.twig",
             "data": {
-              "heading3": {
+              "heading4": {
                 "text": "Choose a Reputable Mover"
               }
             }
@@ -348,9 +346,9 @@
               }]
             }
           },{
-            "path": "@atoms/04-headings/heading-3.twig",
+            "path": "@atoms/04-headings/heading-4.twig",
             "data": {
-              "heading3": {
+              "heading4": {
                 "text": "Observe Parking Restrictions"
               }
             }
@@ -374,8 +372,7 @@
         "contactList": {
           "viewSpecific": false,
           "sidebarHeading": {
-            "title": "Key Agencies",
-            "level": 3
+            "title": "Key Agencies"
           },
           "contacts": [{
             "accordion": false,
@@ -521,7 +518,7 @@
         "keyActions": {
           "compHeading": {
             "title": "Key Actions",
-            "level": 3
+            "sub":true
           },
           "links":[{
             "text": "Related Action to important Page Name",
@@ -550,8 +547,7 @@
         "contactList": {
           "viewSpecific": false,
           "sidebarHeading": {
-            "title": "Key Agencies",
-            "level": 3
+            "title": "Key Agencies"
           },
           "contacts": [{
             "accordion": false,
@@ -633,8 +629,7 @@
         "contactList": {
           "viewSpecific": false,
           "sidebarHeading": {
-            "title": "Key Agencies",
-            "level": 3
+            "title": "Key Agencies"
           },
           "contacts": [{
             "accordion": false,
@@ -738,8 +733,7 @@
         "contactList": {
           "viewSpecific": false,
           "sidebarHeading": {
-            "title": "Key Agencies",
-            "level": 3
+            "title": "Key Agencies"
           },
           "contacts": [{
             "accordion": false,
@@ -878,7 +872,7 @@
         "keyActions": {
           "compHeading": {
             "title": "Key Actions",
-            "level": 3
+            "sub":true
           },
           "links":[{
             "text": "Related Action to important Page Name",

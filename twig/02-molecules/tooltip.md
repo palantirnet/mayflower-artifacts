@@ -20,9 +20,7 @@ tooltip: {
   closeText: 
     type: string / required,
   title: 
-    type: string / optional,
-  level
-    type: number / optional
+    type: string / optional
   message: 
     type rich text / required. 
 }
