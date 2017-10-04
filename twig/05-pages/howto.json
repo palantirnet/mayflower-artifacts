@@ -96,7 +96,7 @@
     "intro": {
       "compHeading": {
         "title": "What you need",
-        "level": 3,
+        "sub": true,
         "color": "",
         "id": "what-you-need",
         "centered": ""
@@ -163,7 +163,7 @@
     "tabularData": {
       "compHeading": {
         "title": "Fees",
-        "level": 3,
+        "sub": true,
         "color": "",
         "id": "fees",
         "centered": ""
@@ -232,7 +232,7 @@
     "stepsUnordered": {
       "compHeading": {
         "title": "How To Apply",
-        "level": 3,
+        "sub": true,
         "color": "",
         "id": "how-to-apply",
         "centered": ""
@@ -301,7 +301,7 @@
     "stepsOrdered": {
       "compHeading": {
         "title": "Next Steps",
-        "level": 3,
+        "sub": true,
         "color": "",
         "id": "next-steps",
         "centered": ""
@@ -382,7 +382,7 @@
     "moreInfo": {
       "compHeading": {
         "title": "More info",
-        "level": 3,
+        "sub": true,
         "color": "",
         "id": "more-info",
         "centered": ""
@@ -400,7 +400,7 @@
     "formDownloads": {
       "compHeading": {
         "title": "Downloads",
-        "level": 3,
+        "sub": true,
         "color": "",
         "id": "downloads",
         "centered": ""
@@ -424,7 +424,7 @@
     "contactList": {
       "compHeading": {
         "title": "Contact",
-        "level": 3,
+        "sub": true,
         "color": "",
         "id": "contact",
         "centered": ""

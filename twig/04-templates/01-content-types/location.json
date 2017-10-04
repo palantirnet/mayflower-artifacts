@@ -19,7 +19,6 @@
       "path": "@molecules/contact-us.twig",
       "data": {
         "contactUs": {
-          "level": 2,
           "groups": [{
             "icon": "",
             "name": "",
