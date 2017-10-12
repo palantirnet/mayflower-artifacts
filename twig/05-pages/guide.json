@@ -124,7 +124,7 @@
     }]
   },
 
-  "stackedRows": [{
+  "stackedRowSections": [{
     "title":"Buying or Renting a Home",
     "id":"buying-or-renting-a-home",
     "pageContent": [{
@@ -488,8 +488,10 @@
       "path":"@organisms/by-author/callout-alert.twig",
       "data":{
         "calloutAlert": {
-          "href": "",
-          "text": "Massachusetts requires you to license your dog"
+          "decorativeLink": {
+            "href": "",
+            "text": "Massachusetts requires you to license your dog"
+          }
         }
       }
     }],
@@ -679,7 +681,6 @@
       "path": "@organisms/by-author/callout-time.twig",
       "data": {
         "calloutTime": {
-          "icon": "@atoms/05-icons/svg-wait-time.twig",
           "text": "This usually takes approximately 4 weeks"
         }
       }
@@ -897,12 +898,8 @@
       "text": "See All Guides"
     },
     "pages": [{
-      "image": {
-        "alt": "Place Holder Image", 
-        "src": "../../assets/images/placeholder/130x160.png",
-        "height": "160",
-        "width": "130"
-      },
+      "image": "../../assets/images/placeholder/130x160.png",
+      "altTag": "Place Holder Image",
       "link": {
         "type": "",
         "href": "#",
@@ -910,12 +907,8 @@
         "label": "Guide:"
       }
     },{
-      "image": {
-        "alt": "Place Holder Image", 
-        "src": "../../assets/images/placeholder/130x160.png",
-        "height": "160",
-        "width": "130"
-      },
+      "image": "../../assets/images/placeholder/130x160.png",
+      "altTag": "Place Holder Image",
       "link": {
         "type": "",
         "href": "#",
@@ -923,12 +916,8 @@
         "label": "Guide:"
       }
     },{
-      "image": {
-        "alt": "Place Holder Image", 
-        "src": "../../assets/images/placeholder/130x160.png",
-        "height": "160",
-        "width": "130"
-      },
+      "image": "../../assets/images/placeholder/130x160.png",
+      "altTag": "Place Holder Image",
       "link": {
         "type": "",
         "href": "#",

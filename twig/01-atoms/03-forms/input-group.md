@@ -1,21 +1,17 @@
-### Description
-This pattern renders a group of radio buttons or checkboxes with an optional title.
+---
+title: Input Group
+---
+Description: Renders a group of radio buttons or checkboxes with an optional title.
 
-### Status
-* Stable as of 5.0.0
+## State: ALPHA
 
-### Pattern Contains
-* Input Checkbox
-* Input Radio
+### Notes:
+- radio button groups should always have required set to true for 508 compliance and because you can't reset a radio button group.
 
-### Variant options
-* The pattern can also be rendered with [checkboxes](./?p=atoms-input-group-checkbox)
-* The input can be rendered inline for [radio buttons](./?p=atoms-input-group-radio-inline) and [checkboxes](./?p=atoms-input-group-checkbox-inline)
+### Used In:
 
-### Usage Guidelines:
-- radio button groups should always have the `required` variable set to true since radio inputs are never optional
 
-### Variables
+### Variables:
 ~~~
 inputGroup: {
   required: 
@@ -27,7 +23,7 @@ inputGroup: {
   type: 
     type: string ('radio' or 'checkbox') / required
   items: [{
-    type: array of inputRadio / required.
+    type: array of objects - uses inputRadio object for both radio and checkboxes.
   }]
 }
 ~~~

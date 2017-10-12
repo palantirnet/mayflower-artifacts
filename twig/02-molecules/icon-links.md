@@ -5,15 +5,11 @@ This is a list of links with a corresponding icon.
 * Stable as of 5.0.0
 
 ### Pattern Contains
-* Comp Heading
 * Decorative Link
 
 ### Variables
 ~~~
 iconLinks: {
-  compHeading: { 
-    type: compHeading / optional
-  },
   items: [{
     icon:
       type: string (path to SVG icon) / required

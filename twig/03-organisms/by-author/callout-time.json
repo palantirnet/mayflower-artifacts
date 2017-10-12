@@ -1,6 +1,5 @@
 {
   "calloutTime": {
-    "icon": "@atoms/05-icons/svg-dog.twig",
-    "text": "Text preceded by a variable icon"
+    "text": "This usually takes approximately 4 weeks"
   }
 }

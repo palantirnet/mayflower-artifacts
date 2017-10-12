@@ -1,41 +1,43 @@
-### Description
-This is an app for filtering a set of locations displayed in list and map form.
+---
+title: Location Listing
+---
+Description: List of location with matching icons on a google map
 
-### Status
-* Stable as of 5.0.0
+## State: Alpha
 
-### Pattern Contains
-* Location Filters
-* Image Promo
-* Google Map
-* Results Heading
-* Pagination
+### Notes
+- The order of the result list and map icons need to match.
 
-### Usage Guidelines
-* Set the `maxItem` variable to restrict the results into "pages" 
+### Contains
+- [@molecules/image-promo](?p=molecules-image-promo)
+- [@molecules/google-map](?p=molecules-google-map)
 
-### JavaScript Used
-* This pattern uses JavaScript for filtering the results (js/modules/locationListing.js)
+### Used in:
+
 
 ### Variables
+
 ~~~
 locationListing: {
   maxItems: 
-    type: integer / optional
+    type: int
+    required: no
+    description: the max number of items to appear per listing "page" / map
   locationFilters: {
-    type: LocationFilters / required
+    type: @molecules/location-filters.twig
   }
   googleMap: {
-    type: googleMap / required
+    type: @molecules/google-map.twig
   }
   resultsHeading: {
-    type: resultsHeading / required
+    type: @molecules/results-heading.twig
   }
   imagePromos: {
-    type: imagePromos / required
+    type: @organisms/by-author/image-promos.twig
   }
   pagination: {
-    type: pagination / required
+    type: @ molecules/pagination.twig
   }
 }
+
 ~~~

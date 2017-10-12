@@ -1,5 +1,5 @@
 ### Description
-Displays a paragraph of text. 
+Displays the `<p>` tag. 
 
 ### Status
 * Stable as of 5.0.0

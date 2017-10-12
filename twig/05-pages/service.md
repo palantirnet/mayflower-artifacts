@@ -5,9 +5,9 @@ Example of a Services template to show how it could be used as an Unemployment B
 * Stable as of 5.0.0
 
 ### Pattern Contains
-* Header
-* Footer
-* Services (template)
+* Header Organism
+* Services Template
+* Footer Organism
 
 ### Variables
 See Services Template

@@ -36,7 +36,9 @@ imagePromo: {
       type: string (url) / optional
   },
   description: {
-    type: richText / optional
+    richText: {
+      type: richText / optional
+    }
   },
   link: {
     type: decorativeLink / optional

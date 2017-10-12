@@ -314,14 +314,16 @@
           "href": "#"
         },
         "description": {
-          "rteElements": [{
-            "path": "@atoms/11-text/paragraph.twig",
-            "data": {
-              "paragraph" : {
-                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu tellus sit amet turpis convallis finibus at id nulla."
+          "richText":{
+            "rteElements": [{
+              "path": "@atoms/11-text/paragraph.twig",
+              "data": {
+                "paragraph" : {
+                  "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu tellus sit amet turpis convallis finibus at id nulla."
+                }
               }
-            }
-          }]
+            }]
+          }
         },
         "link": null
       },{
@@ -335,14 +337,16 @@
           "href": "#"
         },
         "description": {
-          "rteElements": [{
-            "path": "@atoms/11-text/paragraph.twig",
-            "data": {
-              "paragraph" : {
-                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu tellus sit amet turpis convallis finibus at id nulla."
+          "richText":{
+            "rteElements": [{
+              "path": "@atoms/11-text/paragraph.twig",
+              "data": {
+                "paragraph" : {
+                  "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu tellus sit amet turpis convallis finibus at id nulla."
+                }
               }
-            }
-          }]
+            }]
+          }
         },
         "link": null
       },{
@@ -356,14 +360,16 @@
           "href": "#"
         },
         "description": {
-          "rteElements": [{
-            "path": "@atoms/11-text/paragraph.twig",
-            "data": {
-              "paragraph" : {
-                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu tellus sit amet turpis convallis finibus at id nulla."
+          "richText":{
+            "rteElements": [{
+              "path": "@atoms/11-text/paragraph.twig",
+              "data": {
+                "paragraph" : {
+                  "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu tellus sit amet turpis convallis finibus at id nulla."
+                }
               }
-            }
-          }]
+            }]
+          }
         },
         "link": null
       }]

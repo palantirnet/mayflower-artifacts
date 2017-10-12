@@ -1,17 +1,21 @@
-### Description
-This pattern is used as Helper text for a form input
+---
+title: Helper Text
+---
+Description: Helper text for an input that includes if needed.
 
-### Status
-* Stable as of 5.0.0
+## State: ALPHA
 
-### Usage Guidelines
-* the `inputId` value should match the id of the related input.
+### Notes:
 
-### Variables
+
+### Used In:
+
+
+### Variables:
 ~~~
 helperText: {
   inputId: 
-    type: string / required.
+    type: string / unique ID (matches the id on the input) / required.
   message: 
     type: string / required
 }

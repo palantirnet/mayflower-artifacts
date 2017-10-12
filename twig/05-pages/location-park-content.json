@@ -364,14 +364,16 @@
          "href": "#"
        },
        "description": {
-         "rteElements": [{
-           "path": "@atoms/11-text/paragraph.twig",
-           "data": {
-             "paragraph" : {
-               "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu tellus sit amet turpis convallis finibus at id nulla."
+         "richText":{
+           "rteElements": [{
+             "path": "@atoms/11-text/paragraph.twig",
+             "data": {
+               "paragraph" : {
+                 "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu tellus sit amet turpis convallis finibus at id nulla."
+               }
              }
-           }
-         }]
+           }]
+         }
        },
        "link": null
      },{
@@ -385,14 +387,16 @@
          "href": "#"
        },
        "description": {
-         "rteElements": [{
-           "path": "@atoms/11-text/paragraph.twig",
-           "data": {
-             "paragraph" : {
-               "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu tellus sit amet turpis convallis finibus at id nulla."
+         "richText":{
+           "rteElements": [{
+             "path": "@atoms/11-text/paragraph.twig",
+             "data": {
+               "paragraph" : {
+                 "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu tellus sit amet turpis convallis finibus at id nulla."
+               }
              }
-           }
-         }]
+           }]
+         }
        },
        "link": null
      },{
@@ -406,14 +410,16 @@
          "href": "#"
        },
        "description": {
-         "rteElements": [{
-           "path": "@atoms/11-text/paragraph.twig",
-           "data": {
-             "paragraph" : {
-               "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu tellus sit amet turpis convallis finibus at id nulla."
+         "richText":{
+           "rteElements": [{
+             "path": "@atoms/11-text/paragraph.twig",
+             "data": {
+               "paragraph" : {
+                 "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu tellus sit amet turpis convallis finibus at id nulla."
+               }
              }
-           }
-         }]
+           }]
+         }
        },
        "link": null
      }]
@@ -714,48 +720,32 @@
       "text": "Do Something"
     },
     "pages": [{
-      "image": {
-        "alt": "Place Holder Image", 
-        "src": "../../assets/images/placeholder/230x130.png",
-        "height": "130",
-        "width": "230"
-      },
+      "image": "../../assets/images/placeholder/230x130.png",
+      "altTag": "Place Holder Image",
       "link": {
         "type": "",
         "href": "#",
         "text": "Nearby State Parks"
       }
     },{
-      "image": {
-        "alt": "Place Holder Image", 
-        "src": "../../assets/images/placeholder/230x130.png",
-        "height": "130",
-        "width": "230"
-      },
+      "image": "../../assets/images/placeholder/230x130.png",
+      "altTag": "Place Holder Image",
       "link": {
         "type": "",
         "href": "#",
         "text": "Similar State Park"
       }
     },{
-      "image": {
-        "alt": "Place Holder Image", 
-        "src": "../../assets/images/placeholder/230x130.png",
-        "height": "130",
-        "width": "230"
-      },
+      "image": "../../assets/images/placeholder/230x130.png",
+      "altTag": "Place Holder Image",
       "link": {
         "type": "",
         "href": "#",
         "text": "Great Sight Seeing"
       }
     },{
-      "image": {
-        "alt": "Place Holder Image", 
-        "src": "../../assets/images/placeholder/230x130.png",
-        "height": "130",
-        "width": "230"
-      },
+      "image": "../../assets/images/placeholder/230x130.png",
+      "altTag": "Place Holder Image",
       "link": {
         "type": "",
         "href": "#",

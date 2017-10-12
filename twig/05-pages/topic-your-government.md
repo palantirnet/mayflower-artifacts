@@ -5,10 +5,8 @@ This is an example of a Topic page on Mass.gov for the Your Government section.
 * Stable as of 5.0.0
 
 ### Pattern Contains
-* Header
-* Footer
-* Single Column (template)
-* Page Banner - columns
+* Single Column Template
+* Page Banner (columns)
 * Sections Three Up
 * Link List
 

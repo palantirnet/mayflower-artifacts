@@ -1,6 +1,6 @@
-### Status
-* Obsolete as of 5.0.0
-
+---
+title: Related action link
+---
 Description: a molecule for an related action.
 ## Status: Alpha
 ### Notes:

@@ -2,36 +2,34 @@
   "searchBanner": {
     "bgWide": "../../assets/images/placeholder/1600x800.png",
     "bgNarrow": "../../assets/images/placeholder/800x800.png",
-    "id": "GUID935283478A",
-    "searchBannerForm": {
-      "action": "",
-      "buttonText": "Search",
-      "inputText": {
-        "labelText": "Search terms",
-        "required": false,
-        "id": "GUID138490237",
-        "name": "search",
-        "type": "text",
-        "placeholder": "Search..."
+    "imageName": "MIT Media Lab",
+    "imageAuthor": "Sir Mix Alot",
+    "form": {
+      "path": "@molecules/search-banner-form.twig",
+      "content": {
+        "action": "",
+        "buttonText": "Search",
+        "inputText": {
+          "labelText": "Search terms",
+          "required": false,
+          "id": "GUID138490237",
+          "name": "search",
+          "type": "text",
+          "placeholder": "Search..."
+        }
       }
     },
-    "pageIntro": {
-      "pageTitle": {
-        "text": "Welcome to Massachusetts"
-      },
-      "subTitle": "What would you like to do?"
-    },
-    "linkList": {
+    "title": "Welcome to Massachusetts",
+    "intro": "What would you like to do?",
+    "helpfulLinks": {
+      "columns": "true",
       "compHeading": {
         "title": "Popular Searches",
         "sub": "true",
         "color": "yellow",
         "centered": "true"
       },
-      "description": null,
-      "stacked": false,
-      "hideBullets": true,
-      "links" : [{
+      "items": [{
         "href": "#",
         "text":"Apply for Unemployment",
         "chevron": "true"
@@ -52,10 +50,6 @@
         "text":"Learn about Fishing and Hunting",
         "chevron": "true"
       }]
-    },
-    "bannerCredit": {
-      "imageName": "MIT Media Lab",
-      "imageAuthor": "Sir Mix Alot"
     }
   }
 }

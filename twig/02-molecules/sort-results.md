@@ -1,19 +1,28 @@
-### Description
-This pattern is a set of sort buttons with an optional label.
+---
+title: Sort Results
+---
 
-### Status
-* Stable as of 5.0.0
+Description: labelled list of sort buttons
 
-### Pattern Contains
-* Button Sort
+## State: Alpha
 
-### Variables
+### Notes
+
+
+### Contains
+- [@atoms/01-buttons/button-sort](?p=atoms-button-sort)
+
+### Used in:
+
+
+### Required Variables
+
 ~~~
 sortResults: {
   label: 
-    type: string / optional
+    type: string/optional
   sortButtons: [{
-    type: array of buttonSort / required
+    type: Array of buttonSort
   }]
 }
 ~~~

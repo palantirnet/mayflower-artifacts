@@ -1,5 +1,5 @@
 ### Description
-This Pattern shows a link with an optional chevron.
+Displays an link with the `<a>` tag and class "ma__content-link". It can also optionally display a chevron.
 
 ### Status
 * Stable as of 5.0.0

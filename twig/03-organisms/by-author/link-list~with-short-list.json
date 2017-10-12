@@ -9,7 +9,6 @@
     },
     "description": null,
     "stacked": false,
-    "hideBullets": false,
     "links" : [{
       "href":"#",
       "text":"Lorem ipsum dolor sit amet.",
