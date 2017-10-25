@@ -1,6 +1,4 @@
 import                            "./helpers/jQueryExtend.js";
-import                            "./helpers/handlebarsHelpers.js";
-import ajaxAlerts                 from "./modules/ajaxAlerts.js";
 import accordions                 from "./modules/accordions.js";
 import googleMap                  from "./modules/googleMap.js";
 import back2top                   from "./modules/back2top.js";
