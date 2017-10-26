@@ -5,10 +5,6 @@
 
   "backToTopButton": true,
 
-  "ajaxAlerts": {
-    "endpoint":"/assets/data/emergency-alerts.json"
-  },
-
   "emergencyAlerts": {
     "id":"GUID18378923w38789",
     "buttonAlert": {
