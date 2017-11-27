@@ -1,8 +1,4 @@
 import                            "./helpers/jQueryExtend.js";
-import                            "./helpers/jQueryExtend_ajaxPattern.js";
-import                            "./helpers/handlebarsHelpers.js";
-import ajaxPattern                from "./modules/ajaxPattern.js";
-import ajaxPatternOverride        from "./modules/ajaxPatternOverride.js";
 import accordions                 from "./modules/accordions.js";
 import googleMap                  from "./modules/googleMap.js";
 import back2top                   from "./modules/back2top.js";
@@ -13,6 +9,7 @@ import eventFilters               from "./modules/eventFilters";
 import eventListingInteractive    from "./modules/eventListingInteractive";
 import footnote                   from "./modules/footnote.js";
 import formValidation             from "./modules/formValidation.js";
+import headerTags                 from "./modules/headerTags.js";
 import hideAlert                  from "./modules/hideAlert.js";
 import keywordSearch              from "./modules/keywordSearch.js";
 import locationFilters            from "./modules/locationFilters.js";
