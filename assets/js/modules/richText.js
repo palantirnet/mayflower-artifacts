@@ -4,5 +4,15 @@ export default function (window,document,$,undefined) {
     let $el = $(this);
 
     $el.find('table').wrap( "<div class='ma__rich-text__table-wrapper'></div>" );
+
+    // Allow heading and contents to be indented.
+    if ('.js-outline-indent'.length) {
+      $el.find(':header').each(function(index,header){
+        $(header).nextUntil(':header')
+          .addClass("ma__rich-text__indent")
+          .attr('data-ma-heading-parent', $(header).prop('tagName'));
+      });
+    }
   });
-}(window,document,jQuery);
+}
+(window,document,jQuery);
