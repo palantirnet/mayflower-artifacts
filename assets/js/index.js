@@ -1,4 +1,7 @@
 import                            "./helpers/jQueryExtend.js";
+import                            "./helpers/jQueryExtend_ajaxPattern.js";
+import ajaxPattern                from "./modules/ajaxPattern.js";
+import ajaxPatternOverride        from "./modules/ajaxPatternOverride.js";
 import accordions                 from "./modules/accordions.js";
 import googleMap                  from "./modules/googleMap.js";
 import back2top                   from "./modules/back2top.js";
@@ -25,4 +28,3 @@ import richText                   from "./modules/richText.js";
 import scrollAnchors              from "./modules/scrollAnchors.js";
 import formInputs                 from "./modules/formInputs.js";
 import utilNav                    from "./modules/utilNav.js";
-import                            "./helpers/headerAnchorLinks.js";

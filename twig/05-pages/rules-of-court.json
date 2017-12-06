@@ -2,13 +2,11 @@
   "pageHeader": {
     "category": "Rule of Court Sample Page",
     "subCategory": {
-      "compHeading": {
-        "title": "Demonstrates rich text indentation ",
-        "level": 3,
-        "color": "",
-        "id": "",
-        "centered": ""
-      }
+      "title": "Rule of Court Optional Sub-category",
+      "level": "",
+      "color": "",
+      "id": "",
+      "centered": ""
     },
     "divider": false,
     "prefix": "",
@@ -81,10 +79,18 @@
           }
         }
       },{
-        "path": "@atoms/11-text/paragraph.twig",
+        "path": "@organisms/by-author/rich-text.twig",
         "data": {
-          "paragraph" : {
-            "text": "This is a court rules page, and this is an optional description field. For shorter content, authors may choose to use only the overview field. For longer content, this may be a place to summarize findings or to provide a short introduction."
+          "richText": {
+            "property": "",
+            "rteElements": [{
+              "path": "@atoms/11-text/paragraph.twig",
+              "data": {
+                "paragraph" : {
+                  "text": "This is a court rules page, and this is an optional description field. For shorter content, authors may choose to use only the overview field. For longer content, this may be a place to summarize findings or to provide a short introduction."
+                }
+              }
+            }]
           }
         }
       }],
@@ -119,6 +125,7 @@
     "contents": [
       {
         "headerIndent": true,
+        "anchorLinks": true,
         "compHeading": {
           "title": "(a) Discovery Methods",
           "sub": false,
@@ -139,6 +146,7 @@
       },
       {
         "headerIndent": true,
+        "anchorLinks": true,
         "compHeading": {
           "title": "(b) Scope of Discovery",
           "sub": false,
@@ -547,14 +555,6 @@
                 "path": "@atoms/11-text/paragraph.twig",
                 "data": {
                   "paragraph": {
-                    "text": "<b><i>Optional Description of this policy</i></b>"
-                  }
-                }
-              },
-              {
-                "path": "@atoms/11-text/paragraph.twig",
-                "data": {
-                  "paragraph": {
                     "text": "Explicabo itaque possimus dignissimos? Repudiandae tempore, fugit illum? Iure error omnis eveniet eius iste molestias. Veritatis provident hic voluptate voluptatibus ullam accusantium, obcaecati tempora soluta praesentium accusamus sed dicta sapiente."
                   }
                 }
@@ -569,14 +569,6 @@
           "richText": {
             "property": "",
             "rteElements": [
-              {
-                "path": "@atoms/11-text/paragraph.twig",
-                "data": {
-                  "paragraph": {
-                    "text": "<b><i>Optional Description of this policy</i></b>"
-                  }
-                }
-              },
               {
                 "path": "@atoms/11-text/paragraph.twig",
                 "data": {
