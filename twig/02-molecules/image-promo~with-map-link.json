@@ -7,10 +7,10 @@
     },
     "tags": [{
       "label": "handicapped accessible",
-      "icon": "wheelchair"
+      "icon": "@atoms/05-icons/svg-wheelchair.twig"
     },{
       "label": "open now",
-      "icon": "open-now"
+      "icon": "@atoms/05-icons/svg-open-now.twig"
     }],
     "image": {
       "src":"../../assets/images/placeholder/190x107.png",

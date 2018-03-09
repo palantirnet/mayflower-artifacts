@@ -17,7 +17,7 @@
         "text": "Department of Conservation and Recreation"
       },
       "groups": [{
-        "icon": "phone",
+        "icon": "@atoms/05-icons/svg-phone.twig",
         "name": "Phone",
         "items": [{
           "type": "phone",
@@ -65,7 +65,7 @@
           "details":""
         }]
       },{
-        "icon": "laptop",
+        "icon": "@atoms/05-icons/svg-laptop.twig",
         "name": "Online",
         "hidden": "",
         "items": [{
@@ -92,7 +92,7 @@
           "details":""
         }]
       },{
-        "icon": "fax",
+        "icon": "@atoms/05-icons/svg-fax-icon.twig",
         "name": "Fax",
         "items": [{
           "type": "fax",
@@ -107,7 +107,7 @@
           "details":"Please allow 24 hours for a response"
         }]
       },{
-        "icon": "marker",
+        "icon": "@atoms/05-icons/svg-marker.twig",
         "name": "Address",
         "items": [{
           "type": "address",
@@ -131,7 +131,7 @@
         "text": "Department of Conservation and Recreation"
       },
       "groups": [{
-        "icon": "phone",
+        "icon": "@atoms/05-icons/svg-phone.twig",
         "name": "Phone",
         "items": [{
           "type": "phone",
@@ -179,7 +179,7 @@
           "details":""
         }]
       },{
-        "icon": "laptop",
+        "icon": "@atoms/05-icons/svg-laptop.twig",
         "name": "Online",
         "hidden": "",
         "items": [{
@@ -206,7 +206,7 @@
           "details":""
         }]
       },{
-        "icon": "fax",
+        "icon": "@atoms/05-icons/svg-fax-icon.twig",
         "name": "Fax",
         "items": [{
           "type": "fax",
@@ -221,7 +221,7 @@
           "details":"Please allow 24 hours for a response"
         }]
       },{
-        "icon": "marker",
+        "icon": "@atoms/05-icons/svg-marker.twig",
         "name": "Address",
         "items": [{
           "type": "address",

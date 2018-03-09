@@ -1,6 +1,6 @@
 {
   "contactGroup": {
-    "icon": "laptop",
+    "icon": "@atoms/05-icons/svg-laptop.twig",
     "name": "Online",
     "items": [{
       "type": "email",

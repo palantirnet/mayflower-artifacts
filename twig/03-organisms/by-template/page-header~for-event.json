@@ -16,17 +16,17 @@
       "items": [{
         "altText": "Follow us on Facebook",
         "href": "#",
-        "icon": "facebook",
+        "icon": "@atoms/05-icons/svg-facebook.twig",
         "linkType": "facebook"
       },{
         "altText": "Follow us on Twitter",
         "href": "#",
-        "icon": "twitter",
+        "icon": "@atoms/05-icons/svg-twitter.twig",
         "linkType": "twitter"
       },{
         "altText": "Follow us on LinkedIn",
         "href": "#",
-        "icon": "linkedin",
+        "icon": "@atoms/05-icons/svg-linkedin.twig",
         "linkType": "linkedin"
       }]
     },
@@ -70,8 +70,8 @@
     "widgets": [{
       "path": "@atoms/09-media/image.twig",
       "data": {
-        "image": {
-          "alt": "Mass Wildlife",
+        "image": { 
+          "alt": "Mass Wildlife", 
           "src": "../../assets/images/placeholder/190x220.png",
           "height": "220",
           "width": "190"

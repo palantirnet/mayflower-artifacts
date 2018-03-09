@@ -19,17 +19,17 @@
       "items": [{
         "altText": "Follow us on Facebook",
         "href": "#",
-        "icon": "facebook",
+        "icon": "@atoms/05-icons/svg-facebook.twig",
         "linkType": "facebook"
       },{
         "altText": "Follow us on Twitter",
         "href": "#",
-        "icon": "twitter",
+        "icon": "@atoms/05-icons/svg-twitter.twig",
         "linkType": "twitter"
       },{
         "altText": "Follow us on LinkedIn",
         "href": "#",
-        "icon": "linkedin",
+        "icon": "@atoms/05-icons/svg-linkedin.twig",
         "linkType": "linkedin"
       }]
     },
@@ -52,8 +52,8 @@
 
     "figure": {
       "align": "",
-      "image": {
-        "alt": "alt text",
+      "image": { 
+        "alt": "alt text", 
         "src": "../../assets/images/placeholder/820x460.png",
         "height": "",
         "width": ""
@@ -99,7 +99,7 @@
           "text": "Tom Lyons"
         },
         "groups": [{
-          "icon": "phone",
+          "icon": "@atoms/05-icons/svg-phone.twig",
           "name": "Phone",
           "items": [{
             "type": "phone",
@@ -114,7 +114,7 @@
             "details": ""
           }]
         },{
-          "icon": "laptop",
+          "icon": "@atoms/05-icons/svg-laptop.twig",
           "name": "Online",
           "hidden": "",
           "items": [{
@@ -130,7 +130,7 @@
             "details":""
           }]
         },{
-          "icon": "fax",
+          "icon": "@atoms/05-icons/svg-fax-icon.twig",
           "name": "Fax",
           "items": [{
             "type": "fax",
@@ -145,7 +145,7 @@
             "details":"Please allow 24 hours for a response"
           }]
         },{
-          "icon": "marker",
+          "icon": "@atoms/05-icons/svg-marker.twig",
           "name": "Address",
           "items": [{
             "type": "address",
@@ -169,7 +169,7 @@
           "text": "Betty White"
         },
         "groups": [{
-          "icon": "phone",
+          "icon": "@atoms/05-icons/svg-phone.twig",
           "name": "Phone",
           "items": [{
             "type": "phone",
@@ -184,7 +184,7 @@
             "details":"This line is open from 9 a.m. - 5 p.m., M-F"
           }]
         },{
-          "icon": "laptop",
+          "icon": "@atoms/05-icons/svg-laptop.twig",
           "name": "Online",
           "hidden": "",
           "items": [{
@@ -200,7 +200,7 @@
             "details":""
           }]
         },{
-          "icon": "fax",
+          "icon": "@atoms/05-icons/svg-fax-icon.twig",
           "name": "Fax",
           "items": [{
             "type": "fax",
@@ -215,7 +215,7 @@
             "details":"Please allow 24 hours for a response"
           }]
         },{
-          "icon": "marker",
+          "icon": "@atoms/05-icons/svg-marker.twig",
           "name": "Address",
           "items": [{
             "type": "address",
@@ -346,7 +346,7 @@
           "text": "Tom Lyons"
         },
         "groups": [{
-          "icon": "phone",
+          "icon": "@atoms/05-icons/svg-phone.twig",
           "name": "Phone",
           "items": [{
             "type": "phone",
@@ -361,7 +361,7 @@
             "details": ""
           }]
         },{
-          "icon": "laptop",
+          "icon": "@atoms/05-icons/svg-laptop.twig",
           "name": "Online",
           "hidden": "",
           "items": [{
