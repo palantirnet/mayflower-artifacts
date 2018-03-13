@@ -1,7 +1,7 @@
 {
   "downloadLink": {
     "iconSize": "small",
-    "icon": "doc-docx",
+    "icon": "@atoms/05-icons/svg-doc-docx.twig",
     "decorativeLink": {
       "text": "link using a small icon",
       "href": "#",

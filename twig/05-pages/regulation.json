@@ -226,7 +226,7 @@
       "downloadLinks": [{
         "downloadLink": {
           "iconSize": "",
-          "icon": "doc-pdf",
+          "icon": "@atoms/05-icons/svg-doc-pdf.twig",
           "decorativeLink": {
             "text": "Signed, official copy of this document",
             "href": "#",
@@ -257,7 +257,7 @@
           "text": "Rules & Regulations Bureau"
         },
         "groups": [{
-          "icon": "phone",
+          "icon": "@atoms/05-icons/svg-phone.twig",
           "name": "Phone",
           "items": [{
             "type": "phone",
@@ -272,7 +272,7 @@
             "details":""
           }]
         },{
-          "icon": "laptop",
+          "icon": "@atoms/05-icons/svg-laptop.twig",
           "name": "Online",
           "hidden": "",
           "items": [{
@@ -310,7 +310,7 @@
           "text": "Rules & Regulations Bureau"
         },
         "groups": [{
-          "icon": "laptop",
+          "icon": "@atoms/05-icons/svg-laptop.twig",
           "name": "Online",
           "hidden": "",
           "items": [{

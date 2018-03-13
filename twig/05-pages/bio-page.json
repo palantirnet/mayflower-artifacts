@@ -185,7 +185,7 @@
           "text": "Office of the State Treasurer"
         },
         "groups": [{
-          "icon": "phone",
+          "icon": "@atoms/05-icons/svg-phone.twig",
           "name": "Phone",
           "hidden": "",
           "items": [{
@@ -207,7 +207,7 @@
             }
           }]
         },{
-          "icon": "laptop",
+          "icon": "@atoms/05-icons/svg-laptop.twig",
           "name": "Online",
           "hidden": "",
           "items": [{
@@ -233,7 +233,7 @@
       },
       "items": [
         {
-          "icon": "twitter",
+          "icon": "@atoms/05-icons/svg-twitter.twig",
           "link": {
             "href": "https://twitter.com/",
             "text": "Twitter",

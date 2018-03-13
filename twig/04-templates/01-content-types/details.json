@@ -28,7 +28,7 @@
       "path": "@organisms/by-author/callout-time.twig",
       "data": {
         "calloutTime": {
-          "icon": "wait-time",
+          "icon": "@atoms/05-icons/svg-wait-time.twig",
           "text": "turn around time for completion"
         }
       }
@@ -86,7 +86,7 @@
           "chevron":""
         },
         "groups": [{
-          "icon": "phone",
+          "icon": "@atoms/05-icons/svg-phone.twig",
           "name": "Phone",
           "items": [{
             "type": "phone",
@@ -101,7 +101,7 @@
             "details":"This line is open from 9:00 a.m. - 5:00 p.m., M-F"
           }]
         },{
-          "icon": "laptop",
+          "icon": "@atoms/05-icons/svg-laptop.twig",
           "name": "Online",
           "hidden": "",
           "items": [{

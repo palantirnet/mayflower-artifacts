@@ -2,16 +2,16 @@
   "locationIcons": {
     "title": "Location Features",
     "icons": [{
-      "icon":"transit",
+      "path":"@atoms/05-icons/svg-transit.twig",
       "name":"Transit Friendly"
     },{
-      "icon":"castle",
+      "path":"@atoms/05-icons/svg-castle.twig",
       "name":"Historic Site"
     },{
-      "icon":"wheelchair",
+      "path":"@atoms/05-icons/svg-wheelchair.twig",
       "name":"Wheelchair Accessible"
     },{
-      "icon":"dog",
+      "path":"@atoms/05-icons/svg-dog.twig",
       "name":"Dogs Allowed"
     }]
   }

@@ -48,13 +48,13 @@
 
       "locationIcons": {
         "icons": [{
-          "icon":"credit",
+          "path":"@atoms/05-icons/svg-credit.twig",
           "name":"credit card"
         },{
-          "icon":"check",
+          "path":"@atoms/05-icons/svg-check.twig",
           "name":"check"
         },{
-          "icon":"cash",
+          "path":"@atoms/05-icons/svg-cash.twig",
           "name":"cash"
         }]
       }
@@ -74,7 +74,7 @@
           "text": "Name of Agency or Organization"
         },
         "groups": [{
-          "icon": "phone",
+          "icon": "@atoms/05-icons/svg-phone.twig",
           "name": "Phone",
           "items": [{
             "type": "phone",
@@ -89,7 +89,7 @@
             "details":""
           }]
         },{
-          "icon": "laptop",
+          "icon": "@atoms/05-icons/svg-laptop.twig",
           "name": "Online",
           "hidden": "",
           "items": [{

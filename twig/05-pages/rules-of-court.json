@@ -442,7 +442,7 @@
         {
           "downloadLink": {
             "iconSize": "",
-            "icon": "doc-pdf",
+            "icon": "@atoms/05-icons/svg-doc-pdf.twig",
             "decorativeLink": {
               "text": "PDF download item",
               "href": "#",
@@ -456,7 +456,7 @@
         {
           "downloadLink": {
             "iconSize": "",
-            "icon": "doc-docx",
+            "icon": "@atoms/05-icons/svg-doc-docx.twig",
             "decorativeLink": {
               "text": "Word download item",
               "href": "#",
@@ -470,7 +470,7 @@
         {
           "downloadLink": {
             "iconSize": "",
-            "icon": "laptop",
+            "icon": "@atoms/05-icons/svg-laptop.twig",
             "decorativeLink": {
               "text": "Online form or information page",
               "href": "#",
@@ -502,7 +502,7 @@
           },
           "groups": [
             {
-              "icon": "phone",
+              "icon": "@atoms/05-icons/svg-phone.twig",
               "name": "Phone",
               "items": [
                 {
@@ -520,7 +520,7 @@
               ]
             },
             {
-              "icon": "laptop",
+              "icon": "@atoms/05-icons/svg-laptop.twig",
               "name": "Online",
               "hidden": "",
               "items": [
@@ -631,7 +631,7 @@
           },
           "groups": [
             {
-              "icon": "laptop",
+              "icon": "@atoms/05-icons/svg-laptop.twig",
               "name": "Online",
               "hidden": "",
               "items": [

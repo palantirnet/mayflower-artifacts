@@ -14,7 +14,7 @@ socialLinks: {
     href: 
       type: string(url) / required,
     icon: 
-      type: string(icon name for path and id) / required
+      type: string(path to icon) / required
     altText:
       type: string / required for accessibilty
   }

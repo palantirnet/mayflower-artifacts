@@ -5,8 +5,7 @@
         <div class="ma__utility-nav__translate">
           <div id="google_translate_element"></div>
           <div class="ma__utility-nav__translate-icon">
-            {% set icon = "lat-lon-globe" %}
-            {% include "@atoms/05-icons/svg.twig" %}
+            {% include "@atoms/05-icons/svg-lat-lon-globe.twig" %}
           </div>
         </div>
       </li>
@@ -16,8 +15,7 @@
         <a class="ma__utility-nav__link"
           href="#"
           aria-label="{% if item.ariaLabelText %}{{ item.ariaLabelText }}{% else %}{{ item.text }}{% endif %}">
-          {% set icon = item.icon %}
-          {% include "@atoms/05-icons/svg.twig"%}
+          {% include item.icon %}
           <span>
             {{ item.text }}
           </span>
@@ -26,8 +24,7 @@
           <div class="ma__utility-nav__container">
             <div class="ma__utility-nav__content-title">
               <button class="ma__utility-nav__close js-close-util-nav"><span>{{ item.closeText }}</span><span class="ma__utility-nav__close-icon" aria-hidden="true">+</span></button>
-              {% set icon = item.icon %}
-              {% include "@atoms/05-icons/svg.twig"%}
+              {% include item.icon %}
               <span>{{ item.text }}</span>
             </div>
             <div class="ma__utility-nav__content-body">

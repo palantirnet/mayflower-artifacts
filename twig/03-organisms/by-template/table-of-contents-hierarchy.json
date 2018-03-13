@@ -1,8 +1,8 @@
 {
   "tableOfContentsHierarchy": {
-    "coloredHeading": {
+    "title": {
       "text": "Table of Contents",
-      "color": "green"
+      "colored": true
     },
     "sections": [
       {
@@ -24,7 +24,7 @@
       },
       {
         "iconSize": "",
-        "icon": "doc-docx",
+        "icon": "@atoms/05-icons/svg-doc-docx.twig",
         "decorativeLink": {
           "text": "Link to a file for download",
           "href": "#",

@@ -27,7 +27,7 @@
               "details": ""
             }]
           },{
-            "icon": "phone",
+            "icon": "@atoms/05-icons/svg-phone.twig",
             "name": "Phone",
             "items": [{
               "type": "phone",
@@ -39,7 +39,7 @@
               "details":"This line is open from 9 a.m. - 5 p.m., M-F"
             }]
           },{
-            "icon": "laptop",
+            "icon": "@atoms/05-icons/svg-laptop.twig",
             "name": "Online",
             "items": [{
               "type": "email",
@@ -78,16 +78,16 @@
       "data": {
         "locationIcons": {
           "icons": [{
-            "path":"transit",
+            "path":"@atoms/05-icons/svg-transit.twig",
             "name":"Transit Friendly"
           },{
-            "path":"castle",
+            "path":"@atoms/05-icons/svg-castle.twig",
             "name":"Historic Site"
           },{
-            "path":"wheelchair",
+            "path":"@atoms/05-icons/svg-wheelchair.twig",
             "name":"Wheelchair Accessible"
           },{
-            "path":"dog",
+            "path":"@atoms/05-icons/svg-dog.twig",
             "name":"Dogs Allowed"
           }]
         }

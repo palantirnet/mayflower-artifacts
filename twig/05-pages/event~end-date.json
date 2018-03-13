@@ -16,17 +16,17 @@
       "items": [{
         "altText": "Follow us on Facebook",
         "href": "#",
-        "icon": "facebook",
+        "icon": "@atoms/05-icons/svg-facebook.twig",
         "linkType": "facebook"
       },{
         "altText": "Follow us on Twitter",
         "href": "#",
-        "icon": "twitter",
+        "icon": "@atoms/05-icons/svg-twitter.twig",
         "linkType": "twitter"
       },{
         "altText": "Follow us on LinkedIn",
         "href": "#",
-        "icon": "linkedin",
+        "icon": "@atoms/05-icons/svg-linkedin.twig",
         "linkType": "linkedin"
       }]
     },
@@ -160,7 +160,7 @@
           "text": "Peter Van Demark"
         },
         "groups": [{
-          "icon": "phone",
+          "icon": "@atoms/05-icons/svg-phone.twig",
           "name": "Phone",
           "items": [{
             "type": "phone",
@@ -175,7 +175,7 @@
             "details":""
           }]
         },{
-          "icon": "laptop",
+          "icon": "@atoms/05-icons/svg-laptop.twig",
           "name": "Online",
           "hidden": "",
           "items": [{
@@ -242,7 +242,7 @@
           "text": "Peter Van Demark"
         },
         "groups": [{
-          "icon": "phone",
+          "icon": "@atoms/05-icons/svg-phone.twig",
           "name": "Phone",
           "items": [{
             "type": "phone",
@@ -257,7 +257,7 @@
             "details":""
           }]
         },{
-          "icon": "laptop",
+          "icon": "@atoms/05-icons/svg-laptop.twig",
           "name": "Online",
           "hidden": "",
           "items": [{
