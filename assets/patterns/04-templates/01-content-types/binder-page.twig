@@ -1,3 +1,4 @@
+
 {# site header #}
 {% block header %}{% endblock %}
 
@@ -5,12 +6,7 @@
   <div class="pre-content">
     {% block preContent %}
       {% include "@organisms/by-template/content-eyebrow.twig" %}
-      {% if illustratedHeader %}
-        {% include "@organisms/by-template/illustrated-header.twig" %}
-      {% endif %}
-      {% if pageHeader %}
-        {% include "@organisms/by-template/page-header.twig" %}
-      {% endif %}
+      {% include "@organisms/by-template/illustrated-header.twig" %}
     {% endblock %}
   </div>
   <div class="ma__binder-page__content">
