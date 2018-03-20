@@ -10,6 +10,7 @@
 		"url": "git@github.com:jonathantneal/svg4everybody.git"
 	},
 	"main": [
-		"dist/svg4everybody.js"
+		"dist/svg4everybody.js",
+		"dist/svg4everybody.legacy.js"
 	]
 }

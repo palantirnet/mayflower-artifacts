@@ -3,7 +3,7 @@
 <div class="ma__download-link {{ sizeClass }}">
   {% if downloadLink.icon %}
     <div class="ma__download-link__icon">
-      {{ icon(downloadLink.icon) }}
+      {% include downloadLink.icon %}
     </div>
   {% endif %}
   <div class="ma__download-link__title">

@@ -148,7 +148,7 @@
       "downloadLinks": [{
         "downloadLink": {
           "iconSize": "",
-          "icon": "doc-pdf",
+          "icon": "@atoms/05-icons/svg-doc-pdf.twig",
           "decorativeLink": {
             "text": "PDF download item",
             "href": "#",
