@@ -1,8 +1,8 @@
 {
   "tableOfContentsHierarchy": {
-    "title": {
+    "coloredHeading": {
       "text": "Table of Contents",
-      "colored": true
+      "color": "green"
     },
     "sections": [
       {

@@ -3,26 +3,24 @@
     "contentTitle": "",
     "titleContext": ""
   },
-  "preContent": {
-    "pageHeader": {
-      "divider": false,
-      "title": "Why is habitat management needed?",
-      "subTitle": "MassWildlife's Habitat Programs are designed to help wildlife that rely on open habitats (grassland, shrubland, and young forests).",
-      "headerTags": {
-        "label": "More about:",
-        "taxonomyTerms": [
-          {
-            "href": "#",
-            "text": "MassWildlife"
-          },
-          {
-            "href": "#",
-            "text": "MassWildlife's Habitat Programs"
-          }
-        ]
-      },
-      "widgets": null
-    }
+  "pageHeader": {
+    "divider": false,
+    "title": "Why is habitat management needed?",
+    "subTitle": "MassWildlife's Habitat Programs are designed to help wildlife that rely on open habitats (grassland, shrubland, and young forests).",
+    "headerTags": {
+      "label": "More about:",
+      "taxonomyTerms": [
+        {
+          "href": "#",
+          "text": "MassWildlife"
+        },
+        {
+          "href": "#",
+          "text": "MassWildlife's Habitat Programs"
+        }
+      ]
+    },
+    "widgets": null
   },
   "pageContent": {
     "section1": {
@@ -71,7 +69,7 @@
               "downloadLinks": [{
                 "downloadLink": {
                   "iconSize": "",
-                  "icon": "@atoms/05-icons/svg-doc-pdf.twig",
+                  "icon": "doc-pdf",
                   "decorativeLink": {
                     "text": "PDF resource item",
                     "href": "#",
@@ -84,7 +82,7 @@
               },{
                 "downloadLink": {
                   "iconSize": "",
-                  "icon": "@atoms/05-icons/svg-laptop.twig",
+                  "icon": "laptop",
                   "decorativeLink": {
                     "text": "Link to an online form",
                     "href": "#",
