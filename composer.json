@@ -1,5 +1,5 @@
 {
-    "name": "palantirnet/mayflower-artifacts",
+    "name": "massgov/mayflower-artifacts",
     "description": "This repository is the product of the built artifact from massgov/mayflower",
     "type": "library",
     "license": "proprietary",
