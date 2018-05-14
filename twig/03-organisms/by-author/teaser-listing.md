@@ -22,12 +22,6 @@ teaserListing: {
   },
   stacked:
     type: boolean / optional,
-  expandable:
-    type: boolean / optional,
-  accordionLabel:
-    type: string / required if expandable is true
-  itemsLabel:
-    type: string / required if expandable is true
   featuredItems: [{
     type: generalTeaser / optional
   }],
