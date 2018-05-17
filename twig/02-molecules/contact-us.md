@@ -31,12 +31,6 @@ contactUs: {
   subTitle: {
     type: columnHeading / optional
   }
-  showMore: {
-    type: boolean / optional
-  }
-  hideSecondary: {
-    type: boolean / optional
-  }
   level:
     type: number / optional
   contactName:
