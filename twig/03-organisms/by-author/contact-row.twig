@@ -1,4 +1,4 @@
-<section class="ma__contact-row js-accordion">
+<section class="ma__contact-row">
   {% set contactHeading = 2 %}
   {% set contactHeading = (contactRow.compHeading.level ? : contactHeading) + 1 %}
 
@@ -12,31 +12,50 @@
     {% endif %}
   {% endblock %}
 
-  {% if contactRow.primaryContact %}
-    <div class="ma__contact-row__primary">
-      {% block primaryContactGroup %}
-        {% set contactGroup = contactRow.primaryContact|merge({"level": contactHeading}) %}
-        {% include "@molecules/contact-group.twig" %}
+  {% if contactRow.addressContacts %}
+  {{contactRow.addressContacts.hasAccordion}}
+    <div class="ma__contact-row__address-contacts {{contactRow.addressContacts.hasAccordion ? 'js-accordion': ''}}">
+      {% block addressContacts %}
+        {% for contact in contactRow.addressContacts.contacts %}
+          {% set contactGroup = contact|merge({"level": contactHeading}) %}
+          {% include "@molecules/contact-group.twig" %}
+        {% endfor %}
+      {% endblock %}
+      <div class="ma__contact-row__expand">
+        <button type="button" class="js-accordion-link">
+          <span>more</span><span>fewer</span> addresses
+        </button>
+      </div>
+    </div>
+  {% endif %}
+
+  {% if contactRow.phoneFaxContacts %}
+    <div class="ma__contact-row__phone-fax-contacts {{contactRow.phoneFaxContacts.hasAccordion ? 'js-accordion': ''}}">
+      {% block phoneFaxContacts %}
+        {% for contact in contactRow.phoneFaxContacts.contacts %}
+          {% set contactGroup = contact|merge({"level": contactHeading}) %}
+          {% include "@molecules/contact-group.twig" %}
+        {% endfor %}
+      {% endblock %}
+      <div class="ma__contact-row__expand">
+        <button type="button" class="js-accordion-link">
+          <span>more</span><span>less</span> contact info
+        </button>
+      </div>
+    </div>
+  {% endif %}
+
+  {% if contactRow.onlineContacts %}
+    <div class="ma__contact-row__online-contacts">
+      {% block onlineContacts %}
+        {% for contact in contactRow.onlineContacts.contacts %}
+          {% set contactGroup = contact|merge({"level": contactHeading}) %}
+          {% include "@molecules/contact-group.twig" %}
+        {% endfor %}
       {% endblock %}
     </div>
   {% endif %}
 
-  <div class="ma__contact-row__additional {{ contactRow.hasManyAdditional ? 'has-many': ''}}">
-    {% block additionalContacts %}
-      {% for contact in contactRow.additionalContacts %}
-        {% set contactGroup = contact|merge({"level": contactHeading}) %}
-        {% include "@molecules/contact-group.twig" %}
-      {% endfor %}
-    {% endblock %}
-  </div>
-
-  {% if contactRow.hasManyAdditional %}
-    <div class="ma__contact-row__expand">
-      <button type="button" class="js-accordion-link">
-        Show <span>more</span><span>less</span> contact info
-      </button>
-    </div>
-  {% endif %}
 
   {% if contactRow.moreLink %}
     <div class="ma__contact-row__more-info">
