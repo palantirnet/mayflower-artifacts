@@ -13,7 +13,20 @@
             "height": "130",
             "width": "230"
         },
-        "hasManyAdditional": true,
+        "primaryContact": {
+            "icon": "marker",
+            "name": "Address",
+            "items": [
+                {
+                    "type": "address",
+                    "label": "",
+                    "value": "One Ashburton Place, 11th Floor, Boston, MA 02108",
+                    "link": "https://www.google.com/maps/place/1+Ashburton+Pl,+Boston,+MA+02108",
+                    "details": ""
+                }
+            ]
+        },
+        "hasManyAdditional": false,
         "additionalContacts": [
             {
                 "icon": "phone",
@@ -66,55 +79,6 @@
                             "property": ""
                         },
                         "details": ""
-                    }
-                ]
-            },
-            {
-                "icon": "laptop",
-                "name": "Online",
-                "hidden": "",
-                "items": [
-                    {
-                        "type": "email",
-                        "property": "",
-                        "label": "Email:",
-                        "link": {
-                            "href": "email@email.com",
-                            "text": "email@email.com",
-                            "info": "",
-                            "property": ""
-                        },
-                        "details": ""
-                    },
-                    {
-                        "type": "online",
-                        "property": "",
-                        "label": "Web:",
-                        "link": {
-                            "href": "#",
-                            "text": "Contact Form",
-                            "info": "",
-                            "property": ""
-                        },
-                        "details": ""
-                    }
-                ]
-            },
-            {
-                "icon": "fax-icon",
-                "name": "Fax",
-                "items": [
-                    {
-                        "type": "fax",
-                        "property": "",
-                        "label": "Main:",
-                        "link": {
-                            "href": "+14134994262",
-                            "text": "(413) 499-4262",
-                            "info": "",
-                            "property": ""
-                        },
-                        "details": "Please allow 24 hours for a response"
                     }
                 ]
             }
