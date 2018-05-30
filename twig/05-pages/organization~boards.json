@@ -1,6 +1,6 @@
 {
   "urlPath": "/?p=pages-ORG-Health-Services",
-  "COMMENT": "****PRECONTENT COMPONENTS****",
+  "COMMENT": "****PAGE CONTENT COMPONENTS****",
   "pageBanner": {
     "bgWide": "../../assets/images/placeholder/1600x400.png",
     "bgNarrow": "../../assets/images/placeholder/800x400.png",
@@ -9,611 +9,115 @@
     "title": "Forester Licensing Board",
     "titleSubText": "(FLB)"
   },
-
-  "COMMENT": "****PAGE CONTENT COMPONENTS****",
-
   "short_description": {
-     "richText": {
-      "rteElements": [{
-        "path": "@atoms/04-headings/heading-4.twig",
-        "data": {
-           "heading4" : {
-            "text": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. "
+    "richText": {
+      "rteElements": [
+        {
+          "path": "@atoms/04-headings/heading-4.twig",
+          "data": {
+            "heading4": {
+              "text": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. "
+            }
           }
         }
-      }]
+      ]
     }
   },
   "stackedRows": [
     {
-      "title": "About Us",
+      "title": "",
       "id": "",
       "pageContent": [
         {
-          "path": "@organisms/by-author/rich-text.twig",
+          "path": "@organisms/by-author/featured-item-mosaic.twig",
           "data": {
-            "richText": {
-              "rteElements": [
-
-                {
-                  "path": "@atoms/11-text/paragraph.twig",
-                  "data": {
-                    "paragraph": {
-                      "text": "We do things related to forestry, including investigations, consultations, development of forest management plans, supervision of forest management, forest utilization, forest economics or other forestry activity carried out in connection with public or private lands."
-                    }
-                  }
-                },
-                {
-                  "path": "@atoms/11-text/paragraph.twig",
-                  "data": {
-                    "paragraph": {
-                      "text": "<a href=\"http://www.google.com\">Additional Information</a>"
-                    }
-                  }
-                }
-              ]
-            }
-          }
-        }
-      ],
-      "sideBar": [{
-        "path": "@molecules/icon-links.twig",
-        "data": {
-          "iconLinks": {
-            "compHeading": {
-              "title": "Social",
-              "sub": true,
-              "color": "",
-              "id": "",
-              "centered": "",
-              "titleContext": "links for Executive Office of Health and Human Services"
-            },
-            "items": [{
-              "icon": "twitter",
-              "link": {
-                "href": "https://twitter.com/MassHHS",
-                "text": "@MassHHS",
-                "chevron": ""
-              }
-            },{
-              "icon": "flickr",
-              "link": {
-                "href": "https://www.flickr.com/photos/mass_hhs/",
-                "text": "Mass_HHS",
-                "chevron": ""
-              }
-            },{
-              "icon": "blog",
-              "link": {
-                "href": "https://blog.mass.gov/hhs",
-                "text": "blog.mass.gov/hhs",
-                "chevron": ""
-              }
-            }]
-          }
-        }
-      }]
-    },{
-      "title": "Board Members",
-      "id": "",
-      "pageContent": [
-        {
-          "path": "@organisms/by-author/teaser-listing.twig",
-          "data": {
-            "teaserListing": {
-              "stacked": false,
-              "contained": true,
-              "shownNumber": 6,
-              "expandable": true,
-              "moreItemsLabel": "Show all members",
-              "lessItemsLabel": "Show fewer members",
-              "gridTwoColumns": true,
-              "featuredItems": [
-                {
-                  "layout": "stacked",
-                  "image": {
-                    "src": "../../assets/images/placeholder/172x228.png",
-                    "alt": "placeholder image",
-                    "width": "172",
-                    "height": "228"
-                  },
-                  "eyebrow": "Featured Board Member",
-                  "title": {
-                    "text": "Featured Board Member's Name",
-                    "info": "",
-                    "property": ""
-                  },
-                  "emphasizedText": [
-                    "Featured Board Member's Title"
-                  ],
-                  "contents": [{
-                    "path": "@atoms/11-text/paragraph.twig",
-                    "data": {
-                      "paragraph": {
-                        "text": "Optional descriptive text. Vel impetus tamquam equidem cu, ei possit possim constituam eos, mea ut rebum iudico. Soluta bonorum partiendo est ne, nominati postulant argumentum ius no, quo ne quaeque sanctus."
-                      }
-                    }
-                  }]
-                },
-                {
-                  "layout": "stacked",
-                  "image": {
-                    "src": "../../assets/images/placeholder/172x228.png",
-                    "alt": "placeholder image",
-                    "width": "172",
-                    "height": "228"
-                  },
-                  "eyebrow": "Featured Board Member",
-                  "title": {
-                    "href": "#",
-                    "text": "Featured Board Member's Name",
-                    "info": "",
-                    "property": ""
-                  },
-                  "emphasizedText": [
-                    "Featured Board Member's title"
-                  ],
-                  "contents": [
-                    {
-                      "path": "@atoms/11-text/paragraph.twig",
-                      "data": {
-                        "paragraph": {
-                          "text": "Optional descriptive text. Vel impetus tamquam equidem cu, ei possit possim constituam eos, mea ut rebum iudico. Soluta bonorum partiendo est ne, nominati postulant argumentum ius no, quo ne quaeque sanctus."
-                        }
-                      }
-                    }
-                  ]
-                }
-              ],
-              "items": [
-                {
-                  "layout": "inline-image",
-                  "image": {
-                    "src": "../../assets/images/placeholder/72x96.png",
-                    "alt": "placeholder image",
-                    "width": "72",
-                    "height": "96"
-                  },
-                  "eyebrow": "Board member",
-                  "title": {
-                    "href": "#",
-                    "text": "Sally Testperson",
-                    "info": "",
-                    "property": ""
-                  },
-                  "emphasizedText": [
-                    "Awesome board member"
-                  ],
-                  "contents": [
-                    {
-                      "path": "@atoms/11-text/paragraph.twig",
-                      "data": {
-                        "paragraph": {
-                          "text": "Optional descriptive text. Vel impetus tamquam equidem cu, ei possit possim constituam eos, mea ut rebum iudico. Soluta bonorum partiendo est ne, nominati postulant argumentum ius no, quo ne quaeque sanctus."
-                        }
-                      }
-                    }
-                  ]
-                },
-                {
-                  "layout": "inline-image",
-                  "image": {
-                    "src": "../../assets/images/placeholder/72x96.png",
-                    "alt": "placeholder image",
-                    "width": "72",
-                    "height": "96"
-                  },
-                  "eyebrow": "Board Member",
-                  "title": {
-                    "text": "Board Member's Name",
-                    "info": "",
-                    "property": ""
-                  },
-                  "emphasizedText": [
-                    "Member's title"
-                  ],
-                  "contents": [{
-                    "path": "@atoms/11-text/paragraph.twig",
-                    "data": {
-                      "paragraph": {
-                        "text": "Optional descriptive text. Vel impetus tamquam equidem cu, ei possit possim constituam eos, mea ut rebum iudico. Soluta bonorum partiendo est ne, nominati postulant argumentum ius no, quo ne quaeque sanctus."
-                      }
-                    }
-                  }]
-                },
-                {
-                  "layout": "inline-image",
-                  "image": {
-                    "src": "../../assets/images/placeholder/72x96.png",
-                    "alt": "placeholder image",
-                    "width": "72",
-                    "height": "96"
-                  },
-                  "eyebrow": "Board Member",
-                  "title": {
-                    "text": "Board Member's Name",
-                    "info": "",
-                    "property": ""
-                  },
-                  "emphasizedText": [
-                    "Board Member's Title"
-                  ],
-                  "contents": [{
-                    "path": "@atoms/11-text/paragraph.twig",
-                    "data": {
-                      "paragraph": {
-                        "text": "Optional descriptive text. Vel impetus tamquam equidem cu, ei possit possim constituam eos, mea ut rebum iudico. Soluta bonorum partiendo est ne, nominati postulant argumentum ius no, quo ne quaeque sanctus."
-                      }
-                    }
-                  }]
-                },
-                {
-                  "layout": "inline-image",
-                  "image": {
-                    "src": "../../assets/images/placeholder/72x96.png",
-                    "alt": "placeholder image",
-                    "width": "72",
-                    "height": "96"
-                  },
-                  "eyebrow": "Board Member",
-                  "title": {
-                    "text": "Board Member's Name",
-                    "info": "",
-                    "property": ""
-                  },
-                  "emphasizedText": [
-                    "Board Member's Title"
-                  ],
-                  "contents": [{
-                    "path": "@atoms/11-text/paragraph.twig",
-                    "data": {
-                      "paragraph": {
-                        "text": "Optional descriptive text. Vel impetus tamquam equidem cu, ei possit possim constituam eos, mea ut rebum iudico. Soluta bonorum partiendo est ne, nominati postulant argumentum ius no, quo ne quaeque sanctus."
-                      }
-                    }
-                  }]
-                }
-              ]
-            }
-          }
-        },
-        {
-          "path": "@organisms/by-author/teaser-listing.twig",
-          "data": {
-            "teaserListing": {
-              "stacked": false,
-              "contained": true,
-              "gridTwoColumns": true,
-              "shownNumber": 2,
-              "expandable": true,
-              "moreItemsLabel": "Show all members",
-              "lessItemsLabel": "Show fewer members",
+            "featuredItemMosaic": {
               "compHeading": {
-                "title": "Subsection of boards",
+                "title": "Featured Items",
                 "sub": "",
                 "color": "",
                 "id": "",
-                "level": 3,
                 "centered": ""
               },
-              "description": {
-                "text": "Optional descriptive text. Vel impetus tamquam equidem cu, ei possit possim constituam eos, mea ut rebum iudico. Soluta bonorum partiendo est ne, nominati postulant argumentum ius no, quo ne quaeque sanctus."
-              },
-              "items": [
-                {
-                  "layout": "inline-image",
-                  "image": {
-                    "src": "../../assets/images/placeholder/72x96.png",
-                    "alt": "placeholder image",
-                    "width": "72",
-                    "height": "96"
-                  },
-                  "eyebrow": "Board member",
-                  "title": {
+              "columns": [
+                [
+                  {
                     "href": "#",
-                    "text": "Sally Testperson",
-                    "info": "",
-                    "property": ""
-                  },
-                  "emphasizedText": [
-                    "Awesome board member"
-                  ],
-                  "contents": [
-                    {
-                      "path": "@atoms/11-text/paragraph.twig",
-                      "data": {
-                        "paragraph": {
-                          "text": "Optional descriptive text. Vel impetus tamquam equidem cu, ei possit possim constituam eos, mea ut rebum iudico. Soluta bonorum partiendo est ne, nominati postulant argumentum ius no, quo ne quaeque sanctus."
-                        }
-                      }
+                    "text": "First action",
+                    "image": {
+                      "alt": "alt text",
+                      "src": "../../assets/images/placeholder/400x300.png",
+                      "height": "",
+                      "width": ""
+                    },
+                    "featuredImage": {
+                      "alt": "alt text",
+                      "src": "../../assets/images/placeholder/300x500.png",
+                      "height": "",
+                      "width": ""
                     }
-                  ]
-                },
-                {
-                  "layout": "inline-image",
-                  "image": {
-                    "src": "../../assets/images/placeholder/72x96.png",
-                    "alt": "placeholder image",
-                    "width": "72",
-                    "height": "96"
-                  },
-                  "eyebrow": "Board Member",
-                  "title": {
-                    "text": "Board Member's Name",
-                    "info": "",
-                    "property": ""
-                  },
-                  "emphasizedText": [
-                    "Member's title"
-                  ],
-                  "contents": [{
-                    "path": "@atoms/11-text/paragraph.twig",
-                    "data": {
-                      "paragraph": {
-                        "text": "Optional descriptive text. Vel impetus tamquam equidem cu, ei possit possim constituam eos, mea ut rebum iudico. Soluta bonorum partiendo est ne, nominati postulant argumentum ius no, quo ne quaeque sanctus."
-                      }
+                  }
+                ],
+                [
+                  {
+                    "href": "#",
+                    "text": "Second action which has a very long title",
+                    "image": {
+                      "alt": "alt text",
+                      "src": "../../assets/images/placeholder/400x300.png",
+                      "height": "",
+                      "width": ""
                     }
-                  }]
-                },
-                {
-                  "layout": "inline-image",
-                  "image": {
-                    "src": "../../assets/images/placeholder/72x96.png",
-                    "alt": "placeholder image",
-                    "width": "72",
-                    "height": "96"
                   },
-                  "eyebrow": "Board Member",
-                  "title": {
-                    "text": "Board Member's Name",
-                    "info": "",
-                    "property": ""
-                  },
-                  "emphasizedText": [
-                    "Board Member's Title"
-                  ],
-                  "contents": [{
-                    "path": "@atoms/11-text/paragraph.twig",
-                    "data": {
-                      "paragraph": {
-                        "text": "Optional descriptive text. Vel impetus tamquam equidem cu, ei possit possim constituam eos, mea ut rebum iudico. Soluta bonorum partiendo est ne, nominati postulant argumentum ius no, quo ne quaeque sanctus."
-                      }
+                  {
+                    "href": "#",
+                    "text": "Third action",
+                    "image": {
+                      "alt": "alt text",
+                      "src": "../../assets/images/placeholder/400x300.png",
+                      "height": "",
+                      "width": ""
                     }
-                  }]
-                },
-                {
-                  "layout": "inline-image",
-                  "image": {
-                    "src": "../../assets/images/placeholder/72x96.png",
-                    "alt": "placeholder image",
-                    "width": "72",
-                    "height": "96"
-                  },
-                  "eyebrow": "Board Member",
-                  "title": {
-                    "text": "Board Member's Name",
-                    "info": "",
-                    "property": ""
-                  },
-                  "emphasizedText": [
-                    "Board Member's Title"
-                  ],
-                  "contents": [{
-                    "path": "@atoms/11-text/paragraph.twig",
-                    "data": {
-                      "paragraph": {
-                        "text": "Optional descriptive text. Vel impetus tamquam equidem cu, ei possit possim constituam eos, mea ut rebum iudico. Soluta bonorum partiendo est ne, nominati postulant argumentum ius no, quo ne quaeque sanctus."
-                      }
+                  }
+                ],
+                [
+                  {
+                    "href": "#",
+                    "text": "Fourth action",
+                    "image": {
+                      "alt": "alt text",
+                      "src": "../../assets/images/placeholder/400x300.png",
+                      "height": "",
+                      "width": ""
                     }
-                  }]
-                },
-                {
-                  "layout": "inline-image",
-                  "image": {
-                    "src": "../../assets/images/placeholder/72x96.png",
-                    "alt": "placeholder image",
-                    "width": "72",
-                    "height": "96"
                   },
-                  "eyebrow": "Board Member",
-                  "title": {
-                    "text": "Board Member's Name",
-                    "info": "",
-                    "property": ""
-                  },
-                  "emphasizedText": [
-                    "Board Member's Title"
-                  ],
-                  "contents": [{
-                    "path": "@atoms/11-text/paragraph.twig",
-                    "data": {
-                      "paragraph": {
-                        "text": "Optional descriptive text. Vel impetus tamquam equidem cu, ei possit possim constituam eos, mea ut rebum iudico. Soluta bonorum partiendo est ne, nominati postulant argumentum ius no, quo ne quaeque sanctus."
-                      }
+                  {
+                    "href": "#",
+                    "text": "Fifth action is truncated because it's over 60 characters...",
+                    "image": {
+                      "alt": "alt text",
+                      "src": "../../assets/images/placeholder/400x300.png",
+                      "height": "",
+                      "width": ""
                     }
-                  }]
-                },
-                {
-                  "layout": "inline-image",
-                  "image": {
-                    "src": "../../assets/images/placeholder/72x96.png",
-                    "alt": "placeholder image",
-                    "width": "72",
-                    "height": "96"
-                  },
-                  "eyebrow": "Board Member",
-                  "title": {
-                    "text": "Board Member's Name",
-                    "info": "",
-                    "property": ""
-                  },
-                  "emphasizedText": [
-                    "Board Member's Title"
-                  ],
-                  "contents": [{
-                    "path": "@atoms/11-text/paragraph.twig",
-                    "data": {
-                      "paragraph": {
-                        "text": "Optional descriptive text. Vel impetus tamquam equidem cu, ei possit possim constituam eos, mea ut rebum iudico. Soluta bonorum partiendo est ne, nominati postulant argumentum ius no, quo ne quaeque sanctus."
-                      }
-                    }
-                  }]
-                }
-              ]
+                  }
+                ]
+              ],
+              "more": {
+                "href": "#",
+                "text": "view all events at this location",
+                "info": "",
+                "chevron": true
+              }
             }
           }
         }
-      ],
-      "sideBar": null
+      ]
     },{
       "title": "",
       "id": "",
       "pageContent": [
         {
-          "path": "@organisms/by-author/event-listing.twig",
-          "data": {
-            "eventListing": {
-              "grid": true,
-              "compHeading":{
-                "title": "Upcoming Events"
-              },
-              "events":[{
-                "title": {
-                  "href": "#",
-                  "text": "Forester Licensing Board monthly meeting",
-                  "info": "",
-                  "property": ""
-                },
-                "location": "",
-                "date": {
-                  "summary": "March 30, 2018",
-                  "startMonth": "Mar",
-                  "startDay": "30",
-                  "endMonth": "",
-                  "endDay": ""
-                },
-                "time": "",
-                "description": "Event description. Lorem ipsum dolor sit amet, consectetur adipisicing elit."
-              },{
-                "title": {
-                  "href": "#",
-                  "text": "Forester Licensing Board monthly meeting",
-                  "info": "",
-                  "property": ""
-                },
-                "location": "",
-                "date": {
-                  "summary": "April 30, 2018",
-                  "startMonth": "Apr",
-                  "startDay": "30",
-                  "endMonth": "",
-                  "endDay": ""
-                },
-                "time": "",
-                "description": "Event description. Lorem ipsum dolor sit amet, consectetur adipisicing elit."
-              }],
-              "more":{
-                "href": "#",
-                "text": "See all events",
-                "chevron": true,
-                "label": ""
-              }
-            }
-          }
-        }
-      ],
-      "sidebar": null
-
-    },
-    {
-      "title": "",
-      "id": "",
-      "pageContent": [
-        {
-          "path": "@organisms/by-author/action-finder.twig",
-          "data": {
-            "actionFinder": {
-              "id": "GUID831741781374893",
-              "bgWide": "../../assets/images/placeholder/1600x600-lighthouse-blur.jpg",
-              "bgNarrow": "../../assets/images/placeholder/800x800.png",
-              "title": "What would you like to do?",
-              "featuredHeading": "Featured services",
-              "generalHeading": "More services",
-              "seeAll": {
-                "type": "external",
-                "href": "#",
-                "text": "See all services",
-                "info": ""
-              },
-              "featuredLinks": [
-                {
-                  "image": "",
-                  "text": "Request Public Records",
-                  "type": "external",
-                  "href": "#"
-                },{
-                  "image": "",
-                  "text": "Top Action/Service",
-                  "type": "external",
-                  "href": "#"
-                },{
-                  "image": "",
-                  "text": "Top Action/Service",
-                  "type": "external",
-                  "href": "#"
-                },{
-                  "image": "",
-                  "text": "Top Action/Service",
-                  "type": "external",
-                  "href": "#"
-                },{
-                  "image": "",
-                  "text": "Top Action/Service",
-                  "type": "external",
-                  "href": "#"
-                },{
-                  "image": "",
-                  "text": "Top Action/Service",
-                  "type": "external",
-                  "href": "#"
-                }
-              ],
-              "links": [
-                {
-                  "image": "",
-                  "text": "Service 1",
-                  "href": "#"
-                },
-                {
-                  "image": "",
-                  "text": "Service 2",
-                  "href": "#"
-                },
-                {
-                  "image": "",
-                  "text": "Service 3",
-                  "href": "#",
-                  "label": ""
-                },
-                {
-                  "image": "",
-                  "text": "Service 4",
-                  "href": "#"
-                },
-                {
-                  "image": "",
-                  "text": "Service 5",
-                  "href": "#"
-                },
-                {
-                  "image": "",
-                  "text": "Service 6",
-                  "href": "#"
-                }
-              ]
-            }
-          }
-        },{
           "path": "@organisms/by-author/contact-row.twig",
           "data": {
             "contactRow": {
@@ -747,6 +251,789 @@
                       "details": "Please allow 24 hours for a response"
                     }
                   ]
+                }
+              ]
+            }
+          }
+        }]
+    },{
+      "title": "About Us",
+      "id": "",
+      "pageContent": [
+        {
+          "path": "@organisms/by-author/rich-text.twig",
+          "data": {
+            "richText": {
+              "rteElements": [
+                {
+                  "path": "@atoms/11-text/paragraph.twig",
+                  "data": {
+                    "paragraph": {
+                      "text": "We do things related to forestry, including investigations, consultations, development of forest management plans, supervision of forest management, forest utilization, forest economics or other forestry activity carried out in connection with public or private lands."
+                    }
+                  }
+                },
+                {
+                  "path": "@atoms/11-text/paragraph.twig",
+                  "data": {
+                    "paragraph": {
+                      "text": "<a href=\"http://www.google.com\">Additional Information</a>"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "sideBar": [
+        {
+          "path": "@molecules/icon-links.twig",
+          "data": {
+            "iconLinks": {
+              "compHeading": {
+                "title": "Social",
+                "sub": true,
+                "color": "",
+                "id": "",
+                "centered": "",
+                "titleContext": "links for Executive Office of Health and Human Services"
+              },
+              "items": [
+                {
+                  "icon": "twitter",
+                  "link": {
+                    "href": "https://twitter.com/MassHHS",
+                    "text": "@MassHHS",
+                    "chevron": ""
+                  }
+                },
+                {
+                  "icon": "flickr",
+                  "link": {
+                    "href": "https://www.flickr.com/photos/mass_hhs/",
+                    "text": "Mass_HHS",
+                    "chevron": ""
+                  }
+                },
+                {
+                  "icon": "blog",
+                  "link": {
+                    "href": "https://blog.mass.gov/hhs",
+                    "text": "blog.mass.gov/hhs",
+                    "chevron": ""
+                  }
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "title": "",
+      "id": "",
+      "pageContent": [
+        {
+          "path": "@organisms/by-author/image-link-list.twig",
+          "data": {
+            "imageLinkList": {
+              "blocks": true,
+              "compHeading": {
+                "title": "Our Organizations",
+                "sub": "",
+                "color": "",
+                "id": "",
+                "centered": false
+              },
+              "itemPluralName": "organizations",
+              "description": {
+                "rteElements": [
+                  {
+                    "path": "@atoms/11-text/paragraph.twig",
+                    "data": {
+                      "paragraph": {
+                        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, perspiciatis, similique? Reprehenderit vel praesentium est, tempora animi mollitia non quae. Quasi, inventore. Dolores maxime consequatur dolorum voluptatem, natus dolorem blanditiis."
+                      }
+                    }
+                  }
+                ]
+              },
+              "links": [
+                {
+                  "href": "#",
+                  "text": "Lorem ipsum dolor sit amet.",
+                  "info": "",
+                  "image": {
+                    "src": "../../assets/images/placeholder/250x250.png",
+                    "alt": "logo"
+                  }
+                },
+                {
+                  "href": "#",
+                  "text": "Lorem ipsum dolor sit amet.",
+                  "info": "",
+                  "image": {
+                    "src": "../../assets/images/placeholder/250x250.png",
+                    "alt": "logo"
+                  }
+                },
+                {
+                  "href": "#",
+                  "text": "Lorem ipsum dolor sit amet.",
+                  "info": "",
+                  "image": {
+                    "src": "../../assets/images/placeholder/250x250.png",
+                    "alt": "logo"
+                  }
+                },
+                {
+                  "href": "#",
+                  "text": "Lorem ipsum dolor sit amet.",
+                  "info": ""
+                },
+                {
+                  "href": "#",
+                  "text": "Lorem ipsum dolor sit amet, consectetur.",
+                  "info": "",
+                  "image": {
+                    "src": "../../assets/images/placeholder/250x250.png",
+                    "alt": "logo"
+                  }
+                },
+                {
+                  "href": "#",
+                  "text": "Lorem ipsum dolor sit.",
+                  "info": "",
+                  "image": {
+                    "src": "../../assets/images/placeholder/250x250.png",
+                    "alt": "logo"
+                  }
+                },
+                {
+                  "href": "#",
+                  "text": "Lorem ipsum dolor",
+                  "info": "",
+                  "image": {
+                    "src": "../../assets/images/placeholder/250x250.png",
+                    "alt": "logo"
+                  }
+                },
+                {
+                  "href": "#",
+                  "text": "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.",
+                  "info": ""
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "title": "Board Members",
+      "id": "",
+      "pageContent": [
+        {
+          "path": "@organisms/by-author/teaser-listing.twig",
+          "data": {
+            "teaserListing": {
+              "stacked": false,
+              "contained": true,
+              "shownNumber": 6,
+              "expandable": true,
+              "moreItemsLabel": "Show all members",
+              "lessItemsLabel": "Show fewer members",
+              "gridTwoColumns": true,
+              "featuredItems": [
+                {
+                  "layout": "stacked",
+                  "image": {
+                    "src": "../../assets/images/placeholder/172x228.png",
+                    "alt": "placeholder image",
+                    "width": "172",
+                    "height": "228"
+                  },
+                  "eyebrow": "Featured Board Member",
+                  "title": {
+                    "text": "Featured Board Member's Name",
+                    "info": "",
+                    "property": ""
+                  },
+                  "emphasizedText": [
+                    "Featured Board Member's Title"
+                  ],
+                  "contents": [
+                    {
+                      "path": "@atoms/11-text/paragraph.twig",
+                      "data": {
+                        "paragraph": {
+                          "text": "Optional descriptive text. Vel impetus tamquam equidem cu, ei possit possim constituam eos, mea ut rebum iudico. Soluta bonorum partiendo est ne, nominati postulant argumentum ius no, quo ne quaeque sanctus."
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "layout": "stacked",
+                  "image": {
+                    "src": "../../assets/images/placeholder/172x228.png",
+                    "alt": "placeholder image",
+                    "width": "172",
+                    "height": "228"
+                  },
+                  "eyebrow": "Featured Board Member",
+                  "title": {
+                    "href": "#",
+                    "text": "Featured Board Member's Name",
+                    "info": "",
+                    "property": ""
+                  },
+                  "emphasizedText": [
+                    "Featured Board Member's title"
+                  ],
+                  "contents": [
+                    {
+                      "path": "@atoms/11-text/paragraph.twig",
+                      "data": {
+                        "paragraph": {
+                          "text": "Optional descriptive text. Vel impetus tamquam equidem cu, ei possit possim constituam eos, mea ut rebum iudico. Soluta bonorum partiendo est ne, nominati postulant argumentum ius no, quo ne quaeque sanctus."
+                        }
+                      }
+                    }
+                  ]
+                }
+              ],
+              "items": [
+                {
+                  "layout": "inline-image",
+                  "image": {
+                    "src": "../../assets/images/placeholder/72x96.png",
+                    "alt": "placeholder image",
+                    "width": "72",
+                    "height": "96"
+                  },
+                  "eyebrow": "Board member",
+                  "title": {
+                    "href": "#",
+                    "text": "Sally Testperson",
+                    "info": "",
+                    "property": ""
+                  },
+                  "emphasizedText": [
+                    "Awesome board member"
+                  ],
+                  "contents": [
+                    {
+                      "path": "@atoms/11-text/paragraph.twig",
+                      "data": {
+                        "paragraph": {
+                          "text": "Optional descriptive text. Vel impetus tamquam equidem cu, ei possit possim constituam eos, mea ut rebum iudico. Soluta bonorum partiendo est ne, nominati postulant argumentum ius no, quo ne quaeque sanctus."
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "layout": "inline-image",
+                  "image": {
+                    "src": "../../assets/images/placeholder/72x96.png",
+                    "alt": "placeholder image",
+                    "width": "72",
+                    "height": "96"
+                  },
+                  "eyebrow": "Board Member",
+                  "title": {
+                    "text": "Board Member's Name",
+                    "info": "",
+                    "property": ""
+                  },
+                  "emphasizedText": [
+                    "Member's title"
+                  ],
+                  "contents": [
+                    {
+                      "path": "@atoms/11-text/paragraph.twig",
+                      "data": {
+                        "paragraph": {
+                          "text": "Optional descriptive text. Vel impetus tamquam equidem cu, ei possit possim constituam eos, mea ut rebum iudico. Soluta bonorum partiendo est ne, nominati postulant argumentum ius no, quo ne quaeque sanctus."
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "layout": "inline-image",
+                  "image": {
+                    "src": "../../assets/images/placeholder/72x96.png",
+                    "alt": "placeholder image",
+                    "width": "72",
+                    "height": "96"
+                  },
+                  "eyebrow": "Board Member",
+                  "title": {
+                    "text": "Board Member's Name",
+                    "info": "",
+                    "property": ""
+                  },
+                  "emphasizedText": [
+                    "Board Member's Title"
+                  ],
+                  "contents": [
+                    {
+                      "path": "@atoms/11-text/paragraph.twig",
+                      "data": {
+                        "paragraph": {
+                          "text": "Optional descriptive text. Vel impetus tamquam equidem cu, ei possit possim constituam eos, mea ut rebum iudico. Soluta bonorum partiendo est ne, nominati postulant argumentum ius no, quo ne quaeque sanctus."
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "layout": "inline-image",
+                  "image": {
+                    "src": "../../assets/images/placeholder/72x96.png",
+                    "alt": "placeholder image",
+                    "width": "72",
+                    "height": "96"
+                  },
+                  "eyebrow": "Board Member",
+                  "title": {
+                    "text": "Board Member's Name",
+                    "info": "",
+                    "property": ""
+                  },
+                  "emphasizedText": [
+                    "Board Member's Title"
+                  ],
+                  "contents": [
+                    {
+                      "path": "@atoms/11-text/paragraph.twig",
+                      "data": {
+                        "paragraph": {
+                          "text": "Optional descriptive text. Vel impetus tamquam equidem cu, ei possit possim constituam eos, mea ut rebum iudico. Soluta bonorum partiendo est ne, nominati postulant argumentum ius no, quo ne quaeque sanctus."
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        },
+        {
+          "path": "@organisms/by-author/teaser-listing.twig",
+          "data": {
+            "teaserListing": {
+              "stacked": false,
+              "contained": true,
+              "gridTwoColumns": true,
+              "shownNumber": 2,
+              "expandable": true,
+              "moreItemsLabel": "Show all members",
+              "lessItemsLabel": "Show fewer members",
+              "compHeading": {
+                "title": "Subsection of boards",
+                "sub": "",
+                "color": "",
+                "id": "",
+                "level": 3,
+                "centered": ""
+              },
+              "description": {
+                "text": "Optional descriptive text. Vel impetus tamquam equidem cu, ei possit possim constituam eos, mea ut rebum iudico. Soluta bonorum partiendo est ne, nominati postulant argumentum ius no, quo ne quaeque sanctus."
+              },
+              "items": [
+                {
+                  "layout": "inline-image",
+                  "image": {
+                    "src": "../../assets/images/placeholder/72x96.png",
+                    "alt": "placeholder image",
+                    "width": "72",
+                    "height": "96"
+                  },
+                  "eyebrow": "Board member",
+                  "title": {
+                    "href": "#",
+                    "text": "Sally Testperson",
+                    "info": "",
+                    "property": ""
+                  },
+                  "emphasizedText": [
+                    "Awesome board member"
+                  ],
+                  "contents": [
+                    {
+                      "path": "@atoms/11-text/paragraph.twig",
+                      "data": {
+                        "paragraph": {
+                          "text": "Optional descriptive text. Vel impetus tamquam equidem cu, ei possit possim constituam eos, mea ut rebum iudico. Soluta bonorum partiendo est ne, nominati postulant argumentum ius no, quo ne quaeque sanctus."
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "layout": "inline-image",
+                  "image": {
+                    "src": "../../assets/images/placeholder/72x96.png",
+                    "alt": "placeholder image",
+                    "width": "72",
+                    "height": "96"
+                  },
+                  "eyebrow": "Board Member",
+                  "title": {
+                    "text": "Board Member's Name",
+                    "info": "",
+                    "property": ""
+                  },
+                  "emphasizedText": [
+                    "Member's title"
+                  ],
+                  "contents": [
+                    {
+                      "path": "@atoms/11-text/paragraph.twig",
+                      "data": {
+                        "paragraph": {
+                          "text": "Optional descriptive text. Vel impetus tamquam equidem cu, ei possit possim constituam eos, mea ut rebum iudico. Soluta bonorum partiendo est ne, nominati postulant argumentum ius no, quo ne quaeque sanctus."
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "layout": "inline-image",
+                  "image": {
+                    "src": "../../assets/images/placeholder/72x96.png",
+                    "alt": "placeholder image",
+                    "width": "72",
+                    "height": "96"
+                  },
+                  "eyebrow": "Board Member",
+                  "title": {
+                    "text": "Board Member's Name",
+                    "info": "",
+                    "property": ""
+                  },
+                  "emphasizedText": [
+                    "Board Member's Title"
+                  ],
+                  "contents": [
+                    {
+                      "path": "@atoms/11-text/paragraph.twig",
+                      "data": {
+                        "paragraph": {
+                          "text": "Optional descriptive text. Vel impetus tamquam equidem cu, ei possit possim constituam eos, mea ut rebum iudico. Soluta bonorum partiendo est ne, nominati postulant argumentum ius no, quo ne quaeque sanctus."
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "layout": "inline-image",
+                  "image": {
+                    "src": "../../assets/images/placeholder/72x96.png",
+                    "alt": "placeholder image",
+                    "width": "72",
+                    "height": "96"
+                  },
+                  "eyebrow": "Board Member",
+                  "title": {
+                    "text": "Board Member's Name",
+                    "info": "",
+                    "property": ""
+                  },
+                  "emphasizedText": [
+                    "Board Member's Title"
+                  ],
+                  "contents": [
+                    {
+                      "path": "@atoms/11-text/paragraph.twig",
+                      "data": {
+                        "paragraph": {
+                          "text": "Optional descriptive text. Vel impetus tamquam equidem cu, ei possit possim constituam eos, mea ut rebum iudico. Soluta bonorum partiendo est ne, nominati postulant argumentum ius no, quo ne quaeque sanctus."
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "layout": "inline-image",
+                  "image": {
+                    "src": "../../assets/images/placeholder/72x96.png",
+                    "alt": "placeholder image",
+                    "width": "72",
+                    "height": "96"
+                  },
+                  "eyebrow": "Board Member",
+                  "title": {
+                    "text": "Board Member's Name",
+                    "info": "",
+                    "property": ""
+                  },
+                  "emphasizedText": [
+                    "Board Member's Title"
+                  ],
+                  "contents": [
+                    {
+                      "path": "@atoms/11-text/paragraph.twig",
+                      "data": {
+                        "paragraph": {
+                          "text": "Optional descriptive text. Vel impetus tamquam equidem cu, ei possit possim constituam eos, mea ut rebum iudico. Soluta bonorum partiendo est ne, nominati postulant argumentum ius no, quo ne quaeque sanctus."
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "layout": "inline-image",
+                  "image": {
+                    "src": "../../assets/images/placeholder/72x96.png",
+                    "alt": "placeholder image",
+                    "width": "72",
+                    "height": "96"
+                  },
+                  "eyebrow": "Board Member",
+                  "title": {
+                    "text": "Board Member's Name",
+                    "info": "",
+                    "property": ""
+                  },
+                  "emphasizedText": [
+                    "Board Member's Title"
+                  ],
+                  "contents": [
+                    {
+                      "path": "@atoms/11-text/paragraph.twig",
+                      "data": {
+                        "paragraph": {
+                          "text": "Optional descriptive text. Vel impetus tamquam equidem cu, ei possit possim constituam eos, mea ut rebum iudico. Soluta bonorum partiendo est ne, nominati postulant argumentum ius no, quo ne quaeque sanctus."
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "sideBar": null
+    },
+    {
+      "title": "",
+      "id": "",
+      "pageContent": [
+        {
+          "path": "@organisms/by-author/event-listing.twig",
+          "data": {
+            "eventListing": {
+              "grid": true,
+              "compHeading": {
+                "title": "Upcoming Events"
+              },
+              "events": [
+                {
+                  "title": {
+                    "href": "#",
+                    "text": "Forester Licensing Board monthly meeting",
+                    "info": "",
+                    "property": ""
+                  },
+                  "location": "",
+                  "date": {
+                    "summary": "March 30, 2018",
+                    "startMonth": "Mar",
+                    "startDay": "30",
+                    "endMonth": "",
+                    "endDay": ""
+                  },
+                  "time": "",
+                  "description": "Event description. Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+                },
+                {
+                  "title": {
+                    "href": "#",
+                    "text": "Forester Licensing Board monthly meeting",
+                    "info": "",
+                    "property": ""
+                  },
+                  "location": "",
+                  "date": {
+                    "summary": "April 30, 2018",
+                    "startMonth": "Apr",
+                    "startDay": "30",
+                    "endMonth": "",
+                    "endDay": ""
+                  },
+                  "time": "",
+                  "description": "Event description. Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+                }
+              ],
+              "more": {
+                "href": "#",
+                "text": "See all events",
+                "chevron": true,
+                "label": ""
+              }
+            }
+          }
+        }
+      ],
+      "sidebar": null
+    },
+    {
+      "title": "",
+      "id": "",
+      "pageContent": [
+        {
+          "path": "@organisms/by-author/link-list.twig",
+          "data": {
+            "linkList": {
+              "compHeading": {
+                "title": "Reports & Information",
+                "sub": "",
+                "color": "",
+                "id": "",
+                "centered": ""
+              },
+              "links": [
+                {
+                  "href": "#",
+                  "text": "Document Name"
+                },
+                {
+                  "href": "#",
+                  "text": "Document Name"
+                },
+                {
+                  "href": "#",
+                  "text": "Document Name"
+                },
+                {
+                  "href": "#",
+                  "text": "Document Name"
+                },
+                {
+                  "href": "#",
+                  "text": "Document Name"
+                },
+                {
+                  "href": "#",
+                  "text": "Document Name"
+                },
+                {
+                  "href": "#",
+                  "text": "Document Name"
+                },
+                {
+                  "href": "#",
+                  "text": "Document Name"
+                },
+                {
+                  "href": "#",
+                  "text": "Document Name"
+                },
+                {
+                  "href": "#",
+                  "text": "Document Name"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "title": "",
+      "id": "",
+      "pageContent": [
+        {
+          "path": "@organisms/by-author/action-finder.twig",
+          "data": {
+            "actionFinder": {
+              "id": "GUID831741781374893",
+              "bgWide": "../../assets/images/placeholder/1600x600-lighthouse-blur.jpg",
+              "bgNarrow": "../../assets/images/placeholder/800x800.png",
+              "title": "What would you like to do?",
+              "featuredHeading": "Featured services",
+              "generalHeading": "More services",
+              "seeAll": {
+                "type": "external",
+                "href": "#",
+                "text": "See all services",
+                "info": ""
+              },
+              "featuredLinks": [
+                {
+                  "image": "",
+                  "text": "Request Public Records",
+                  "type": "external",
+                  "href": "#"
+                },
+                {
+                  "image": "",
+                  "text": "Top Action/Service",
+                  "type": "external",
+                  "href": "#"
+                },
+                {
+                  "image": "",
+                  "text": "Top Action/Service",
+                  "type": "external",
+                  "href": "#"
+                },
+                {
+                  "image": "",
+                  "text": "Top Action/Service",
+                  "type": "external",
+                  "href": "#"
+                },
+                {
+                  "image": "",
+                  "text": "Top Action/Service",
+                  "type": "external",
+                  "href": "#"
+                },
+                {
+                  "image": "",
+                  "text": "Top Action/Service",
+                  "type": "external",
+                  "href": "#"
+                }
+              ],
+              "links": [
+                {
+                  "image": "",
+                  "text": "Service 1",
+                  "href": "#"
+                },
+                {
+                  "image": "",
+                  "text": "Service 2",
+                  "href": "#"
+                },
+                {
+                  "image": "",
+                  "text": "Service 3",
+                  "href": "#",
+                  "label": ""
+                },
+                {
+                  "image": "",
+                  "text": "Service 4",
+                  "href": "#"
+                },
+                {
+                  "image": "",
+                  "text": "Service 5",
+                  "href": "#"
+                },
+                {
+                  "image": "",
+                  "text": "Service 6",
+                  "href": "#"
                 }
               ]
             }
@@ -1120,6 +1407,65 @@
             }
           }
         },
+                {
+          "path": "@organisms/by-author/mapped-locations.twig",
+          "data": {
+            "mappedLocations": {
+              "compHeading": {
+                "title": "Locations",
+                "sub": "",
+                "color": "",
+                "id": "",
+                "centered": "",
+                "titleContext": "of Executive Office of Health and Human Services"
+              },
+              "link": {
+                "href": "/patterns/05-pages-Map-listing-human-services/05-pages-Map-listing-human-services.html",
+                "text": "Location Details",
+                "chevron": "true"
+              },
+              "googleMap": {
+                "map": {
+                  "center": {
+                    "lat": 42.366565,
+                    "lng": -71.058940
+                  },
+                  "zoom": 16
+                },
+                "markers": [
+                  {
+                    "position": {
+                      "lat": 42.366565,
+                      "lng": -71.058940
+                    },
+                    "label": "A",
+                    "infoWindow": {
+                      "name": "Department of Conservation and Recreation",
+                      "phone": "16176261250",
+                      "fax": "16176261351",
+                      "email": "mass.parks@state.ma.us",
+                      "address": "251 Causeway Street, Suite 900\nBoston, MA 02114-2104"
+                    }
+                  },
+                  {
+                    "position": {
+                      "lat": 42.358795,
+                      "lng": -71.063858
+                    },
+                    "label": "B",
+                    "infoWindow": {
+                      "name": "Department of Recreation and Fun",
+                      "phone": "16176261250",
+                      "fax": "",
+                      "email": "mass.parks@state.ma.us",
+                      "address": "24 Beacon St\nBoston, MA 02133"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
         {
           "path": "@organisms/by-author/link-list.twig",
           "data": {
@@ -1151,7 +1497,8 @@
                 {
                   "href": "#",
                   "text": "Related Board 2"
-                },{
+                },
+                {
                   "href": "#",
                   "text": "Related Board 3"
                 }
