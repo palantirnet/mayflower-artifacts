@@ -68,7 +68,7 @@
         {% endif %}
       {% endif %}
     {% endblock %}
-    {% if teaserListing.more %}
+    {% if teaserListing.items|length > shownNumber %}
       <div class="ma__teaser-listing__more">
         {% set link = teaserListing.more %}
         {% include "@atoms/11-text/link.twig" %}
