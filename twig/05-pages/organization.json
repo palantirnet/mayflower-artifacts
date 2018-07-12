@@ -47,6 +47,33 @@
     "title": "Executive Office of Health and Human Services",
     "titleSubText": "(EOHHS)"
   },
+  "organizationNavigation": {
+    "orgNavTitle": "Executive Office of Energy and Environmental Affairs",
+    "orgNavAbbrev": "EOEEA",
+    "orgNav": [{
+      "title": "I want to...",
+      "subNav": "true"
+    },{
+      "active": true,
+      "title": "About",
+      "subNav": "true"
+    },{
+      "title": "Contact Us",
+      "subNav": "true"
+    },{
+      "title": "Our Organizations",
+      "subNav": ""
+    },{
+      "title": "News",
+      "subNav": ""
+    },{
+      "title": "Events",
+      "subNav": ""
+    },{
+      "title": "Locations",
+      "subNav": ""
+    }]
+  },
   "short_description": {
     "richText": {
       "rteElements": [

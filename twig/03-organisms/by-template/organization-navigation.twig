@@ -1,0 +1,46 @@
+<section class="ma__organization-navigation">
+  <div class="ma__organization-navigation--inner-wrapper">
+    <div class="ma__organization-navigation__mobile-toggle">
+      <span class="mobile-toggle-label">{{ organizationNavigation.orgNavTitle }}</span>
+      <span class="mobile-toggle-close"></span>
+    </div>
+    <div class="ma__organization-navigation__search">
+      <button class="ma__organization-navigation__search--toggle search--toggle-open js-toggle-open">{{ icon('search') }} Search this organization</button>
+      <div class="ma__organization-navigation__search--wrapper">
+        <div class="form-label">{{ organizationNavigation.orgNavAbbrev }}</div>
+        <form action="#" class="ma__form js-organization-navigation__search">
+          <input
+              id="organization-navigation-search"
+              class="ma__form js-organization-navigation__search-input"
+              placeholder="Search {{ organizationNavigation.orgNavTitle }}"
+              type="text" 
+          />
+          {% include "@atoms/01-buttons/button-search.twig" %}
+        </form>
+        <button class="ma__organization-navigation__search--toggle search--toggle-close js-toggle-close">Close</button>
+      </div>
+    </div>
+    <ul class="ma__organization-navigation__items">
+      {% for nav in organizationNavigation.orgNav %}
+        {% set buttonId =  'button' ~ loop.index %}
+        {% set menuId =  'menu' ~ loop.index %}
+        <li class="ma__organization-navigation__item{% if nav.subNav %} has-subnav{% endif %}">
+        <button 
+          id="{{ buttonId }}" 
+          {% if nav.subNav %}class="js-subnav-toggle"{% endif %}
+          {{ nav.subNav ? 'aria-haspopup="true" aria-expanded="false"' : '' }}>
+            {{ nav.title }}
+        </button>
+        {% if nav.subNav %}
+          <div id="{{menuId}}" class="ma__organization-navigation__subitem">
+            <p>submenu</p>
+          </div>         
+        {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+    <div class="ma__organization-navigation__mobile-login ma__organization-navigation__item">
+      <button> Log in to</button>
+    </div>
+  </div>
+</section>
