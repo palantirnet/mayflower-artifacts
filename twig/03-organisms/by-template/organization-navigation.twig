@@ -13,8 +13,7 @@
               id="organization-navigation-search"
               class="ma__form js-organization-navigation__search-input"
               placeholder="Search {{ organizationNavigation.orgNavTitle }}"
-              type="text" 
-          />
+              type="text" />
           {% include "@atoms/01-buttons/button-search.twig" %}
         </form>
         <button class="ma__organization-navigation__search--toggle search--toggle-close js-toggle-close">Close</button>
@@ -32,8 +31,30 @@
             {{ nav.title }}
         </button>
         {% if nav.subNav %}
-          <div id="{{menuId}}" class="ma__organization-navigation__subitem">
-            <p>submenu</p>
+          <div id="{{menuId}}" class="ma__organization-navigation__subitems {{ nav.section }}">
+            {% if nav.section == "i-want-to" %}
+              <div class="ma__organization-navigation__subitem">
+                {% set findService = nav.subNav.findService  %}
+                {% set learnAbout = nav.subNav.learnAbout %}
+                {% include "@organisms/by-template/org-nav-i-want-to-menu.twig" %}
+              </div>
+            {% endif %}
+            
+
+            {% if nav.section == "about" %}
+              <div class="ma__organization-navigation__subitem">
+                {% set  linkList = nav.subNav.linkList %}
+                {% include "@organisms/by-author/link-list.twig" %}
+              </div>
+            {% endif %}
+
+            {% if nav.section == "contact-us" %}
+              <div class="ma__organization-navigation__subitem">
+                {% set contactRow = nav.subnav.menuContactRow %}
+                {% set customItems = nav.subNav.customItems %}
+                {% include "@organisms/by-template/org-nav-contact-menu.twig" %}  
+              </div>
+            {% endif %}
           </div>         
         {% endif %}
         </li>

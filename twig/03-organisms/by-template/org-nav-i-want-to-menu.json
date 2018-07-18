@@ -1,5 +1,5 @@
 {
-  "find_service": {
+  "findService": {
     "linkList" : {
       "compHeading": {
         "title": "Find a service or task",
@@ -23,7 +23,7 @@
       }]
     }
   },
-  "learn_about": {
+  "learnAbout": {
     "linkList" : {
       "compHeading": {
         "title": "Learn more about...",
