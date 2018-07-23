@@ -32,29 +32,34 @@
         </button>
         {% if nav.subNav %}
           <div id="{{menuId}}" class="ma__organization-navigation__subitems {{ nav.section }}">
-            {% if nav.section == "i-want-to" %}
-              <div class="ma__organization-navigation__subitem">
-                {% set findService = nav.subNav.findService  %}
-                {% set learnAbout = nav.subNav.learnAbout %}
-                {% include "@organisms/by-template/org-nav-i-want-to-menu.twig" %}
-              </div>
-            {% endif %}
+            {% block iWantTo %}
+              {% if nav.section == "i-want-to" %}
+                <div class="ma__organization-navigation__subitem">
+                  {% set findService = nav.subNav.findService  %}
+                  {% set learnAbout = nav.subNav.learnAbout %}
+                  {% include "@organisms/by-template/org-nav-i-want-to-menu.twig" %}
+                </div>
+              {% endif %}
+            {% endblock %}
             
+            {% block about %}
+              {% if nav.section == "about" %}
+                <div class="ma__organization-navigation__subitem">
+                  {% set  linkList = nav.subNav.linkList %}
+                  {% include "@organisms/by-author/link-list.twig" %}
+                </div>
+              {% endif %}
+            {% endblock %}
 
-            {% if nav.section == "about" %}
-              <div class="ma__organization-navigation__subitem">
-                {% set  linkList = nav.subNav.linkList %}
-                {% include "@organisms/by-author/link-list.twig" %}
-              </div>
-            {% endif %}
-
-            {% if nav.section == "contact-us" %}
-              <div class="ma__organization-navigation__subitem">
-                {% set contactRow = nav.subnav.menuContactRow %}
-                {% set customItems = nav.subNav.customItems %}
-                {% include "@organisms/by-template/org-nav-contact-menu.twig" %}  
-              </div>
-            {% endif %}
+            {% block contactUs %}
+              {% if nav.section == "contact-us" %}
+                <div class="ma__organization-navigation__subitem">
+                  {% set contactRow = nav.subnav.menuContactRow %}
+                  {% set customItems = nav.subNav.customItems %}
+                  {% include "@organisms/by-template/org-nav-contact-menu.twig" %}
+                </div>
+              {% endif %}
+            {% endblock %}
           </div>         
         {% endif %}
         </li>
