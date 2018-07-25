@@ -2,10 +2,7 @@
 <div class="ma__org-nav-contact-us">
   <div class="ma__org-nav-contact-us__contact-row">
   {% block contactTopRow %}
-    {% for item in menuContactRow.items %}
-    {% set contactUs = item.contactUs %}
-    {% include "@molecules/contact-us.twig" %}
-    {% endfor %}
+  
   {% endblock %}
   </div>
   <div class="ma__org-nav-contact-us__custom-options">
