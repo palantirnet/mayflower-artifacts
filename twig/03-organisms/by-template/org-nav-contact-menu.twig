@@ -1,38 +1,40 @@
 
 <div class="ma__org-nav-contact-us">
   <div class="ma__org-nav-contact-us__contact-row">
+  {% block contactTopRow %}
     {% for item in menuContactRow.items %}
     {% set contactUs = item.contactUs %}
     {% include "@molecules/contact-us.twig" %}
     {% endfor %}
+  {% endblock %}
   </div>
   <div class="ma__org-nav-contact-us__custom-options">
-    {% if customItems.findContact.link.href %}
-      {% block findContact %}
-      <div class="custom-options__find-contact custom-option-item">
-      <span class="custom-option-item__label">{{ icon(customItems.findContact.icon) }} {{ customItems.findContact.title }}</span>
-      <a href="{{ customItems.findContact.link.href }}">{{ customItems.findContact.link.text }}</a>
-      </div>
-      {% endblock %}
-    {% endif %}
+    {% block findContact %}
+      {% if customItems.findContact.link.href %}
+        <div class="custom-options__find-contact custom-option-item">
+        <span class="custom-option-item__label">{{ icon(customItems.findContact.icon) }} {{ customItems.findContact.title }}</span>
+        <a href="{{ customItems.findContact.link.href }}">{{ customItems.findContact.link.text }}</a>
+        </div>
+      {% endif %}
+    {% endblock %}
 
-    {% if  customItems.newsletter.link.href %}
-      {% block getUpdates %}
-      <div class="custom-options__get-updates custom-option-item">
-      <span class="custom-option-item__label">{{ icon(customItems.newsletter.icon) }} {{ customItems.newsletter.title }}</span>
-      
-      <a href="{{ customItems.newsletter.link.href }}">{{ customItems.newsletter.link.text }}</a>
-      </div>
-      {% endblock %}
-    {% endif %}
+    {% block getUpdates %}
+      {% if  customItems.newsletter.link.href %}
+        <div class="custom-options__get-updates custom-option-item">
+        <span class="custom-option-item__label">{{ icon(customItems.newsletter.icon) }} {{ customItems.newsletter.title }}</span>
+        
+        <a href="{{ customItems.newsletter.link.href }}">{{ customItems.newsletter.link.text }}</a>
+        </div>  
+      {% endif %}
+    {% endblock %}
 
-    {% if customItems.publicRecords.link.href %}
-      {% block recordsRequest %}
-      <div class="custom-options__prr custom-option-item">
-      <span class="custom-option-item__label">{{ icon(customItems.publicRecords.icon) }} {{ customItems.publicRecords.title }}</span>
-      <a href="{{ customItems.publicRecords.link.href }}">{{ customItems.publicRecords.link.text }}</a>
-      </div>
-      {% endblock %}
-    {% endif %}
+    {% block recordsRequest %}
+      {% if customItems.publicRecords.link.href %}
+        <div class="custom-options__prr custom-option-item">
+        <span class="custom-option-item__label">{{ icon(customItems.publicRecords.icon) }} {{ customItems.publicRecords.title }}</span>
+        <a href="{{ customItems.publicRecords.link.href }}">{{ customItems.publicRecords.link.text }}</a>
+        </div>
+      {% endif %}
+    {% endblock %}
   </div>
 </div> 
