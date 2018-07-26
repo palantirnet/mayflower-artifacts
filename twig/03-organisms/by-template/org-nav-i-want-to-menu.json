@@ -6,7 +6,7 @@
         "sub": "true"
       },
       "description": null,
-      "stacked": false,
+      "stacked": true,
       "hideBullets": true,
       "links" : [{
         "href":"#",
@@ -20,7 +20,12 @@
         "href":"#",
         "text":"Lorem ipsum dolor sit.",
         "info": ""
-      }]
+      }],
+      "more": {
+        "href": "#",
+        "text": "See all 10 related services",
+        "info": "See all of the resources for Executive Office of Health and Human Services"
+      }
     }
   },
   "learnAbout": {
@@ -30,7 +35,7 @@
         "sub": "true"
       },
       "description": null,
-      "stacked": false,
+      "stacked": true,
       "hideBullets": true,
       "links" : [{
         "href":"#",

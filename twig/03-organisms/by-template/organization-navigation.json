@@ -29,15 +29,6 @@
               "text":"Lorem ipsum dolor sit.",
               "info": ""
             }]
-          },
-          "button": {
-            "href": "#",
-            "info": "",
-            "text": "See all services & tasks",
-            "type": "button",
-            "size": "",
-            "theme": "",
-            "outline": true
           }
         },
         "learnAbout": {

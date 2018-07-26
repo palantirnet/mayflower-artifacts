@@ -76,16 +76,12 @@
               "href":"#",
               "text":"Lorem ipsum dolor sit.",
               "info": ""
-            }]
-          },
-          "button": {
-            "href": "#",
-            "info": "",
-            "text": "See all services & tasks",
-            "type": "button",
-            "size": "",
-            "theme": "",
-            "outline": true
+            }],
+            "more": {
+              "href": "#",
+              "text": "See all 10 related services",
+              "info": "See all of the resources for Executive Office of Health and Human Services"
+            }
           }
         },
         "learnAbout": {
