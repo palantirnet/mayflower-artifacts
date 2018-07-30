@@ -8,16 +8,12 @@
     <div class="ma__organization-navigation__search">
       <button class="ma__organization-navigation__search--toggle search--toggle-open js-toggle-open">{{ icon('search') }} Search this organization</button>
       <div class="ma__organization-navigation__search--wrapper">
-        <form action="https://search.mass.gov/?" class="ma__form js-organization-navigation__search">
+        <form action="https://search.mass.gov/?org={{ organizationNavigation.orgId }}" class="ma__form js-organization-navigation__search">
           <input
               id="organization-navigation-search"
               class="ma__form js-organization-navigation__search-input"
               placeholder="Search {{ organizationNavigation.orgNavTitle }} {% if organizationNavigation.orgNavAbbrev %} ({{ organizationNavigation.orgNavAbbrev }}) {% endif %}"
-              type="text"
-              name="q" />
-          {% if organizationNavigation.orgId %}
-            <input type="hidden" name="org" value="{{ organizationNavigation.orgId }}" />
-          {% endif %}
+              type="text" />
           {% include "@atoms/01-buttons/button-search.twig" %}
         </form>
         <button class="ma__organization-navigation__search--toggle search--toggle-close js-toggle-close">Close</button>
@@ -31,7 +27,7 @@
         <li class="ma__organization-navigation__item {{ nav.section }}{% if nav.subNav %} has-subnav{% endif %}">
         <button 
           id="{{ buttonId }}" 
-          {% if nav.subNav %}class="js-subnav-toggle"{% endif %}
+          {% if nav.subNav %}class="subnav-toggle"{% endif %}
           {{ nav.subNav ? 'aria-haspopup="true" aria-expanded="false"' : '' }}>
             {{ nav.title }}
         </button>
