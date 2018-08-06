@@ -1,49 +1,43 @@
 {
   "urlPath": "/?p=pages-ORG-Health-Services",
   "COMMENT": "****PAGE CONTENT COMPONENTS****",
-  "relationshipIndicators": {
-    "primary": {
-      "position": "primary",
-      "label": "offered by",
-      "tags": [{
-        "class": "ma__relationship-indicators--term",
+   "relationshipIndicators": {
+    "offered_by": [
+      {
         "href": "#",
-        "title": "Department of Conservation and Recreation"
-      },{
-        "class": "ma__relationship-indicators--term",
+        "text": "Department of Conservation and Recreation"
+      },
+      {
         "href": "#",
-        "title": "Other agency or organization"
-      }]
-    },
-    "secondary": {
-      "position": "",
-      "label": "related to",
-      "tags": [{
-        "class": "ma__relationship-indicators--term",
+        "text": "Other agency or organization that has a super long name that wraps even at full widths"
+      }
+    ],
+    "relatedTo": [
+      {
         "href": "#",
-        "title": "Snowmobile in the Parks"
-      },{
-        "class": "ma__relationship-indicators--term",
+        "text": "Snowmobile in the Parks"
+      },
+      {
         "href": "#",
-        "title": "Cross-Country Skiing"
-      },{
-        "class": "ma__relationship-indicators--term",
+        "text": "Cross-Country Skiing"
+      },
+      {
         "href": "#",
-        "title": "Accessible Hiking"
-      },{
-        "class": "ma__relationship-indicators--term",
+        "text": "Accessible Hiking"
+      },
+      {
         "href": "#",
-        "title": "Scenic Viewing Areas"
-      },{
-        "class": "ma__relationship-indicators--term",
+        "text": "Scenic Viewing Areas"
+      },
+      {
         "href": "#",
-        "title": "Hunting"
-      },{
-        "class": "ma__relationship-indicators--term",
+        "text": "Hunting"
+      },
+      {
         "href": "#",
-        "title": "Biking"
-      }]
-    }
+        "text": "Biking"
+      }
+    ]
   },
   "pageBanner": {
     "bgWide": "../../assets/images/placeholder/1600x400.png",
