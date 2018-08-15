@@ -9,5 +9,7 @@
             "email": "bryan.hirsch@mass.gov"
         }
     ],
-    "require": {}
+    "require": {
+        "composer/installers": "~1.0"
+    }
 }
