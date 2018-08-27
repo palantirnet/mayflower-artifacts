@@ -61,12 +61,7 @@
         "value": "open",
         "checked": "false"
       }],
-      "buttons": [{
-        "text": "Submit",
-        "type": "submit",
-        "theme": "",
-        "outline": false
-      }] 
+      "submitButton": "Submit"
     },
     "googleMap": {
       "map": {
