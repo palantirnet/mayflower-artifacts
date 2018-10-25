@@ -108,15 +108,10 @@
 {% endblock %}
 
 {% block sidebar %}
-  {% if sidebar.linkList %}
-    {% set linkList = sidebar.linkList %}
-    {% include "@organisms/by-author/link-list.twig" %}
-  {% endif %}
-
-  {% if sidebar.contactList %}
-    {% set contactList = sidebar.contactList %}
-    {% include "@organisms/by-author/contact-list.twig" %}
-  {% endif %}
+  {% set linkList = sidebar.linkList %}
+  {% include "@organisms/by-author/link-list.twig" %}
+  {% set contactList = sidebar.contactList %}
+  {% include "@organisms/by-author/contact-list.twig" %}
 {% endblock %}
 
 {% block footer %}
