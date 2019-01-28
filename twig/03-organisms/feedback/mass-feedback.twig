@@ -1,7 +1,7 @@
 <div class="ma__mass-feedback-form">
   <h2 class="visually-hidden">Feedback</h2>
 
-  <form class="ma__mass-feedback-form__form" method="post" action="{{ formAction}}" id="">
+  <form class="ma__mass-feedback-form__form" method="post" novalidate action="{{ formAction }}" id="{{ formId }}">
     <fieldset class="ma_feedback-fieldset feedback-load">
       <legend>
         {{ title }}
@@ -24,23 +24,26 @@
         <p>{{ queryDescription }}</p>
 
         {% if reportMessage %}
-          {% set headerAlerts = reportMessage %}
-          {% include "@organisms/by-template/header-alerts.twig" %}
+          {% set pageAlert = reportMessage %}
+          {% include "@organisms/by-template/in-page-alert.twig" %}
         {% endif %}
-      </fieldset>
-
-      <fieldset class="ma_feedback-fieldset user-response">
-        {% set textarea = textarea %}
-        {% include "@atoms/03-forms/textarea.twig" %}
+        <div class="feedback-response feedback-positive">
+          {% set textarea = affirmativeTextarea %}
+          {% include "@atoms/03-forms/textarea.twig" %}
+        </div>
+        <div class="feedback-response feedback-negative">
+          {% set textarea = negativeTextarea %}
+          {% include "@atoms/03-forms/textarea.twig" %}
+        </div>
 
         {% set helperText = helperText %}
         {% include "@atoms/03-forms/helper-text.twig" %}
 
         {% if Response %}
-        <div class="ma__mass-feedback-form__form--user-response">
+        <div class="ma__mass-feedback-form__form--user-response feedback-response feedback-negative">
           <legend>
             {{ Response }} 
-            {% if responseRequired.inputGroup %} {{ org }}? {% endif %} 
+            {% if responseRequired.inputGroup %} {{ org }}? *{% endif %}
             {% if noResponseDescription %}<a class="ma__content-link--chevron form--no-response">Why? </a>{% endif %}
           </legend>
 
@@ -58,27 +61,14 @@
               {% endif %}
 
               <div class="ma__mass-feedback-form__contact-form--items">
-                <div class="contact-form--item firstName">
-                  <legend>First Name</legend>
+              {% for input in contactInputs %}
+                <div class="contact-form--item">
+                  {% set inputText = input %}
                   {% include "@atoms/03-forms/input-text.twig" %}
                 </div>
-
-                <div class="contact-form--item lastName">
-                  <legend>Last Name</legend>
-                  {% include "@atoms/03-forms/input-text.twig" %}
-                </div>
-
-                <div class="contact-form--item email">
-                  <legend>Phone</legend>
-                  {% include "@atoms/03-forms/input-text.twig" %}
-                </div>
-
-                <div class="contact-form--item phone">
-                  <legend>Email</legend>
-                  {% include "@atoms/03-forms/input-text.twig" %}
-                </div>
-
+              {% endfor %}
               </div>
+
             </div>
           </fieldset>
           {% endif %}
