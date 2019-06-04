@@ -1,10 +1,7 @@
 {% set calloutLinkTheme = calloutLink.theme ? "ma__callout-link--" ~ calloutLink.theme : "" %}
 
-{# <div > #}
-  <a href="{{ calloutLink.href }}" 
-  class="ma__callout-link {{calloutLinkTheme}}"
-  {% if alloutLink.info %} title="{{ calloutLink.info }}"{% endif %}
-  target="">
+<div class="ma__callout-link {{calloutLinkTheme}}"{% if alloutLink.info %} title={{ calloutLink.info }}{% endif %}>
+  <a href="{{ calloutLink.href }}">
     {% if calloutLink.eyebrow or calloutLink.time %}
     <div class="ma__callout-link__header">
       {% if calloutLink.eyebrow %}
@@ -25,4 +22,4 @@
       <p class="ma__callout-link__description">{{ calloutLink.description }}</p>
     {% endif %}
   </a>
-{# </div> #}
+</div>
