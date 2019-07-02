@@ -106,15 +106,15 @@
                   {% include "@organisms/by-author/split-columns.twig" %}
                 {% endif %}
               {% endif %}
-            {% endblock %}
-            {% if flexibleLinkGroup %}
-              {% if splitColumns %}
-                <div class="more-info-header">
-                  <h2 class="ma__comp-heading">Related Services</h2>
-                </div>
-                {% include "@organisms/by-author/split-columns.twig" %}
+              {% if flexibleLinkGroup %}
+                {% if splitColumns %}
+                  <div class="more-info-header">
+                    <h2 class="ma__comp-heading">Related Services</h2>
+                  </div>
+                  {% include "@organisms/by-author/split-columns.twig" %}
+                {% endif %}
               {% endif %}
-            {% endif %}
+            {% endblock %}
           </div>
         </div>
       </section>
