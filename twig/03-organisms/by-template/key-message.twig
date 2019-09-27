@@ -36,6 +36,16 @@
           background-image: url('{{ bgImage }}');
         }
       }
+    </style>
+  {% endif %}
+  {% if keyMessage.mobileBgImage %}
+    <style>
+      #img{{ id }}.ma__key-message__inline-image {
+        background-image: url('{{ keyMessage.mobileBgImage }}');
+      }
+    </style>
+  {% elseif bgImage %}
+    <style>
       #img{{ id }}.ma__key-message__inline-image {
         background-image: url('{{ bgImage }}');
       }
