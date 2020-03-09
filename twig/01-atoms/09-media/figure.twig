@@ -1,16 +1,15 @@
-{% set figureClass = figure.align ? "ma__figure--" ~ figure.align : "" %}
-
-<figure class="ma__figure {{ figureClass }}">
-  {% set image = figure.image %}
+{% set alignmentClass = figure.align ? " ma__figure--" ~ figure.align : "" %}
+{% set sizeClass = figure.size ? " ma__figure--" ~ figure.size : "" %}
+<figure class="ma__figure{{ alignmentClass }}{{ sizeClass }}{{ figure.class ? " "~ figure.class : "" }}">
   {% if figure.title %}
   <span class="ma__figure__title">
     {{ figure.title }}
   </span>
   {% endif %}
-  {% include "@atoms/09-media/image.twig" %}
+  {{ figure.content }}
   {% if figure.caption %}
     <figcaption class="ma__figure__caption">
-      {{ figure.caption }}
+    {{ figure.caption }}
     </figcaption>
   {% endif %}
 </figure>
