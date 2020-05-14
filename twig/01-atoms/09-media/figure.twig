@@ -1,16 +1,16 @@
-{% set alignmentClass = figure.align ? (figure.size == "x-large" ? "" : " ma__figure--" ~ figure.align) : "" %}
-{% set sizeClass = figure.size ? (figure.size == 'x-large' ? " ma__figure--full ma__figure--" ~ figure.size : " ma__figure--" ~ figure.size) : "" %}
-{% set wrapClass = not figure.wrap ? " ma__figure--no-wrap" : "" %}
-<figure class="ma__figure{{ alignmentClass }}{{ sizeClass }}{{ figure.class ? " "~ figure.class : "" }}{{ wrapClass }}">
+{% set figureClass = figure.align ? "ma__figure--" ~ figure.align : "" %}
+
+<figure class="ma__figure {{ figureClass }}">
+  {% set image = figure.image %}
   {% if figure.title %}
   <span class="ma__figure__title">
     {{ figure.title }}
   </span>
   {% endif %}
-  {{ figure.content }}
+  {% include "@atoms/09-media/image.twig" %}
   {% if figure.caption %}
     <figcaption class="ma__figure__caption">
-    {{ figure.caption }}
+      {{ figure.caption }}
     </figcaption>
   {% endif %}
 </figure>
