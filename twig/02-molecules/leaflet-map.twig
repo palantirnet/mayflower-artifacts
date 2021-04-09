@@ -3,7 +3,7 @@
 
 <div
   class="ma__leaflet-map">
-  {% if leafletMap.link.href %}
+  {% if leafletMap.link.href and leafletMap.isStatic %}
     <a class="ma__leaflet-map__link" href="{{ leafletMap.link.href }}">
       <div class="ma__leaflet-map__map js-leaflet-map"></div>
       <div class="ma__leaflet-map__directions-link">
@@ -18,7 +18,8 @@
     var ma = ma || {};
     ma.leafletMapData = ma.leafletMapData || [];
     ma.leafletMapData.push({ // why need to remap the data object?
-      isStatic: {{leafletMap.isStatic}},
+      isStatic: {{leafletMap.isStatic or 0 }},
+      hideAttribution: {{leafletMap.hideAttribution or 0 }},
       map: {
         center: {
           lat: {{leafletMap.map.center.lat}},
