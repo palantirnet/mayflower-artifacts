@@ -3,28 +3,34 @@
 {% set colorClass = pageBanner.color ? "ma__page-banner--" ~ pageBanner.color : '' %}
 
 {% set linkedClass = pageBanner.primaryLink ? "ma__page-banner--linked" : '' %}
+{% set bgNarrowClass = pageBanner.bgNarrow ? "ma__page-banner--bg-narrow" : "" %}
+{% set bgWideClass = pageBanner.bgWide ? "ma__page-banner--bg-wide" : "" %}
+{% set sectionClass = "ma__page-banner #{sizeClass} #{colorClass} #{linkedClass} #{bgNarrowClass} #{bgWideClass}" %}
 
-<section class="ma__page-banner {{ sizeClass }} {{ colorClass }} {{ linkedClass }}">
-  {% if pageBanner.size == "columns" or linkedClass %}
+{% set bgNarrowWrapperClass = pageBanner.bgNarrow ? "ma__page-banner__content-wrapper--bg-narrow" : "" %}
+{% set bgWideWrapperClass = pageBanner.bgNarrow ? "ma__page-banner__content-wrapper--bg-wide" : "" %}
+{% set wrapperClass = "ma__page-banner__content-wrapper #{bgNarrowWrapperClass} #{bgWideWrapperClass}" %}
+
+<section class="{{ sectionClass }}">
+  {% set classBgImage =
+    (pageBanner.size == "columns" or linkedClass) ?
+      '.ma__page-banner__image' : '.ma__page-banner'
+  %}
+
+  {# Optional pageBanner.bgNarrow #}
+  {% if bgNarrowClasss %}
     <style>
-      .ma__page-banner__image {
-        background-image: url('{{ pageBanner.bgNarrow }}');
-      }
-
-      @media (min-width: 801px) {
-        .ma__page-banner__image {
-          background-image: url('{{ pageBanner.bgWide }}');
-        }
-      }
+    {{ classBgImage }} {
+      background-image: url('{{ pageBanner.bgNarrow }}');
+    }
     </style>
-  {% else %}
-    <style>
-      .ma__page-banner {
-        background-image: url('{{ pageBanner.bgNarrow }}');
-      }
+  {% endif %}
 
-      @media (min-width: 801px) {
-        .ma__page-banner {
+  {# Optional pageBanner.bgWide #}
+  {% if bgWideClass %}
+    <style>
+      @media (min-width: 781px) {
+        {{ classBgImage }} {
           background-image: url('{{ pageBanner.bgWide }}');
         }
       }
@@ -35,7 +41,7 @@
       <div class="ma__page-banner__image"></div>
     {% endif %}
     <div class="ma__page-banner__content" property="mainEntityOfPage">
-      <div class="ma__page-banner__content-wrapper">
+      <div class="{{ wrapperClass }}">
         {% if pageBanner.icon %}
           <div class="ma__page-banner__icon">
             {{ icon(pageBanner.icon) }}
