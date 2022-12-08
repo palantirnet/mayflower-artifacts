@@ -1,5 +1,5 @@
 <div data-nosnippet="true" class="ma__mass-feedback-form" id="feedback">
-  <h2 class="ma__mass-feedback-form__heading">{{ heading }}</h2>
+  <h2 class="ma__mass-feedback-form__heading">{{ heading }}</h2><span class="ma__visually-hidden"> with your feedback</span>
   {# form screen #}
   <form class="ma__mass-feedback-form__form{{ submitted ? ' hidden': ''}}" method="post" novalidate action="{{ formAction }}" id="{{ formId }}">
     <fieldset class="ma_feedback-fieldset feedback-load" role="radiogroup">
@@ -23,7 +23,7 @@
         </label>
 
         {% if helpTip %}
-        <div class="ma__help-tip-container" aria-hidden>
+        <div class="ma__help-tip-container" aria-hidden="true">
           {% set helpTip = helpTip %}
           {% include "@organisms/by-author/help-tip.twig" %}
         </div>
@@ -62,9 +62,9 @@
       </fieldset>
     </div>
 
-    <fieldset class="ma_feedback-fieldset submitButtonWrapper">
+    <div class="ma_feedback-fieldset submitButtonWrapper">
       <input class="submitButton ma__button ma__button--small" type="submit" value="Send Feedback" />
-    </fieldset>
+    </div>
 
     {% for element in hiddenElements %}
       <input type="hidden" id="{{ element.id }}" name="{{ element.name }}" value="{{ element.value }}" class="{{ element.class }}" />
