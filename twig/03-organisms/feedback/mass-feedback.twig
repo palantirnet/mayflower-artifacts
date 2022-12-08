@@ -31,7 +31,10 @@
 
         {% if alert %}
           <div class="feedback-alert">
-            <div class="feedback-alert-icon">{{icon('input-warning')}}</div>
+            <div class="feedback-alert-icon">
+              {{icon('input-warning')}}
+              <div class="ma__visually-hidden">alert</div>
+            </div>
             <div class="feedback-alert-message">
               {{ alert.text }}
               {% set decorativeLink = alert.link %}
@@ -43,7 +46,7 @@
           {% set textarea = affirmativeTextarea %}
           {% include "@atoms/03-forms/textarea.twig" %}
           {% if alertMsg %}
-            <div class="ma__alert-msg">{{ alertMsg }}</div>
+            <div class="ma__alert-msg" role="alert">{{ alertMsg }}</div>
           {% endif %}
           {% if warnMsg %}
             <div class="ma__warn-msg{{showWarnMsg ? ' has-error' : ''}}">{{ warnMsg|raw }}</div>
@@ -53,7 +56,7 @@
           {% set textarea = negativeTextarea %}
           {% include "@atoms/03-forms/textarea.twig" %}
           {% if alertMsg %}
-            <div class="ma__alert-msg">{{ alertMsg }}</div>
+            <div class="ma__alert-msg" role="alert">{{ alertMsg }}</div>
           {% endif %}
           {% if warnMsg %}
             <div class="ma__warn-msg{{showWarnMsg ? ' has-error' : ''}}">{{ warnMsg|raw }}</div>
