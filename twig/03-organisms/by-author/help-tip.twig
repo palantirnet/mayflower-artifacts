@@ -13,7 +13,9 @@
       aria-controls="help-tip-content-{{ helpTip.id }}"
     >
       <span>{{ helpTip.textTrigger }}</span>
-      <span class="ma_help-tip__label-a11y ma__visually-hidden">Open tooltip to learn more.</span>
+      {% if not helpTip.isDescription %}
+        <span class="ma_help-tip__label-a11y ma__visually-hidden">Open tooltip to learn more.</span>
+      {% endif %}
       {{icon('question-mark')}}
     </button>
     {% if textAfter %}
@@ -27,13 +29,13 @@
   >
     <button
       class="ma__help-tip__close-mobile"
-      aria-label="close tooltip"
+      {{ helpTip.isDescription ?: 'aria-label="close tooltip"' }}
     >
       {{ icon('close') }}
     </button>
     <button
       class="ma__help-tip__close-desktop"
-      aria-label="close tooltip"
+      {{ helpTip.isDescription ?: 'aria-label="close tooltip"' }}
     >
       {{ icon('close') }}
     </button>
