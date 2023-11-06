@@ -28,14 +28,8 @@
 
 <section class="ma__page-header{{optClass}}">
   {% if pageHeader.socialLinks.items %}
-  {# {% if pageHeader.headerTags.taxonomyTerms or pageHeader.socialLinks.items %} #}
+  {# {% if pageHeader.socialLinks.items %} #}
     <div class="ma__page-header__tags">
-{# REMOVE: replaced with relationship indicator. #}
-      {# {% if pageHeader.headerTags.taxonomyTerms %}
-        {% set headerTags = pageHeader.headerTags %}
-        {% include "@molecules/header-tags.twig" %}
-      {% endif %} #}
-{# END: REMOVE #}
       {% if pageHeader.socialLinks.items %}
         {% set socialLinks = pageHeader.socialLinks %}
         {% include "@molecules/social-links.twig" %}
@@ -81,6 +75,23 @@
       </h1>
       {% if pageHeader.subTitle %}
         <div class="ma__page-header__sub-title">{{pageHeader.subTitle}}</div>
+      {% endif %}
+      {% if pageHeader.description %}
+        <p class="ma__page-header__description">{{pageHeader.description}}</p>
+      {% endif %}
+      {% if pageHeader.buttons %}
+        <div class="ma__page-banner-legacy__buttons-wrapper">
+        {% if pageHeader.buttonsLabel %}
+            <span  class="ma__page-banner-legacy__buttons-label">{{pageHeader.buttonsLabel}}</span>
+        {% endif %}
+            <ul class="ma__page-banner-legacy__buttons">
+                {% for button in pageHeader.buttons %}
+                <li class="ma__page-banner-legacy__button">
+                    {% include "@atoms/01-buttons/button.twig" %}
+                </li>
+                {% endfor %}
+            </ul>
+        <div>
       {% endif %}
     {% endif %}
   </div>
