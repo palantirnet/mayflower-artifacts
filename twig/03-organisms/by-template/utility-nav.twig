@@ -1,6 +1,4 @@
 <div class="ma__utility-nav js-util-nav">
-  {# Unable to use aria for labeling since inconsistent support for the tags by screen readers as of Feb. 22, 2023. #}
-  <span id="utility-nav-label" class="ma__visually-hidden">Language options and quick access links</span>
   <ul class="ma__utility-nav__items">
     {% if googleLanguages %}
       <li class="ma__utility-nav__item">
@@ -39,7 +37,6 @@
           <div aria-hidden="true" class="ma__utility-nav__content js-util-nav-content is-closed">
             <div class="ma__utility-nav__container">
               <div class="ma__utility-nav__content-title">
-                <button class="ma__utility-nav__close js-close-util-nav"><span>{{ item.closeText }}</span><span class="ma__utility-nav__close-icon" aria-hidden="true">+</span></button>
                 {{ icon(item.icon) }}
                 <div>{{ item.text }}</div>
               </div>
@@ -49,6 +46,14 @@
                 {% include "@organisms/by-template/utility-panel.twig" %}
                 {% endfor %}
               </div>
+
+              <button class="ma__utility-nav__close js-close-util-nav">
+                <span>{{ item.closeText }}</span>
+                <span class="ma__utility-nav__close-icon" aria-hidden="true">+</span>
+              </button>
+
+
+
             </div>
           </div>
         {% endif %}
