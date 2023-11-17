@@ -1,0 +1,44 @@
+{% set outerAccordion = contactUs.accordion %}
+
+{% if outerAccordion %}
+  {% set accordionClass = "ma__contact-us--accordion js-accordion" %}
+{% endif %}
+
+{% set groupHeading = contactUs.level ? : 2 %}
+
+<section
+  class="ma__contact-us {{ accordionClass }} {{ contactUs.isExpanded ? 'is-open':'' }} {{ contactUs.columns ? 'ma__contact-us--columns':'' }}">
+
+  {% if contactUs.subTitle %}
+    {% if outerAccordion %}
+      <button class="ma__contact-us__header js-accordion-link" type="button">
+    {% endif %}
+      {% set columnHeading = contactUs.subTitle|merge({"level": contactUs.level}) %}
+      {% include "@atoms/04-headings/column-heading.twig" %}
+    {% if outerAccordion %}
+      <span class="ma__contact-us--accordion__status js-accordion-status" aria-label="click to show info">+</span>
+      </button>
+    {% endif %}
+    {% set groupHeading = groupHeading + 1 %}
+    {% set contactName = contactUs.subTitle.text %}
+  {% endif %}
+
+  {% block contactGroups %}
+      <div class="ma__contact-us__content js-accordion-content">
+        <div class="ma__contact-us__content-wrap">
+          {% for group in contactUs.groups %}
+            {% set contactGroup = group|merge({
+                             "level": groupHeading,
+                             "contactName": contactName })  %}
+            {% include "@molecules/contact/contact-group.twig" %}
+          {% endfor %}
+          {% if contactUs.decorativeLink %}
+            <div class="ma__contact-us__more-info">
+              {% set decorativeLink = contactUs.decorativeLink %}
+              {% include "@atoms/decorative-link.twig" %}
+            </div>
+          {% endif %}
+        </div>
+      </div>
+  {% endblock %}
+</section>
